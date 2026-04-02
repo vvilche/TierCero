@@ -307,6 +307,16 @@ function triggerGenAI() {
         historyEl.removeChild(typingMsg);
         const response = getAIResponse(query);
         typeMessage('system', response);
+        
+        // Trigger Dynamic UI if keywords detected
+        const q = query.toLowerCase();
+        if (q.includes('dashboard') || q.includes('panel')) {
+            generateDynamicUI('dashboard');
+        } else if (q.includes('tendencia') || q.includes('analiza') || q.includes('flujo')) {
+            generateDynamicUI('trends');
+        } else if (q.includes('tco') || q.includes('ahorro') || q.includes('valor')) {
+            generateDynamicUI('tco');
+        }
     }, 1500);
 }
 
@@ -455,7 +465,21 @@ setInterval(() => {
         }
     }
     renderDetails(selectedNode.data);
+    
+    // Update mobile simulation if open
+    const mobileVal = document.getElementById('mobile-val');
+    if (mobileVal && selectedNode.data.value) {
+        mobileVal.innerText = `${selectedNode.data.value.toFixed(1)}%`;
+    }
 }, 2000);
+
+function openMobileSimulation() {
+    document.getElementById('mobile-modal').style.display = 'flex';
+}
+
+function closeMobileSimulation() {
+    document.getElementById('mobile-modal').style.display = 'none';
+}
 
 // --- Reference Data Integration ---
 function updateDataInspector(node) {

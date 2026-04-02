@@ -1409,3 +1409,106 @@ body {
 
 .dot.live { background: #3FB950; box-shadow: 0 0 5px #3FB950; height: 8px; width: 8px; border-radius: 50%; margin-right: 8px; }
 .dot.standby { background: #8B949E; height: 8px; width: 8px; border-radius: 50%; margin-right: 8px; }
+
+/* Mobile Simulation Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.mobile-frame {
+    width: 320px;
+    height: 640px;
+    background: #0d1117;
+    border: 8px solid #30363d;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(88, 166, 255, 0.3);
+    overflow: hidden;
+}
+
+.mobile-notch {
+    width: 120px;
+    height: 25px;
+    background: #30363d;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 15px 15px;
+    z-index: 10;
+}
+
+.mobile-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-header {
+    background: #161b22;
+    padding: 35px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #8B949E;
+    border-bottom: 1px solid #30363d;
+}
+
+.mobile-header button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.mobile-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #0d1117 0%, #161b22 100%);
+}
+
+.hologram-circle {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3FB950;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 30px rgba(63, 185, 80, 0.3);
+    position: relative;
+}
+
+.btn-action {
+    background: #238636;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 2rem;
+}
