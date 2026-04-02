@@ -1,34 +1,46 @@
-# SUPCON Chile | Tablero Táctico & Tier Cero "Bala de Plata"
+# Tablero Táctico Tier Cero | SUPCON Chile 🇨🇱
 
-Este es el activo digital estratégico para la penetración del mercado industrial chileno (2026-2030). Combina inteligencia de mercado (TAM), Playbook de Ventas (KAM) y un simulador de **Unified Namespace (UNS)** de alta fidelidad.
+Este repositorio contiene la **"Bala de Plata" (Tier Cero Dashboard)**, una herramienta industrial de alta fidelidad diseñada para que los Key Account Managers (KAMs) de SUPCON Chile desplacen a la competencia tradicional (marcas legacy) mediante la digitalización nativa y la IA Generativa Industrial.
 
-## 🚀 Módulos Clave
+## 🚀 La Trilogía Estratégica (Valor Agregado)
 
-### 1. Tier Cero Dashboard (Bala de Plata)
-- **Unified Namespace (UNS)**: Jerarquía de activos industriales via MQTT/Sparkplug B.
-- **GenAI Copilot**: Inferencia industrial en tiempo real para optimización de procesos (TPT).
-- **No-Code Variables**: Editor visual para ajustar parámetros de planta sin programar.
+Para ganar el mercado, entendemos la interacción entre tres pilares fundamentales:
 
-### 2. Tablero Táctico (Estrategia 2026-2030)
-- **TAM Matrix**: Oportunidades en Minería, Celulosa y Energía (USD Potential).
-- **Modelo VAC**: Estrategia de ensamble local para reducir tiempos de entrega a 72 horas.
-- **Calculadora TCO/IPC**: Herramienta de cierre comercial basada en el costo total de propiedad.
-
-## 🛠️ Cómo Ejecutar la Demo
-
-1. **Requisitos**: Se recomienda tener Docker para el Broker MQTT local.
-2. **Ejecución Local**:
-   ```bash
-   chmod +x deploy_tier0.sh
-   ./deploy_tier0.sh
-   ```
-3. **Broker MQTT**: La demo está pre-configurada para conectar con el broker de pruebas o un broker local en `localhost:9001`.
-
-## 📂 Estructura del Proyecto
-- `index.html`: Cuadro de mando táctico estratégico.
-- `tier0.html`: Simulador Industrial de alta fidelidad.
-- `tier0_core.js`: Motor de lógica MQTT y UNS.
-- `deploy_tier0.sh`: Script de portabilidad industrial.
+1.  **UCS (Universal Control System)**: El hardware abierto definido por software. Elimina el *vendor lock-in* (dependencia de marca) y reduce el CAPEX del cliente en un 40%.
+2.  **Tier Cero (Unified Namespace - UNS)**: La arquitectura que democratiza los datos. Pone toda la planta en una "Fuente Única de Verdad" accesible vía MQTT/Sparkplug B.
+3.  **TPT (Time-Series Pre-trained Transformer)**: La IA nativa. Analiza telemetría en tiempo real para predecir fallas y optimizar procesos, aumentando el OEE del cliente en un 25%.
 
 ---
-**Mantenido por SUPCON Chile Sales Strategy Team**
+
+## 🛠️ Funcionalidades del Dashboard
+
+- **Digital Twin Dinámico**: Mapeo automático de activos industriales mediante escaneo MQTT.
+- **Copiloto TPT (GenAI)**: Asistente industrial que genera interfaces (tendencias, reportes OEE) en tiempo real mediante lenguaje natural.
+- **Soberanía de Datos**: Exportación directa de datasets históricos y de referencia en formato CSV.
+- **Calculadora TCO/IPC**: Herramienta de ventas para demostrar el aumento de costos de mantenimiento de marcas legacy (2009-2026).
+
+---
+
+## 📦 Despliegue en Terreno (Air-Gapped)
+
+Para visitas a planta sin internet, utiliza el script industrial de despliegue:
+
+```bash
+./deploy_tier0.sh
+```
+
+Este script inicializa la infraestructura local (`Docker`, `EMQX Broker`) necesaria para que la demo funcione en el laptop del KAM sin conexión externa.
+
+---
+
+## 📂 Estructura del Proyecto
+
+- `index.html`: Dashboard táctico central (Estrategia 2026-2030).
+- `tier0.html`: Interfaz de ingeniería y simulación (Bala de Plata).
+- `tier0_core.js`: Motor de inferencia TPT y lógica de conectividad MQTT.
+- `reference_data.js`: Librería de benchmarks industriales (Minería, Celulosa, Energía).
+- `style.css`: Sistema de diseño industrial con estética *Premium Glassmorphism*.
+
+---
+
+© 2026 SUPCON Chile. Todos los derechos reservados. Confidencial - Uso Exclusivo para KAMs.
