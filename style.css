@@ -37,7 +37,12 @@ body {
     font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
+
+.sidebar-logo { height: 40px; width: auto; filter: brightness(1.2); }
 
 .logo span { color: var(--primary); font-weight: 400; }
 
@@ -777,7 +782,12 @@ body {
     color: #F0F6FC;
     font-size: 1.3rem;
     font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
+
+.conecta-logo { height: 32px; width: auto; filter: brightness(1.1); }
 
 .tier0-brand span {
     background: linear-gradient(90deg, #3FB950, #2ea44f);
