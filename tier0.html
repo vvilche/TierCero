@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier Cero Dashboard | SUPCON Chile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <style>
+        body { background: #010409; } /* Darker background for standalone demo */
+        .standalone-layout {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .demo-nav {
+            padding: 1rem 2rem;
+            background: #161B22;
+            border-bottom: 1px solid #30363D;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-back {
+            color: #58A6FF;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .qr-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #7D8590;
+            font-size: 0.8rem;
+        }
+        .qr-placeholder {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 4px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body class="standalone-layout">
+    <nav class="demo-nav">
+        <a href="index.html" class="btn-back">← Volver al Tablero Táctico</a>
+        <div class="qr-section">
+            <div class="qr-placeholder">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=40x40&data=https://tier0.app/sensor-sim" alt="QR" style="width:100%; height:100%;">
+            </div>
+            <span>Escanea para simular sensor móvil</span>
+        </div>
+    </nav>
+
+    <div class="glass-card full tier0-container" style="height: 100%; border:none; border-radius: 0;">
+        <div class="tier0-header">
+            <div class="tier0-brand">Tier Cero <span>Dashboard</span></div>
+            <div class="tier0-status">
+                <span id="mqtt-status-pulse" class="pulse" style="background:#8B949E;"></span> 
+                <span id="mqtt-status-text">Disconnected</span>
+            </div>
+            <div class="industry-selector">
+                <label>Industria :</label>
+                <select id="industry-select" onchange="loadIndustryUNS()">
+                    <option value="mining">⛏️ Minería (Codelco)</option>
+                    <option value="pulp">🌲 Celulosa (Arauco)</option>
+                    <option value="desal">💧 Desalación (Antofagasta)</option>
+                    <option value="food">🍎 Alimentos (Agrosuper)</option>
+                </select>
+                <button class="btn-settings" onclick="openSettings()" title="Configurar Variables">⚙️</button>
+            </div>
+        </div>
+        
+        <div class="tier0-workspace">
+            <div class="tier0-panel uns-tree">
+                <h4>Unified Namespace (UNS)</h4>
+                <div id="uns-root" class="tree-container">
+                    <div class="tree-empty">Inicializando conexión MQTT...</div>
+                </div>
+            </div>
+            
+            <div class="tier0-panel detail-view">
+                <div class="detail-header">
+                    <h4 id="detail-title">Propiedades del Activo</h4>
+                    <button class="btn-scan" onclick="startNetworkScan()">🔍 Scan Network (MQTT)</button>
+                </div>
+                <div id="detail-content" class="detail-grid">
+                    <p class="placeholder">Selecciona un nodo del árbol UNS para ver telemetría viva conectada por WebSockets.</p>
+                </div>
+                <div class="genai-box">
+                    <label>GenAI App Builder:</label>
+                    <input type="text" id="genai-input" placeholder="Ej: 'Genera reporte de eficiencia energética'">
+                    <button onclick="triggerGenAI()">✨ Generar App en Vivo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal (No-Code Editor) -->
+    <div id="settings-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>⚙️ Configuración Visual de la Demo</h3>
+                <button class="btn-close" onclick="closeSettings()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Personaliza los nombres y valores de los tags para este cliente. Estos cambios se guardan localmente para tu reunión.</p>
+                <table id="settings-table">
+                    <thead>
+                        <tr>
+                            <th>Nivel / Activo</th>
+                            <th>Nombre del Tag</th>
+                            <th>Valor Base</th>
+                            <th>Unidad</th>
+                        </tr>
+                    </thead>
+                    <tbody id="settings-tbody">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-reset" onclick="resetToFactorySettings()">🔙 Restaurar Originales</button>
+                <button class="btn-primary" onclick="saveSettings()">💾 Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="tier0_core.js"></script>
+</body>
+</html>

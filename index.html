@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPCON Chile | Tablero Táctico 2026-2030</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-theme">
+    <aside class="sidebar">
+        <div class="logo">SUPCON<span>CHILE</span></div>
+        <nav class="side-nav">
+            <button onclick="showModule('home')" class="active">🏠 Inicio</button>
+            <button onclick="showModule('tier')" class="side-nav-btn tier0-btn">📊 Tier Cero Dashboard</button>
+            <button onclick="showModule('market')">📊 Mercado (TAM)</button>
+            <button onclick="showModule('kam')">🤝 Playbook KAM</button>
+            <button onclick="showModule('references')">🌍 Referencias Globales</button>
+            <button onclick="showModule('vac')">⚙️ Modelo VAC</button>
+            <button onclick="showModule('legacy')">🏛️ Legado & Evolución</button>
+            <button onclick="showModule('tech')">🔬 Comparativa Técnica</button>
+            <button onclick="showModule('tco')">🧮 Calculadora TCO/IPC</button>
+            <button onclick="showModule('exponor')">🏔️ EXPOONOR 2026</button>
+            <button onclick="showModule('horizons')">🚀 Ruta 2026-2040</button>
+            <button onclick="showModule('odoo')">📋 Gestión (Odoo)</button>
+            <button onclick="showModule('resources')">📂 Fuentes & Documentos</button>
+        </nav>
+    </aside>
+
+    <main id="dashboard-content">
+        <!-- Module: Home -->
+        <div id="module-home" class="module active">
+            <header class="module-header">
+                <h1>Tablero Táctico de Acción SUPCON 2026-2030</h1>
+                <p>Herramienta Operativa para Subgerencia e Ingeniería de Ventas</p>
+            </header>
+            <div class="module-grid">
+                <div class="action-card tier0-card" onclick="showModule('tier')">
+                    <span class="icon">⚡</span>
+                    <h3>Bala de Plata</h3>
+                    <p>Tier Cero Dashboard.</p>
+                </div>
+                <div class="action-card" onclick="showModule('kam')">
+                    <span class="icon">🚀</span>
+                    <h3>Cerrar Pilots</h3>
+                    <p>Guía "Prueba y Compra" 90 días.</p>
+                </div>
+                <div class="action-card goal" onclick="showModule('vac')">
+                    <span class="icon">⚙️</span>
+                    <h3>Proyecto VAC</h3>
+                    <p>Meta Q3-2026: Ensamble Local.</p>
+                </div>
+                <div class="action-card" onclick="showModule('legacy')">
+                    <span class="icon">✨</span>
+                    <h3>Valorar Legado</h3>
+                    <p>Comparativa Era Fisher vs SUPCON.</p>
+                </div>
+                <div class="action-card" onclick="showModule('references')">
+                    <span class="icon">🌍</span>
+                    <h3>Confianza Global</h3>
+                    <p>+600,000 Válvulas instaladas.</p>
+                </div>
+                <div class="action-card" onclick="showModule('market')">
+                    <span class="icon">🎯</span>
+                    <h3>Targets Mineros</h3>
+                    <p>Pipeline Codelco, BHP, AMSA.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module: Market (TAM) -->
+        <div id="module-market" class="module">
+            <div class="glass-card full tam-premium-container">
+                <div class="tam-header">
+                    <h2>Inteligencia de Mercado Industrial (TAM)</h2>
+                    <p>Oportunidad de Captura 2026-2030 por Sector Crítico</p>
+                </div>
+                
+                <div class="tam-matrix">
+                    <!-- Mining Pillar -->
+                    <div class="tam-sector pillar-mining">
+                        <div class="sector-head">⛏️ Minería (60%)</div>
+                        <div class="sector-body">
+                            <div class="customer-card">
+                                <span>Codelco</span>
+                                <div class="ioi-bar"><div class="fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="customer-card">
+                                <span>BHP Billiton</span>
+                                <div class="ioi-bar"><div class="fill" style="width: 70%;"></div></div>
+                            </div>
+                            <div class="customer-card">
+                                <span>Antofagasta Minerals</span>
+                                <div class="ioi-bar"><div class="fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="customer-card">
+                                <span>Collahuasi</span>
+                                <div class="ioi-bar"><div class="fill" style="width: 60%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="sector-footer">USD 120M Potential</div>
+                    </div>
+
+                    <!-- Pulp & Paper Pillar -->
+                    <div class="tam-sector pillar-pulp">
+                        <div class="sector-head">🌲 Celulosa (25%)</div>
+                        <div class="sector-body">
+                            <div class="customer-card">
+                                <span>Arauco</span>
+                                <div class="ioi-bar"><div class="fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="customer-card">
+                                <span>CMPC</span>
+                                <div class="ioi-bar"><div class="fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="sector-footer">USD 50M Potential</div>
+                    </div>
+
+                    <!-- Energy/Desal Pillar -->
+                    <div class="tam-sector pillar-energy">
+                        <div class="sector-head">💧 Desalación / Energía (15%)</div>
+                        <div class="sector-body">
+                            <div class="customer-card">
+                                <span>Aguas Antofagasta</span>
+                                <div class="ioi-bar"><div class="fill" style="width: 65%;"></div></div>
+                            </div>
+                            <div class="customer-card">
+                                <span>ENAP</span>
+                                <div class="ioi-bar"><div class="fill" style="width: 40%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="sector-footer">USD 30M Potential</div>
+                    </div>
+                </div>
+
+                <div class="tam-footer">
+                    <div class="legend">
+                        <span class="dot" style="background:var(--accent-mining)"></span> Potencial de Captura Inmediata (IOI)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module: KAM Playbook -->
+        <div id="module-kam" class="module">
+            <div class="glass-card full">
+                <h2>Playbook del KAM (Key Account Manager)</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3>1. Protocolo "Prueba y Compra" (Trial & Buy)</h3>
+                        <div class="content">
+                            <ul>
+                                <li><strong>Instalación:</strong> Selección de línea paralela no crítica.</li>
+                                <li><strong>KPI Cierre:</strong> Definir 3 parámetros (ej. precisión, estanqueidad).</li>
+                                <li><strong>Plazo:</strong> 90 días Trial. OC Automática al éxito.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3>2. Manejo de Objeciones "Marca China"</h3>
+                        <div class="content">
+                            <p>Argumento: "SUPCON es líder mundial en I4.0 con presencia en 50 países. La tecnología es actual, no legado de los 90s".</p>
+                            <p>Argumento: "Local Stock & Local Warranty (VAC) elimina el riesgo de importación".</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3>3. 🛠️ Checklist de Visita a Planta (Bala de Plata)</h3>
+                        <div class="content">
+                            <ul>
+                                <li><strong>Hardware:</strong> Router 4G, Cables RJ45, Laptop con Docker.</li>
+                                <li><strong>Software:</strong> Imágenes Docker pre-cargadas (EMQX, Grafana).</li>
+                                <li><strong>Red OT:</strong> Configuración de IP estática y PING de validación.</li>
+                                <a href="kam_plant_visit_checklist.md" target="_blank" class="resource-link">📄 Ver Checklist Detallado</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3>4. 🛡️ Manejo de Objeciones Técnicas (IT/OT)</h3>
+                        <div class="content">
+                            <p>Prepárate para las preguntas del CISO y el Jefe de Mantenimiento:</p>
+                            <ul>
+                                <li><strong>Ciberseguridad:</strong> Contenedores aislados, modo "Solo Lectura".</li>
+                                <li><strong>Ancho de Banda:</strong> Protocolo RBE (Report by Exception).</li>
+                                <li><strong>Legado:</strong> Conectividad agnóstica (Modbus, OPC-UA, Profibus).</li>
+                                <a href="kam_technical_faq.md" target="_blank" class="resource-link">📄 Ver FAQ Técnica de Manejo de OT</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module: Legado & Evolución -->
+        <div id="module-legacy" class="module">
+            <div class="glass-card full">
+                <div class="legacy-metrics">
+                    <div class="metric-box">
+                        <label>Base 2009 (Emerson/Fisher)</label>
+                        <span class="value">USD 5.2M</span>
+                    </div>
+                    <div class="metric-box highlighted">
+                        <label>Equivalente 2026 (Ajuste IPC)</label>
+                        <span class="value">USD 10.32M</span>
+                    </div>
+                    <div class="metric-box trend">
+                        <label>Target SUPCON 2030</label>
+                        <span class="value">USD 25M</span>
+                    </div>
+                </div>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Era Fisher/Metso (Pasado)</th>
+                            <th>Era SUPCON (Futuro)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Valor Percibido</strong></td>
+                            <td>Status Quo de Marca</td>
+                            <td><strong>Agilidad & TCO (35% ahorro)</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Soporte</strong></td>
+                            <td>Reactivo Planta Parada</td>
+                            <td><strong>Predictivo I4.0 / Digital Twin</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Logística</strong></td>
+                            <td>12-14 Semanas</td>
+                            <td><strong>Meta 2026: 72h (VAC Chile)</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Competencia</strong></td>
+                            <td>Emerson, Metso, Flowserve</td>
+                            <td><strong>Samson, Bray, K-Tork</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="legend">Nota: La reajustabilidad por IPC demuestra que el costo de mantenimiento de marcas legacy se ha duplicado desde 2009.</p>
+            </div>
+        </div>
+
+        <!-- Module: References & Brand -->
+        <div id="module-references" class="module">
+            <div class="glass-card full">
+                <h2>Credibilidad y Base Instalada Global</h2>
+                <div class="stats-banner">
+                    <div class="stat"><span>+35,000</span> Clientes</div>
+                    <div class="stat"><span>+600,000</span> Válvulas</div>
+                    <div class="stat"><span>50+</span> Países</div>
+                </div>
+                <div class="ref-grid">
+                    <div class="ref-item">
+                        <h4>Petroquímica & Refino</h4>
+                        <p>Sustitución de sistemas Emerson/Yokogawa en refinerías críticas de Asia y Medio Oriente.</p>
+                    </div>
+                    <div class="ref-item">
+                        <h4>Minería & Litio</h4>
+                        <p>Estándar para gigantes como SVOLT y Hubei Ronbay en procesamiento de materiales críticos.</p>
+                    </div>
+                    <div class="ref-item">
+                        <h4>Certificaciones</h4>
+                        <p>SIL3, API-6D, API 6FA/607, ATEX, CE. Cumplimiento total de estándares mineros chilenos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module: Technical Comparison -->
+        <div id="module-tech" class="module">
+            <div class="glass-card full">
+                <h2>Defensa Técnica por Segmento</h2>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="card-header">🔴 Minería de Cobre (Abrasión)</div>
+                        <p><strong>El Dolor:</strong> Desgaste prematuro en dardo de control de nivel.</p>
+                        <ul>
+                            <li><strong>SUPCON:</strong> Cerámica técnica y estellite en trim.</li>
+                            <li><strong>Ventaja Táctica:</strong> 40% menor costo de reposición vs Metso.</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <div class="card-header">⚪ Litio (Corrosión Ácida)</div>
+                        <p><strong>El Dolor:</strong> Ataque químico en lixiviación.</p>
+                        <ul>
+                            <li><strong>SUPCON:</strong> Aleaciones exóticas (Hastelloy/Duplex) de serie.</li>
+                            <li><strong>Ventaja Táctica:</strong> Tiempos de entrega de 12 semanas vs 24 de Fisher.</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <div class="card-header">🟢 Celulosa (Viscosidad)</div>
+                        <p><strong>El Dolor:</strong> Variación de consistencia y cavitación.</p>
+                        <ul>
+                            <li><strong>SUPCON:</strong> Posicionadores inteligentes con Autotuning I4.0.</li>
+                            <li><strong>Ventaja Táctica:</strong> Diagnóstico preventivo integrado (Digital Twin).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module: Odoo Dashboard -->
+        <div id="module-odoo" class="module">
+            <div class="glass-card full">
+                <div class="odoo-top">
+                    <h2>Pipeline de Oportunidades (Odoo CRM)</h2>
+                    <span class="status-pill">📡 Sincronización Mock activa</span>
+                </div>
+                <div class="pipeline-container">
+                    <div class="pipeline-stage">
+                        <h4>Nuevo / Lead</h4>
+                        <div class="mini-card">⚡ Bechtel (Proyecto Salar) <span>USD 450K</span></div>
+                        <div class="mini-card">⚡ Hatch (Expansión Pelambres) <span>USD 1.2M</span></div>
+                    </div>
+                    <div class="pipeline-stage">
+                        <h4>En Propuesta</h4>
+                        <div class="mini-card">✅ BHP (Spence - Reemplazo Dardo) <span>USD 120K</span></div>
+                    </div>
+                    <div class="pipeline-stage">
+                        <h4>Prueba y Compra (90 días)</h4>
+                        <div class="mini-card active">🔥 Codelco (Andina) - Piloto HVP <span>Día 15/90</span></div>
+                    </div>
+                    <div class="pipeline-stage">
+                        <h4>Ganado</h4>
+                        <div class="mini-card won">🏆 ARAUCO (Mantenimiento Anual) <span>USD 65K</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module: TCO Calculator -->
+        <div id="module-tco" class="module">
+            <div class="tco-grid">
+                <div class="glass-card">
+                    <h2>🧮 Calculadora de TCO (5 Años)</h2>
+                    <div class="tco-container">
+                        <div class="tco-inputs">
+                            <div class="input-group">
+                                <label>Modelo Competencia</label>
+                                <select id="comp-model">
+                                    <option value="fisher-ez">Fisher EZ (Globe)</option>
+                                    <option value="neles-re">Neles R-Series</option>
+                                    <option value="masoneilan-cam">Camflex</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>Cantidad de Válvulas</label>
+                                <input type="number" id="tco-qty" value="10">
+                            </div>
+                            <div class="input-group">
+                                <label>Costo Repuesto (USD)</label>
+                                <input type="number" id="tco-comp-price" value="1200">
+                            </div>
+                            <button class="btn-primary" onclick="calculateTCO()">Calcular</button>
+                        </div>
+                        <div id="tco-result" class="tco-display">
+                            <div class="result-box">
+                                <span class="label">Ahorro 5A</span>
+                                <span id="save-5y" class="value">USD 0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <h2>📈 Ajustador por IPC (2009-2026)</h2>
+                    <p>Convierte precios de 2009 a valor real de 2026.</p>
+                    <div class="ipc-container">
+                        <div class="input-group">
+                            <label>Precio en 2009 (USD)</label>
+                            <input type="number" id="ipc-input-2009" value="1000">
+                        </div>
+                        <button class="btn-secondary" onclick="calculateInflationAdjustment()">Ajustar</button>
+                        <div class="result-box highlighted">
+                            <span class="label">Valor en 2026 (Aprox)</span>
+                            <span id="ipc-result-2026" class="value">USD 0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module: EXPOONOR 2026 -->
+        <div id="module-exponor" class="module">
+            <div class="glass-card full">
+                <div class="exponor-header">
+                    <h2>Misión EXPOONOR 2026 (Antofagasta)</h2>
+                    <span class="countdown">Faltan 68 días</span>
+                </div>
+                <div class="exponor-action-grid">
+                    <div class="pitch-card">
+                        <h4>El Pitch de 30 Segundos</h4>
+                        <p class="quote">"Sabemos que el CAPEX es importante, pero en mantenimiento es donde SUPCON gana. Con nuestro VAC en Antofagasta, reducimos sus paradas de planta de 12 semanas a 72 horas."</p>
+                    </div>
+                    <div class="lead-capture">
+                        <h4>Captura de Lead (Feria)</h4>
+                        <input type="text" placeholder="Empresa (Feria)">
+                        <input type="email" placeholder="Email Contacto">
+                        <select>
+                            <option>Interés: Válvulas Control</option>
+                            <option>Interés: DCS/UCS (4.0)</option>
+                            <option>Interés: Servicio VAC</option>
+                        </select>
+                        <button class="btn-secondary">Registrar en Odoo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module: Route 2026-2040 -->
+        <div id="module-horizons" class="module">
+            <div class="glass-card full">
+                <h2>La Ruta de la Innovación SUPCON (2026 - 2040)</h2>
+                <div class="horizons-grid">
+                    <div class="horizon-card">
+                        <div class="card-header">🚀 2026: Agilidad & Software</div>
+                        <p><strong>Meta:</strong> Software-Defined Automation (UCS).</p>
+                        <ul>
+                            <li><strong>Hito:</strong> Implementación de sistemas sin gabinetes rígidos.</li>
+                            <li><strong>Local:</strong> Consolidación de Meta VAC Chile.</li>
+                        </ul>
+                    </div>
+                    <div class="horizon-card active">
+                        <div class="card-header">🤖 2030: IA-Nativa (TPT)</div>
+                        <p><strong>Meta:</strong> Liderazgo Global Top 3.</p>
+                        <ul>
+                            <li><strong>Hito:</strong> IA Generativa para procesos (TPT Model).</li>
+                            <li><strong>Foco:</strong> Hidrógeno Verde y Descarbonización.</li>
+                        </ul>
+                    </div>
+                    <div class="horizon-card">
+                        <div class="card-header">🧠 2040: Autonomía Total</div>
+                        <p><strong>Meta:</strong> The Autonomous Plant.</p>
+                        <ul>
+                            <li><strong>Hito:</strong> Operación Zero-Human en áreas críticas.</li>
+                            <li><strong>Foco:</strong> IA en cada sensor y actuador (Edge Intel).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module: VAC Strategy -->
+        <div id="module-vac" class="module">
+            <div class="glass-card full">
+                <h2>📈 Modelo VAC (Valve Automation Center): Chile 2026</h2>
+                <div class="vac-strategy-grid">
+                    <div class="strategy-card">
+                        <h4>Misión de Entrega</h4>
+                        <p>Reducir el Plazo de Entrega de Válvulas de Control de **12 semanas** (importación) a **72 horas** (ensamble local).</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h4>Estandarización Local</h4>
+                        <p>Stock local de cuerpos, internos (Trims) y actuadores para configuración inmediata en Antofagasta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module: Tier 0 Landing -->
+        <div id="module-tier" class="module">
+            <div class="glass-card full tier0-landing">
+                <div class="tier0-landing-content">
+                    <h1>Estrategia "Bala de Plata"</h1>
+                    <h2>Tier Cero: Unified Namespace (UNS) & GenAI</h2>
+                    <p>Demostración en tiempo real de ingesta de datos industriales y creación de aplicaciones mediante IA Generativa.</p>
+                    
+                    <div class="tier0-feature-list">
+                        <div class="feature">
+                            <span class="dot" style="background:#F59E0B"></span>
+                            <span>Conectividad Sparkplug B & MQTT</span>
+                        </div>
+                        <div class="feature">
+                            <span class="dot" style="background:#10B981"></span>
+                            <span>Mapping Automático de Activos OT</span>
+                        </div>
+                        <div class="feature">
+                            <span class="dot" style="background:#3B82F6"></span>
+                            <span>Digital Twin Industrial Dinámico</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary launch-btn" onclick="window.open('tier0.html', '_blank')">
+                        🚀 LANZAR DASHBOARD INDUSTRIAL
+                    </button>
+                    <p class="small">* Se requiere conexión al Broker MQTT (Local o Cloud) para visibilidad en vivo.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Module: Resources & Sources -->
+        <div id="module-resources" class="module">
+            <div class="glass-card full">
+                <h2>Fuentes de Información y Bases de Datos</h2>
+                <div class="resource-grid-links">
+                    <div class="resource-group">
+                        <h4>📈 Macroeconómico</h4>
+                        <a href="https://www.ine.cl/herramientas/calculadora-ipc" target="_blank" class="resource-link">🔗 Calculadora IPC Oficial (INE)</a>
+                        <a href="https://www.sii.cl/valores_y_fechas/index_valores_y_fechas.html" target="_blank" class="resource-link">🔗 Valores y Reajustes (SII)</a>
+                    </div>
+                    <div class="resource-group">
+                        <h4>🔬 Estratégico SUPCON</h4>
+                        <a href="https://www.supcon.com/about/corporate-strategy" target="_blank" class="resource-link">🔗 Global Strategy 2030</a>
+                        <a href="https://www.supcon.com/solution/autonomous-plant" target="_blank" class="resource-link">🔗 Vision: The Autonomous Plant</a>
+                    </div>
+                    <div class="resource-group">
+                        <h4>🔧 Herramientas de Campo</h4>
+                        <a href="kam_plant_visit_checklist.md" target="_blank" class="resource-link">📋 Checklist de Visita (Bala de Plata)</a>
+                        <a href="kam_technical_faq.md" target="_blank" class="resource-link">🛡️ Guía de Objeciones Técnicas IT/OT</a>
+                        <a href="deploy_tier0.sh" class="resource-link">🚀 Script de Despliegue de Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
