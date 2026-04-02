@@ -57,7 +57,7 @@
 
     <div class="glass-card full tier0-container" style="height: 100%; border:none; border-radius: 0;">
         <div class="tier0-header">
-            <div class="tier0-brand">Tier Cero <span>Dashboard</span></div>
+            <div class="tier0-brand">SUPCON <span>Chile | Intelligent Edge</span></div>
             <div class="tier0-status">
                 <span id="mqtt-status-pulse" class="pulse" style="background:#8B949E;"></span> 
                 <span id="mqtt-status-text">Desconectado</span>
@@ -103,15 +103,26 @@
                 </div>
                 <div class="tier0-genai-area">
                     <div class="genai-header">
-                        <h4>🧠 Copiloto TPT (SUPCON Native)</h4>
-                        <span class="badge">Inferencia Viva</span>
+                        <h4>🧠 Copiloto TPT (Instancia Chile v2.4)</h4>
+                        <span class="badge">Edge Inference Active</span>
                     </div>
                     <div id="genai-chat-history" class="genai-messages">
-                        <div class="message system">Copiloto Industrial Online. Analizando flujo de datos del UNS... Listo para diagnósticos.</div>
+                        <div class="message system">Copiloto Industrial Online. Optimizado por SUPCON Chile Software Team.</div>
                     </div>
                     <div class="genai-input-group">
                         <input type="text" id="genai-input" placeholder="Ej: Analiza la presión de la válvula..." onkeypress="if(event.key === 'Enter') triggerGenAI()">
                         <button onclick="triggerGenAI()" class="btn-send">⚡</button>
+                    </div>
+                </div>
+
+                <!-- Chilean Team Management Panel -->
+                <div class="chile-team-mgmt">
+                    <div class="mgmt-header">💻 Gestión Técnica: SUPCON Chile Software Team</div>
+                    <div class="mgmt-grid">
+                        <div class="status-item"><span class="dot live"></span> supOS Hub</div>
+                        <div class="status-item"><span class="dot live"></span> MQTT EMQX</div>
+                        <div class="status-item"><span class="dot live"></span> TPT Container</div>
+                        <div class="status-item"><span class="dot standby"></span> Remote Support</div>
                     </div>
                 </div>
             </div>

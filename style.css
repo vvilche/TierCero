@@ -775,12 +775,15 @@ body {
 .tier0-brand {
     font-weight: 800;
     color: #F0F6FC;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-family: 'Outfit', sans-serif;
 }
 
 .tier0-brand span {
-    color: #58A6FF;
-    font-weight: 400;
+    background: linear-gradient(90deg, #3FB950, #2ea44f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 300;
 }
 
 .tier0-status {
@@ -1359,3 +1362,40 @@ body {
     border-radius: 6px;
     margin-top: 1rem;
 }
+
+/* Chilean Team Management Styles */
+.chile-team-mgmt {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background: rgba(88, 166, 255, 0.05);
+    border: 1px solid rgba(88, 166, 255, 0.2);
+    border-radius: 12px;
+}
+
+.mgmt-header {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #58a6ff;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.mgmt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+
+.status-item {
+    font-size: 0.8rem;
+    color: #c9d1d9;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 0.5rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.dot.live { background: #3FB950; box-shadow: 0 0 5px #3FB950; height: 8px; width: 8px; border-radius: 50%; margin-right: 8px; }
+.dot.standby { background: #8B949E; height: 8px; width: 8px; border-radius: 50%; margin-right: 8px; }

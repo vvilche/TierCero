@@ -383,7 +383,11 @@ BEGIN
 END_FUNCTION_BLOCK`;
     }
 
-    return `Entendido. Estoy procesando tu solicitud sobre "${query}". Como Copiloto TPT de SUPCON, puedo generar dashboards industriales, reportes de TCO o scripts de control. ¿Qué quieres ver ahora?`;
+    if (q.includes('quien eres') || q.includes('quién eres')) {
+        return `Soy el Copiloto TPT (Instancia Local Chile v2.4). He sido desplegado por el equipo de software regional de SUPCON Chile para analizar tu planta en tiempo real manteniendo la soberanía total de tus datos.`;
+    }
+
+    return `Entendido. Estoy procesando tu solicitud sobre "${query}". Como Copiloto TPT de SUPCON Chile, puedo generar dashboards industriales, reportes de TCO o scripts de control regionalmente. ¿Qué quieres ver ahora?`;
 }
 
 function generateDynamicUI(type) {
