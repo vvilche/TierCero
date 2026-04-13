@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Vidrio Chile — Ficha KAM SUPCON</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --primary:#1a3a5c;--accent:#e85d04;--green:#2d6a4f;
+    --bg:#fafaf7;--paper:#fff;--border:#d4d0c8;
+    --text:#1a1a1a;--text-light:#555;--text-muted:#888;
+    --line:#e8e4de;--highlight:#fff3cd;
+    --col-cristal:#1a3a5c;--col-cristoro:#6b3a2a;
+  }
+  @media print{
+    @page{size:A4;margin:18mm 15mm 20mm 15mm}
+    body{background:#fff}
+    .cover{page-break-after:always}
+    .page-break{page-break-before:always}
+    .no-print{display:none!important}
+    .note-area{border:1px solid var(--border)!important}
+  }
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);font-size:9.5pt;line-height:1.5}
+  .cover{
+    background:linear-gradient(135deg,#0d2240 0%,#1a3a5c 100%);
+    color:#fff;min-height:100vh;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:60px 50px;position:relative;
+  }
+  .cover::before{
+    content:'';position:absolute;top:0;right:0;bottom:0;left:0;
+    background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events:none;
+  }
+  .cover-badge{
+    display:inline-block;background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.9);
+    padding:4px 14px;border-radius:20px;font-size:8pt;font-weight:600;
+    letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px;
+  }
+  .cover h1{font-size:28pt;font-weight:800;line-height:1.1;margin-bottom:8px;letter-spacing:-.02em}
+  .cover h2{font-size:13pt;font-weight:400;color:rgba(255,255,255,.7);margin-bottom:40px}
+  .cover-divider{width:60px;height:3px;background:var(--accent);border-radius:2px;margin-bottom:40px}
+  .cover-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:40px}
+  .cover-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:16px}
+  .cover-card-name{font-size:10pt;font-weight:700;color:#fff;margin-bottom:4px}
+  .cover-card-sub{font-size:7.5pt;color:rgba(255,255,255,.5);margin-bottom:10px}
+  .cover-card-val{font-size:18pt;font-weight:800;color:var(--accent);line-height:1}
+  .cover-card-lbl{font-size:7pt;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.08em;margin-top:3px}
+  .cover-footer{
+    display:flex;justify-content:space-between;align-items:flex-end;font-size:8pt;
+    color:rgba(255,255,255,.4);margin-top:auto;padding-top:40px;border-top:1px solid rgba(255,255,255,.1);
+  }
+  .cover-footer strong{color:rgba(255,255,255,.7)}
+  .section-header{
+    background:var(--primary);color:#fff;padding:14px 24px;
+    display:flex;align-items:center;gap:12px;border-radius:8px 8px 0 0;margin-top:24px;
+  }
+  .section-header h2{font-size:11pt;font-weight:700;letter-spacing:.02em}
+  .section-header .num{
+    background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);
+    color:#fff;width:28px;height:28px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:10pt;font-weight:700;flex-shrink:0;
+  }
+  .content-card{
+    background:var(--paper);border:1px solid var(--border);border-top:none;
+    border-radius:0 0 8px 8px;padding:20px 24px;
+  }
+  .company-header{
+    display:flex;gap:20px;align-items:flex-start;padding-bottom:16px;
+    border-bottom:2px solid var(--line);margin-bottom:16px;
+  }
+  .company-logo{
+    width:56px;height:56px;border-radius:10px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:20pt;font-weight:800;color:#fff;flex-shrink:0;
+  }
+  .company-info{flex:1}
+  .company-info h3{font-size:13pt;font-weight:700;margin-bottom:2px}
+  .company-info .subtitle{font-size:8pt;color:var(--text-muted);margin-bottom:8px}
+  .company-tags{display:flex;gap:6px;flex-wrap:wrap}
+  .tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:7pt;font-weight:600}
+  .data-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:10px;margin-bottom:16px;
+  }
+  .data-item{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:10px 12px}
+  .data-label{font-size:7pt;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin-bottom:3px;font-weight:500}
+  .data-value{font-size:9pt;font-weight:600;color:var(--text)}
+  .note-section{margin-bottom:16px}
+  .note-title{
+    font-size:8pt;text-transform:uppercase;letter-spacing:.08em;
+    color:var(--text-muted);font-weight:600;margin-bottom:6px;
+    display:flex;align-items:center;gap:6px;
+  }
+  .note-title::after{content:'';flex:1;height:1px;background:var(--border)}
+  .note-area{
+    background:var(--bg);border:1px solid var(--border);border-radius:6px;
+    padding:10px 12px;font-size:8.5pt;color:var(--text-light);
+    min-height:80px;line-height:1.6;margin-bottom:12px;
+  }
+  .process-table{width:100%;border-collapse:collapse;font-size:8pt;margin-bottom:16px}
+  .process-table th{background:var(--primary);color:#fff;padding:7px 10px;text-align:left;font-weight:600;font-size:7pt;text-transform:uppercase;letter-spacing:.05em}
+  .process-table td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  .process-table tr:nth-child(even) td{background:#f8f7f4}
+  .process-table .highlight{color:var(--accent);font-weight:600}
+  .process-table .gap{background:#fff8e7}
+  .flow-diagram{
+    display:flex;align-items:center;gap:4px;overflow-x:auto;
+    padding:8px 0;margin-bottom:16px;font-size:7.5pt;
+  }
+  .flow-step{background:var(--primary);color:#fff;padding:7px 10px;border-radius:6px;text-align:center;white-space:nowrap;min-width:80px;font-weight:500}
+  .flow-step span{display:block;font-size:6.5pt;opacity:.6;margin-top:2px}
+  .flow-step.accent{background:var(--accent)}
+  .flow-arrow{color:var(--accent);font-weight:700;font-size:14pt}
+  .tab-bar{
+    display:flex;gap:4px;margin-bottom:12px;
+    border-bottom:2px solid var(--border);padding-bottom:0;
+  }
+  .tab-btn{
+    padding:6px 16px;border:none;background:transparent;
+    color:var(--text-muted);font-size:8pt;font-weight:600;
+    cursor:pointer;border-radius:6px 6px 0 0;transition:all .15s;
+    border-bottom:2px solid transparent;margin-bottom:-2px;
+  }
+  .tab-btn.active{color:var(--primary);border-bottom-color:var(--primary);background:#eef3f8}
+  .tab-content{display:none}
+  .tab-content.active{display:block}
+  .kpi-strip{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+  .kpi-box{flex:1;min-width:80px;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 12px;text-align:center}
+  .kpi-num{font-size:16pt;font-weight:800;line-height:1;color:var(--primary)}
+  .kpi-num.accent{color:var(--accent)}
+  .kpi-lbl{font-size:6.5pt;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);margin-top:3px}
+  .pitch-card{
+    background:linear-gradient(135deg,#f0f7ff 0%,#e8f4f0 100%);
+    border:1px solid #c3d9e8;border-left:4px solid var(--primary);
+    border-radius:8px;padding:14px 16px;margin-bottom:12px;
+  }
+  .pitch-label{font-size:7pt;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);font-weight:700;margin-bottom:6px}
+  .pitch-text{font-size:8.5pt;color:var(--text);line-height:1.6;font-style:italic}
+  .comp-table{width:100%;border-collapse:collapse;font-size:8pt;margin-bottom:16px}
+  .comp-table th{background:#f0f0ec;color:var(--text);padding:6px 10px;text-align:left;font-weight:600;border-bottom:2px solid var(--border)}
+  .comp-table td{padding:6px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  .comp-table tr:hover td{background:#f8f8f5}
+  .dmaker-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin-bottom:16px}
+  .dmaker-card{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:10px 12px}
+  .dmaker-name{font-size:9pt;font-weight:700;margin-bottom:2px}
+  .dmaker-role{font-size:7.5pt;color:var(--text-muted);margin-bottom:4px}
+  .dmaker-area{font-size:7pt;color:var(--primary);font-weight:600}
+  .sep{border:none;border-top:1px solid var(--border);margin:20px 0}
+  .priority-high{background:#fee2e2;color:#991b1b}
+  .priority-med{background:#fef3c7;color:#92400e}
+  .priority-low{background:#f0fdf4;color:#166534}
+  .signal-list{list-style:none;margin-bottom:16px}
+  .signal-list li{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 12px;margin-bottom:6px;font-size:8.5pt;display:flex;gap:10px;align-items:flex-start}
+  .signal-list .bullet{width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:5px}
+  .signal-list .signal-text{flex:1}
+  .signal-list .signal-type{font-size:7pt;color:var(--text-muted);font-style:italic}
+  .checklist{list-style:none;margin-bottom:16px}
+  .checklist li{display:flex;align-items:flex-start;gap:8px;padding:5px 0;font-size:8.5pt;border-bottom:1px solid var(--line)}
+  .checklist li:last-child{border-bottom:none}
+  .checkbox{width:12px;height:12px;border:1.5px solid var(--border);border-radius:3px;flex-shrink:0;margin-top:2px}
+  .print-btn{
+    position:fixed;bottom:24px;right:24px;background:var(--primary);
+    color:#fff;border:none;padding:12px 20px;border-radius:30px;
+    font-size:9pt;font-weight:600;cursor:pointer;
+    box-shadow:0 4px 20px rgba(0,0,0,.2);transition:all .2s;z-index:999;
+  }
+  .print-btn:hover{background:#0d2240;transform:translateY(-2px)}
+  .page-num{text-align:center;font-size:7pt;color:var(--text-muted);margin-top:24px;padding-top:12px;border-top:1px solid var(--border)}
+  .warn-card{background:#fff8e7;border:1px solid #f0d060;border-radius:8px;padding:12px 16px;margin-bottom:12px}
+  .warn-title{font-size:7.5pt;font-weight:700;color:#92400e;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .warn-text{font-size:8pt;color:var(--text);line-height:1.5}
+  .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+  .mini-card{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:10px 14px}
+  .mini-title{font-size:7.5pt;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);font-weight:600;margin-bottom:6px}
+  .mini-val{font-size:11pt;font-weight:800;color:var(--primary);line-height:1}
+  .mini-lbl{font-size:6.5pt;color:var(--text-muted);margin-top:2px}
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="cover-badge">ProcessFDV Intelligence · SUPCON Chile KAM · 2026</div>
+  <h1>Vidrio<br>Chile</h1>
+  <h2>Ficha de inteligencia comercial para vidrio y envases de vidrio</h2>
+  <div class="cover-divider"></div>
+  <div class="cover-grid">
+    <div class="cover-card">
+      <div class="cover-card-sub">Empresas Target</div>
+      <div class="cover-card-val">2</div>
+      <div class="cover-card-lbl">Cristalerías Chile + Cristoro</div>
+    </div>
+    <div class="cover-card">
+      <div class="cover-card-sub">Capacidad Total</div>
+      <div class="cover-card-val">~850K</div>
+      <div class="cover-card-lbl">ton/año vidrio</div>
+    </div>
+    <div class="cover-card">
+      <div class="cover-card-sub">Hornos Totales</div>
+      <div class="cover-card-val">~10</div>
+      <div class="cover-card-lbl">hornos operando/expansión</div>
+    </div>
+    <div class="cover-card">
+      <div class="cover-card-sub">Oportunidad</div>
+      <div class="cover-card-val">DCS</div>
+      <div class="cover-card-lbl">hornos + SCADA + APC</div>
+    </div>
+    <div class="cover-card">
+      <div class="cover-card-sub">Costo Horno Parado</div>
+      <div class="cover-card-val">US$50K+</div>
+      <div class="cover-card-lbl">por hora</div>
+    </div>
+    <div class="cover-card">
+      <div class="cover-card-sub">Expansión activa</div>
+      <div class="cover-card-val">US$170M</div>
+      <div class="cover-card-lbl">Cristoro US$100M + C.Chile US$70M</div>
+    </div>
+  </div>
+  <div class="cover-footer">
+    <div><strong>Preparado para:</strong> Visita a terreno KAM<br><strong>Versión:</strong> 1.0 — Abril 2026</div>
+    <div style="text-align:right"><strong>Clasificación:</strong> Interno<br>No exponer sin autorización</div>
+  </div>
+</div>
+
+<div style="page-break-after:always;height:1px;"></div>
+
+<!-- COMPARATIVA -->
+<div class="section-header">
+  <div class="num">0</div>
+  <h2>Comparativa — Las 2 Cristaleras Chilenas</h2>
+</div>
+<div class="content-card">
+  <table class="comp-table">
+    <thead>
+      <tr><th>Empresa</th><th>RUT</th><th>Dueño</th><th>Hornos</th><th>Capacidad</th><th>Plantas</th><th>DCS Actual</th><th>Expansión</th><th>Prioridad</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Cristalerías Chile</strong></td>
+        <td>90.331.000-6</td>
+        <td>Grupo Claro</td>
+        <td>6</td>
+        <td>~505K ton/año</td>
+        <td>Padre Hurtado + Llay-Llay</td>
+        <td>PLCs ABB + Maximo</td>
+        <td>US$70M modernización Padre Hurtado (2022)</td>
+        <td><span class="tag priority-high">Alta</span></td>
+      </tr>
+      <tr>
+        <td><strong>Cristoro (Toro)</strong></td>
+        <td>93.372.000-4</td>
+        <td><strong>Vidrala (España) — desde mar 2026</strong></td>
+        <td>~2 (+1 nuevo)</td>
+        <td>~300 → 700 ton/día</td>
+        <td>Cerrillos + Maipú (en expansión)</td>
+        <td>Sin info pública / vacío</td>
+        <td><strong>US$100M horno híbrido Maipú</strong></td>
+        <td><span class="tag priority-high">Alta — URGENTE</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pitch-card">
+    <div class="pitch-label">Conclusión estratégica</div>
+    <div class="pitch-text">Cristalerías Chile: empresa establecida con tecnología fragmentada — oportunidad de overlayer y DCS integrado. Cristoro: adquisición reciente por Vidrala — ventana para establecer estándar DCS antes de que Vidrala firme con otro proveedor. <strong>Actuar en Cristoro primero — es más rápido y más limpio.</strong></div>
+  </div>
+</div>
+
+<div style="page-break-after:always;height:1px;"></div>
+
+<!-- PROCESO DEL VIDRIO -->
+<div class="section-header">
+  <div class="num">1</div>
+  <h2>Proceso Productivo del Vidrio — Mapa General</h2>
+</div>
+<div class="content-card">
+
+  <div class="warn-card">
+    <div class="warn-title">Contexto estratégico</div>
+    <div class="warn-text">Cristalerías Chile es la fábrica de vidrio más grande y tecnológicamente avanzada de Chile. En 2011-2012 sufrío un quiebre de horno que dejó la operación en crisis, gatillando un proceso de reorganización judicial. Tras la reorganización y la salida de crisis, la empresa se enfocó en eficiencia operativa, modernizando equipos (Horno G en Llay-Llay, servo-máquinas). Sin embargo, <strong>no se percibe un DCS integrado a nivel de piso de planta</strong> — los PLCs ABB y Eaton/Moeller operan de forma aislada. <strong>Esta es la ventana de oportunidad para SUPCON.</strong></div>
+  </div>
+
+  <div class="flow-diagram">
+    <div class="flow-step">Recepciones<div><span>Materias primas</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Batch House<div><span>Dosificación</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step" style="background:#8b3a00">Horno Fusión<div><span>~1.500°C</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Feeders<div><span>~1.100°C</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step" style="background:#8b3a00">Máq. IS<div><span>Formado servo</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Annealing<div><span>Recocido ~580°C</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Inspección<div><span>Visión artificial</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Embolsado<div><span>Despacho</span></div></div>
+  </div>
+
+  <table class="process-table">
+    <thead>
+      <tr><th style="width:16%">Proceso</th><th style="width:24%">Variables Críticas</th><th style="width:25%">Equipamiento</th><th style="width:35%">Oportunidad SUPCON</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Batch House</strong></td><td>Ratio arena/sosa/cal, % cullet, humedad, dosificación</td><td>Básculas, tolvas, mezclador, cintas</td><td><span class="highlight">Control automático de ratios + lazo de cullet</span></td></tr>
+      <tr class="gap"><td><strong>★ Horno de Fusión</strong></td><td>Temperatura ~1.500°C, atmósfera, nivel vidrio, tiro, emisiones</td><td>Horno 24/7/365, quemadores, regeneradores, pirómetros</td><td><span class="highlight">DCS redundante hot-standby — MÁXIMA OPORTUNIDAD</span></td></tr>
+      <tr><td><strong>Feeders / Canales</strong></td><td>Temperatura vidrio (~1.100°C), flujo, nivel en feeders</td><td>Canales de distribución, controles de flujo</td><td>Extensión del DCS a canales y feeders</td></tr>
+      <tr><td><strong>Máquinas IS</strong></div></td><td>T° molde, presión soplado, timing servo, carrera, peso gob</td><td>IS machine 6-8 secciones, servos, gobl cutters</td><td><span class="highlight">Integración servo-máquinas con planta</span></td></tr>
+      <tr><td><strong>Annealing</strong></td><td>Perfil de temperatura horno recocido, velocidad línea</td><td>Horno recocido, transportadores</td><td>Control de perfil térmico</td></tr>
+      <tr><td><strong>Inspección</strong></td><td>Grietas, burbujas, dimensión, peso</td><td>Cámaras visión artificial, sensores electrónicos</td><td>Integración de datos de inspección con producción</td></tr>
+      <tr><td><strong>Paletizado</strong></td><td>Velocidad, apilado, formato saco/bulk</td><td>Paletizador, embolsadora</td><td>PLC para ensacado y paletizado</td></tr>
+    </tbody>
+  </table>
+
+  <div class="kpi-strip">
+    <div class="kpi-box"><div class="kpi-num">6</div><div class="kpi-lbl">hornos operando</div></div>
+    <div class="kpi-box"><div class="kpi-num">12</div><div class="kpi-lbl">líneas producción</div></div>
+    <div class="kpi-box"><div class="kpi-num">~505K</div><div class="kpi-lbl">ton/año vidrio</div></div>
+    <div class="kpi-box"><div class="kpi-num">24/7</div><div class="kpi-lbl">horno continuo</div></div>
+    <div class="kpi-box"><div class="kpi-num accent">US$50K+</div><div class="kpi-lbl">costo hora parado</div></div>
+    <div class="kpi-box"><div class="kpi-num">~1.500°C</div><div class="kpi-lbl">temp. fusión</div></div>
+  </div>
+
+  <div class="note-section">
+    <div class="note-title">Notas proceso</div>
+    <div class="note-area" contenteditable="true"></div>
+  </div>
+</div>
+
+<div style="page-break-after:always;height:1px;"></div>
+
+<!-- CRISTALERÍAS CHILE -->
+<div class="section-header" style="background:var(--col-cristal)">
+  <div class="num">A</div>
+  <h2>Cristalerías Chile S.A. — Ficha Completa</h2>
+</div>
+<div class="content-card">
+  <div class="company-header">
+    <div class="company-logo" style="background:var(--col-cristal)">CC</div>
+    <div class="company-info">
+      <h3>Cristalerías de Chile S.A.</h3>
+      <div class="subtitle">Grupo Claro · Acciones en Bolsa · RUT 90.331.000-6 · Clasificadora AA- (Feller Rate, ago-2024)</div>
+      <div class="company-tags">
+        <span class="tag priority-high">Alta Relevancia</span>
+        <span class="tag" style="background:#dbeafe;color:#1e40af">Líder vidrio Chile</span>
+        <span class="tag" style="background:#f3e8ff;color:#6b21a8">Grupo Claro</span>
+        <span class="tag" style="background:#fef9c3;color:#854d0b">Reorganización judicial 2012</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showTab(this,'a1')">Perfil</button>
+    <button class="tab-btn" onclick="showTab(this,'a2')">Plantas</button>
+    <button class="tab-btn" onclick="showTab(this,'a3')">Tecnología</button>
+    <button class="tab-btn" onclick="showTab(this,'a4')">Negocios</button>
+    <button class="tab-btn" onclick="showTab(this,'a5')">Pitch</button>
+  </div>
+
+  <div id="a1" class="tab-content active">
+    <div class="mini-grid">
+      <div class="mini-card">
+        <div class="mini-title">Ventas Consolidadas 2024</div>
+        <div class="mini-val">~$285M</div>
+        <div class="mini-lbl">USD estimado</div>
+      </div>
+      <div class="mini-card">
+        <div class="mini-title">Resultado 2024</div>
+        <div class="mini-val" style="color:#dc2626">-1.96%</div>
+        <div class="mini-lbl">margen neto (pérdida)</div>
+      </div>
+      <div class="mini-card">
+        <div class="mini-title">EBIT 2024</div>
+        <div class="mini-val" style="color:#dc2626">-92.7%</div>
+        <div class="mini-lbl">vs año anterior</div>
+      </div>
+      <div class="mini-card">
+        <div class="mini-title">Endeudamiento</div>
+        <div class="mini-val" style="color:var(--green)">3.86%</div>
+        <div class="mini-lbl">bajo, confortable</div>
+      </div>
+      <div class="mini-card">
+        <div class="mini-title">Empleados</div>
+        <div class="mini-val">506-700</div>
+        <div class="mini-lbl">en ambas plantas</div>
+      </div>
+      <div class="mini-card">
+        <div class="mini-title">Capacidad</div>
+        <div class="mini-val">505K</div>
+        <div class="mini-lbl">ton/año vidrio</div>
+      </div>
+    </div>
+
+    <div class="warn-card">
+      <div class="warn-title">Contexto financiero</div>
+      <div class="warn-text">La empresa tuvo EBIT -92.7% en 2024, lo que indica presión sobre márgenes. Sin embargo, el <strong>endeudamiento es muy bajo (3.86%)</strong> y Feller Rate mantiene clasificación <strong>AA- con perspectiva estable</strong>. Esto indica que la empresa tiene <strong>espacio para invertir en eficiencia</strong> — los drivers de compra son: reducción de costos operativos y mejora de productividad, no expansión de capacidad.</div>
+    </div>
+
+    <table class="process-table">
+      <thead><tr><th>Accionista Principal</th><th>Porcentaje</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Grupo Claro</strong> (Familia Claro)</td><td>Mayoritario — control efectivo</td></tr>
+        <tr><td>Bolsa de Comercio de Santiago</td><td>Acciones flotantes</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note-section">
+      <div class="note-title">Resumen reunión</div>
+      <div class="note-area" contenteditable="true"></div>
+    </div>
+  </div>
+
+  <div id="a2" class="tab-content">
+    <table class="process-table">
+      <thead><tr><th>Planta</th><th>Ubicación</th><th>Capacidad</th><th>Hornos</th><th>Líneas</th><th>Notas</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Padre Hurtado</strong></td>
+          <td>José Luis Caro 501, Padre Hurtado, RM</td>
+          <td>~415.000 ton/año</td>
+          <td>4 (A, B, C, D)</td>
+          <td>6</td>
+          <td>Planta principal. Horno A dado de baja 2011. Horno D moderno.</td>
+        </tr>
+        <tr>
+          <td><strong>Llay-Llay</strong></td>
+          <td>El Porvenir 626, Llay-Llay, V Región</td>
+          <td>~90.000 ton/año</td>
+          <td>2 (G, ?)</td>
+          <td>6</td>
+          <td>Más moderna — Horno G full servo. Aislamiento sísmico. Expansión US$120M.</td>
+        </tr>
+        <tr>
+          <td colspan="3"><strong>Total Consolidado</strong></td>
+          <td>6 hornos</td>
+          <td>12 líneas</td>
+          <td>~505.000 ton/año</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="warn-card">
+      <div class="warn-title">Proyecto Horno G — Llay-Llay</div>
+      <div class="warn-text">El Horno G de Llay-Llay fue inaugurado como una de las fábricas de vidrio más modernas del mundo (US$120M+). Incluye Batch House propio y tecnología full servo-asistida. Este horno <strong>tiene especificaciones abiertas para control</strong> — es el punto de entrada ideal para SUPCON.</div>
+    </div>
+
+    <div class="note-section">
+      <div class="note-title">Notas plantas</div>
+      <div class="note-area" contenteditable="true"></div>
+    </div>
+  </div>
+
+  <div id="a3" class="tab-content">
+    <ul class="signal-list">
+      <li><div class="bullet"></div><div class="signal-text"><strong>SAP</strong> — ERP corporativo<br><span class="signal-type">Gestión financiera y supply chain</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>IBM Maximo</strong> — EAM / gestión de activos y mantenimiento<br><span class="signal-type">Extendida a Llay-Llay (80% cobertura)</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Mincom LinkOne</strong> — Sistema de gestión de activos (implementado 2007-2008)<br><span class="signal-type">Descentralizado por áreas — sin integración central</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>PLCs ABB y Eaton/Moeller</strong> — Control distribuido por áreas<br><span class="signal-type">Cada área tiene su PLC — SIN DCS integrado central</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>TPM</strong> — Total Performance Management (cultura de mejora continua)</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Sin SCADA central</strong> — Operadores sin visualización integrada del proceso completo<br><span class="signal-type">PRINCIPAL GAP — oportunidad clara para SUPCON</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Horno G servo-asistido</strong> — Tecnología moderna en Llay-Llay<br><span class="signal-type">Listo para integración con DCS</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Paneles eléctricos modernizados</strong> — Induelectro (protecciones ABB EMAX, contactores Eaton)<br><span class="signal-type">Tableros OK — lo que falta es el control de proceso</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Inspector de Control de Procesos</strong> — Posición abierta en planta<br><span class="signal-type">Están buscando gente de control — momento ideal para proponer solución</span></div></li>
+    </ul>
+  </div>
+
+  <div id="a4" class="tab-content">
+    <table class="process-table">
+      <thead><tr><th>Filial / Negocio</th><th>Descripción</th><th>Relevancia</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Viña Santa Rita</strong> (60.6% propiedad)</td><td>Bodegas, Vinos Santa Rita, Tres Machos. Principal inversión.</td><td><span class="tag priority-high">Alta</span></td></tr>
+        <tr><td><strong>Ediciones Chiloé S.A.</strong> (99.9%)</td><td>Diario Financiero, Revista Capital, medios</td><td><span class="tag priority-low">Baja</span></td></tr>
+        <tr><td><strong>Taguavento SpA</strong></td><td>Brazo inversor en energías renovables</td><td><span class="tag priority-med">Media</span></td></tr>
+        <tr><td><strong>Eólico Las Peñas</strong> (Taguavento, 75%)</td><td>Parque eólico — energía para operaciones</td><td><span class="tag priority-med">Media</span></td></tr>
+      </tbody>
+    </table>
+
+    <div class="warn-card">
+      <div class="warn-title">Dato clave</div>
+      <div class="warn-text">Viña Santa Rita consume <strong>gran parte de la producción de envases de vidrio</strong> de Cristalerías Chile. Esto significa que la empresa tiene un cliente cautivo de alto volumen — la estabilidad de producción del horno es crítica para el negocio del vino. Si el horno baja, Viña Santa Rita pierde envases.</div>
+    </div>
+
+    <div class="note-section">
+      <div class="note-title">Notas negocios</div>
+      <div class="note-area" contenteditable="true"></div>
+    </div>
+  </div>
+
+  <div id="a5" class="tab-content">
+    <div class="pitch-card">
+      <div class="pitch-label">Pitch para Gerente de Operaciones — Pablo Saavedra</div>
+      <div class="pitch-text">"Cristalerías tiene la mejor planta de vidrio de Chile, con servo-máquinas nuevas en Llay-Llay y un Horno G de clase mundial. Pero los 6 hornos que sostienen toda la producción operan con PLCs aislados que no se hablan entre sí. Cada hora de horno parado le cuesta a la empresa más de US$50.000. Con nuestra arquitectura redundante hot-standby y SCADA integrado, le damos visibilidad completa del proceso y control predictivo de combustión — sin reemplazar lo que ya tienen funcionando."</div>
+    </div>
+    <div class="pitch-card">
+      <div class="pitch-label">Pitch para Subgerente de Mantenimiento — Nelson Cuello</div>
+      <div class="pitch-text">"Maximo y LinkOne les dan información de activos, pero los datos de proceso del horno — temperatura, atmósfera, nivel vidrio — no llegan a mantenimiento. Si correlacionamos los datos del DCS con los eventos de Maximo, podemos predecir fallas de refractario con 6 meses de anticipación. Eso es lo que Maximo solo no puede hacer."</div>
+    </div>
+    <div class="pitch-card">
+      <div class="pitch-label">Pitch para conversación con Grupo Claro</div>
+      <div class="pitch-text">"El grupo tiene 3 plantas de vino, 2 plantas de vidrio y un parque eólico. SUPCON puede ser el estándar de automatización para todo el grupo — desde el control del horno de vidrio hasta la gestión energética del viñedo. Empezamos por el mayor dolor: los hornos de vidrio."</div>
+    </div>
+    <div class="note-section">
+      <div class="note-title">Notas reunión</div>
+      <div class="note-area" contenteditable="true"></div>
+    </div>
+  </div>
+
+  <div class="section-header" style="background:#333;margin-top:20px">
+    <div class="num">B</div>
+    <h2>Oportunidades específicas por área — Cristalerías Chile</h2>
+  </div>
+
+  <table class="process-table">
+    <thead><tr><th>Área</th><th>Gap identificado</th><th>Solución SUPCON</th><th>Prioridad</th><th>ROI estimado</th></tr></thead>
+    <tbody>
+      <tr class="gap">
+        <td><strong>Hornos de fusión</strong><br>6 hornos operando 24/7</td>
+        <td>PLCs aislados, sin supervisión central, control de combustión manual</td>
+        <td>DCS redundante ECS-700 + control de combustión avanzada</td>
+        <td><span class="tag priority-high">1 — Ahora</span></td>
+        <td>4-8% ahorro gas × 6 hornos</td>
+      </tr>
+      <tr>
+        <td><strong>Batch House</strong><br>Dosificación de materias primas</td>
+        <td>Sin lazo cerrado entre dosificación y horno — errores de ratio generan vidrio defectuoso</td>
+        <td>Control automático de ratios + cullet feedback loop</td>
+        <td><span class="tag priority-high">2 — Ahora</span></td>
+        <td>Reducción de descarte de vidrio</td>
+      </tr>
+      <tr>
+        <td><strong>SCADA</strong><br>Sin visualización integrada</td>
+        <td>Operadores ciegos — cada PLC muestra su pantalla, sin visión holística</td>
+        <td>Plataforma SCADA multi-horno con trending y alarms</td>
+        <td><span class="tag priority-high">1 — Ahora</span></td>
+        <td>Detección de deriva térmica anticipada</td>
+      </tr>
+      <tr>
+        <td><strong>Alarmas</strong><br>Sistema fragmentado</td>
+        <td>Alarmas por zona sin correlación — cascadas de alarms sin priorización</td>
+        <td>Sistema de alarm management con priorización por criticidad</td>
+        <td><span class="tag priority-med">3 — Mediano plazo</span></td>
+        <td>Reducción fatiga de operadores</td>
+      </tr>
+      <tr>
+        <td><strong>Máquinas IS</strong><br>Horno G servo</td>
+        <td>Servos modernos pero sin integración con el control del horno</td>
+        <td>Extensión DCS a forming y annealing</td>
+        <td><span class="tag priority-med">3 — Mediano plazo</span></td>
+        <td>Consistencia de peso y forma</td>
+      </tr>
+      <tr>
+        <td><strong>Integration Maximo/SAP</strong><br>Datos en silos</td>
+        <td>Maximo y SAP no se comunican en tiempo real con el piso de planta</td>
+        <td>Historian industrial + gateway Maximo/SAP</td>
+        <td><span class="tag priority-med">4 — Largo plazo</span></td>
+        <td>Predicción de fallas 6 meses</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="page-break-after:always;height:1px;"></div>
+
+<!-- =============================================== -->
+<!-- CRISTORO -->
+<!-- =============================================== -->
+<div class="section-header" style="background:var(--col-cristoro)">
+  <div class="num">B</div>
+  <h2>Cristalerías Toro (Cristoro) — La Rival</h2>
+</div>
+<div class="content-card">
+  <div class="company-header">
+    <div class="company-logo" style="background:var(--col-cristoro)">CT</div>
+    <div class="company-info">
+      <h3>Cristalerías Toro S.A. (Cristoro)</h3>
+      <div class="subtitle">Familia Toro · Adquirida por Vidrala (España) en marzo 2026 · RUT 93.372.000-4</div>
+      <div class="company-tags">
+        <span class="tag priority-high">Alta Relevancia — NUEVA ADQUISICIÓN</span>
+        <span class="tag" style="background:#dbeafe;color:#1e40af">Rival directa de Cristalerías Chile</span>
+        <span class="tag" style="background:#f3e8ff;color:#6b21a8">US$100M expansión Maipú</span>
+        <span class="tag" style="background:#fef9c3;color:#854d0b">Vidrala (España) nuevo dueño</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="warn-card">
+    <div class="warn-title">⚡ Alerta estratégica — Adquisición por Vidrala (marzo 2026)</div>
+    <div class="warn-text">Vidrala (España) es el <strong>líder mundial en envases de vidrio</strong>. Al adquirir Cristoro, típicamente <strong>estandariza los sistemas de control</strong> en todas sus adquisiciones. Esta es la <strong>ventana de oportunidad más inmediata</strong> del mercado chileno del vidrio — antes de que Vidrala firme contratos con ABB o Siemens. Actuar ahora.</div>
+  </div>
+
+  <div class="data-grid">
+    <div class="data-item"><div class="data-label">RUT</div><div class="data-value">93.372.000-4</div></div>
+    <div class="data-item"><div class="data-label">Teléfono</div><div class="data-value">(56-2) 2437 4500</div></div>
+    <div class="data-item"><div class="data-label">Email</div><div class="data-value">cristoro@cristoro.cl</div></div>
+    <div class="data-item"><div class="data-label">Web</div><div class="data-value">cristoro.cl</div></div>
+    <div class="data-item"><div class="data-label">Facturación</div><div class="data-value">~$70M USD/año</div></div>
+    <div class="data-item"><div class="data-label">Empleados</div><div class="data-value">~800</div></div>
+  </div>
+
+  <div class="mini-grid" style="margin-bottom:16px">
+    <div class="mini-card"><div class="mini-title">Producción actual Maipú</div><div class="mini-val">300</div><div class="mini-lbl">ton/día vidrio</div></div>
+    <div class="mini-card"><div class="mini-title">Meta producción Maipú</div><div class="mini-val" style="color:var(--accent)">700</div><div class="mini-lbl">ton/día — +133%</div></div>
+    <div class="mini-card"><div class="mini-title">Inversión expansión Maipú</div><div class="mini-val">US$100M</div><div class="mini-lbl">segundo horno híbrido</div></div>
+    <div class="mini-card"><div class="mini-title">Horno Cerrillos</div><div class="mini-val">~300</div><div class="mini-lbl">ton/día (reemplazo futuro)</div></div>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showTab(this,'b1')">Plantas</button>
+    <button class="tab-btn" onclick="showTab(this,'b2')">Tecnología</button>
+    <button class="tab-btn" onclick="showTab(this,'b3')">Pitch Vidrala</button>
+  </div>
+
+  <div id="b1" class="tab-content active">
+    <table class="process-table">
+      <thead><tr><th>Planta</th><th>Ubicación</th><th>Capacidad</th><th>Notas</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Cerrillos (principal)</strong></td><td>Dagoberto Godoy 145, Cerrillos, RM</td><td>~300 ton/día</td><td>Planta histórica — será reemplazada a largo plazo por Maipú</td></tr>
+        <tr><td><strong>Maipú (en expansión)</strong></td><td>Camino Lonquén 15913, Maipú, RM</td><td>300 → 700 ton/día</td><td><strong>NUEVO HORNO HÍBRIDO gas+eléctrico. Inicio obras ~2025.</strong></td></tr>
+        <tr><td><strong>Talcahuano</strong></td><td>Blanco Encalada 701, Talcahuano, VIII</td><td>—</td><td>Oficina/almacén</td></tr>
+        <tr><td colspan="3"><strong>Mina Caldera</strong> — Carbonato de calcio (insumo vidrio)</td><td>Región de Atacama</td></tr>
+        <tr><td colspan="3"><strong>Mina Constitución</strong> — Arena silícica (insumo vidrio)</td><td>Región del Maule</td></tr>
+        <tr><td colspan="3"><strong>Parque Eólico Lebu</strong> — Autoabastecimiento energético</td><td>Región del Biobío</td></tr>
+      </tbody>
+    </table>
+    <div class="pitch-card">
+      <div class="pitch-label">Dato clave</div>
+      <div class="pitch-text">Cristoro tiene integración vertical completa: minas propias de carbonato de calcio y arena silícica, planta de reciclaje de vidrio (la única del país), y parque eólico propio. Esto les da control sobre la cadena de valor completa del vidrio.</div>
+    </div>
+  </div>
+
+  <div id="b2" class="tab-content">
+    <ul class="signal-list">
+      <li><div class="bullet"></div><div class="signal-text"><strong>ISO 9001:2015 / FSSC 22000</strong> — Certificaciones de calidad y seguridad alimentaria<br><span class="signal-type">Cliente exigentes (vinos, cosméticos, farmacéutico) — alta sensibilidad a calidad</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Sin información pública sobre DCS</strong> — No se detecta presencia de ABB, Siemens o Schneider<br><span class="signal-type">POSIBLE VACÍO de automatización — oportunidad directa</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Proyecto nuevo horno Maipú</strong> — Horno híbrido gas+eléctrico — especificación ABIERTA<br><span class="signal-type">Momento ideal para incluir DCS SUPCON en la specs del nuevo horno</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Vidrala como nuevo dueño</strong> — Grupo español con estándares de automatización definidos<br><span class="signal-type">Oportunidad: proponer a Vidrala que SUPCON sea el estándar para Chile</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Paneles eléctricos modernizados</strong> — ABB EMAX + Eaton/Moeller (referencia Induelectro)<br><span class="signal-type">Ya usan ABB en tableros — compatible con propuesta de overlayer</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Planta de reciclaje integrada</strong> — Único ciclo cerrado de vidrio en Chile<br><span class="signal-type">Proceso de molienda de cullet puede requerir control de dosificación</span></div></li>
+    </ul>
+  </div>
+
+  <div id="b3" class="tab-content">
+    <div class="pitch-card">
+      <div class="pitch-label">Pitch para Vidrala — Nuevo dueño (España)</div>
+      <div class="pitch-text">"Vidrala tiene una política de excelencia operativa. Cuando adquieren una empresa, estandarizan los sistemas de control en toda la plataforma. SUPCON puede ser el DCS que Vidrala use en todas sus operaciones de Latinoamérica — empezamos con Cristoro Chile: el nuevo horno híbrido de Maipú se especifica ahora, y el horno de Cerrillos queda para la segunda fase."</div>
+    </div>
+    <div class="pitch-card">
+      <div class="pitch-label">Pitch para Pedro Toro — Gerente de Operaciones</div>
+      <div class="pitch-text">"Cristoro va a más que duplicar su producción en Maipú con un horno nuevo. Ese horno necesita un DCS moderno desde el día uno — no se diseña un horno de US$50M sin control redundante. SUPCON entrega DCS hot-standby con SCADA abierto, listo para operar 24/7."</div>
+    </div>
+    <div class="pitch-card">
+      <div class="pitch-label">Pitch para Francisco Ruiz — Director General</div>
+      <div class="pitch-text">"Con la inversión de US$100M en Maipú y la llegada de Vidrala, Cristoro está entrando en una nueva etapa de profesionalización. Un DCS unificado para los dos hornos — y eventualmente para Cerrillos — les da la visibilidad que hoy no tienen y reduce el riesgo de paradas que cuestan US$50.000 la hora."</div>
+    </div>
+    <div class="note-section">
+      <div class="note-title">Notas reunión</div>
+      <div class="note-area" contenteditable="true"></div>
+    </div>
+  </div>
+
+  <div class="note-section">
+    <div class="note-title">Contacto directo</div>
+    <div class="note-area" contenteditable="true"></div>
+  </div>
+</div>
+
+<div style="page-break-after:always;height:1px;"></div>
+
+<!-- =============================================== -->
+<!-- CONTACTO Y DECISORES -->
+<!-- =============================================== -->
+<div class="section-header">
+  <div class="num">2</div>
+  <h2>Contacto y Mapa de Decisores — Vidrio Chile</h2>
+</div>
+<div class="content-card">
+  <div class="data-grid">
+    <div class="data-item"><div class="data-label">RUT</div><div class="data-value">90.331.000-6</div></div>
+    <div class="data-item"><div class="data-label">Casa Matriz</div><div class="data-value">Hendaya 60, Of. 1502, Las Condes</div></div>
+    <div class="data-item"><div class="data-label">Fono</div><div class="data-value">+56 2 2787 8888</div></div>
+    <div class="data-item"><div class="data-label">Planta Padre Hurtado</div><div class="data-value">José Luis Caro 501, Padre Hurtado</div></div>
+    <div class="data-item"><div class="data-label">Planta Llay-Llay</div><div class="data-value">El Porvenir 626, +56 34 249 4637</div></div>
+    <div class="data-item"><div class="data-label">Web</div><div class="data-value">cristalchile.cl</div></div>
+    <div class="data-item"><div class="data-label">Proveedores</div><div class="data-value">800 203 345/6/7</div></div>
+    <div class="data-item"><div class="data-label">Portal proveedores</div><div class="data-value">Portal CristalChile</div></div>
+  </div>
+
+  <div class="dmaker-grid">
+    <div class="dmaker-card">
+      <div class="dmaker-name">Eduardo Carvallo Infante</div>
+      <div class="dmaker-role">Gerente General — Cristalerías Chile</div>
+      <div class="dmaker-area">Dirección estratégica · CAPEX</div>
+      <div class="dmaker-note">A quien se presenta el ROI</div>
+    </div>
+    <div class="dmaker-card">
+      <div class="dmaker-name">Pablo Saavedra Sánchez</div>
+      <div class="dmaker-role">Gerente de Operaciones — Cristalerías Chile</div>
+      <div class="dmaker-area">Producción · Automatización · Decisor técnico</div>
+      <div class="dmaker-note">Principal target técnico — hablar proceso</div>
+    </div>
+    <div class="dmaker-card">
+      <div class="dmaker-name">Nelson Cuello</div>
+      <div class="dmaker-role">Subgerente de Mantenimiento — Cristalerías Chile</div>
+      <div class="dmaker-area">Maximo · LinkOne · Integration</div>
+      <div class="dmaker-note">Conecta mantenimiento con control de planta</div>
+    </div>
+    <div class="dmaker-card">
+      <div class="dmaker-name">Francisco Ruiz</div>
+      <div class="dmaker-role">Director General — Cristoro</div>
+      <div class="dmaker-area">Dirección estratégica · Vidrala</div>
+      <div class="dmaker-note">Presentar caso Vidrala — estándar SUPCON para grupo</div>
+    </div>
+    <div class="dmaker-card">
+      <div class="dmaker-name">Pedro Toro Harnecker</div>
+      <div class="dmaker-role">Gerente de Operaciones — Cristoro</div>
+      <div class="dmaker-area">Producción · Horno nuevo Maipú · Automatización</div>
+      <div class="dmaker-note">Target técnico — hablar nuevo horno híbrido Maipú</div>
+    </div>
+  </div>
+
+  <div class="note-section">
+    <div class="note-title">Contacto directo</div>
+    <div class="note-area" contenteditable="true"></div>
+  </div>
+</div>
+
+<div style="page-break-after:always;height:1px;"></div>
+
+<!-- OPCIONES ECONÓMICAS -->
+<div class="section-header" style="background:linear-gradient(135deg,#166534 0%,#15803d 100%)">
+  <div class="num">★</div>
+  <h2>Opciones de Entrada Económica — Sin compromiso full DCS</h2>
+</div>
+<div class="content-card">
+  <div class="warn-card" style="background:linear-gradient(135deg,#f0fdf4 0%,#dcfce7 100%);border-color:#22c55e;">
+    <div class="warn-title">💡 Estrategia: "Starter → Scale"</div>
+    <div class="warn-text">No siempre necesitas vender US$2M upfront. Ofrece opciones de entrada con inversión baja y payback rápido para generar confianza y escalar después. Cada opción puede evolucionar a la siguiente.</div>
+  </div>
+  
+  <div class="mini-grid" style="margin:16px 0">
+    <div class="mini-card" style="background:linear-gradient(135deg,#fef9c3 0%,#fef08a 100%);border:2px solid #eab308;">
+      <div class="mini-title" style="color:#854d0e">OPCION A</div>
+      <div class="mini-val" style="font-size:16pt;color:#854d0e">US$55K</div>
+      <div class="mini-lbl">Edge + Cloud</div>
+      <div style="margin-top:8px;font-size:8pt;color:#666;">
+        <strong>Payback:</strong> 2-4 meses<br>
+        <strong>Incluye:</strong> Gateway IoT, cloud analytics, dashboards<br>
+        <strong>Ideal:</strong> Primera reunión, sin riesgo
+      </div>
+    </div>
+    <div class="mini-card" style="background:linear-gradient(135deg,#dbeafe 0%,#bfdbfe 100%);border:2px solid #3b82f6;">
+      <div class="mini-title" style="color:#1e40af">OPCION B</div>
+      <div class="mini-val" style="font-size:16pt;color:#1e40af">US$110K</div>
+      <div class="mini-lbl">SCADA-only</div>
+      <div style="margin-top:8px;font-size:8pt;color:#666;">
+        <strong>Payback:</strong> 4 meses<br>
+        <strong>Incluye:</strong> SUPCON SCADA, server, 6 hornos<br>
+        <strong>Ideal:</strong> Visibilidad sin tocar PLCs
+      </div>
+    </div>
+    <div class="mini-card" style="background:linear-gradient(135deg,#fce7f3 0%,#fbcfe8 100%);border:2px solid #ec4899;">
+      <div class="mini-title" style="color:#9d174d">OPCION C</div>
+      <div class="mini-val" style="font-size:16pt;color:#9d174d">US$140K/horno</div>
+      <div class="mini-lbl">APC Standalone</div>
+      <div style="margin-top:8px;font-size:8pt;color:#666;">
+        <strong>Payback:</strong> 2-3 meses<br>
+        <strong>Incluye:</strong> APC, conecta a PLCs existentes<br>
+        <strong>Ideal:</strong> Decisor técnico, bajo riesgo
+      </div>
+    </div>
+    <div class="mini-card" style="background:linear-gradient(135deg,#d1fae5 0%,#a7f3d0 100%);border:2px solid #10b981;">
+      <div class="mini-title" style="color:#065f46">OPCION D</div>
+      <div class="mini-val" style="font-size:16pt;color:#065f46">US$290K</div>
+      <div class="mini-lbl">Piloto 1 Horno</div>
+      <div style="margin-top:8px;font-size:8pt;color:#666;">
+        <strong>Payback:</strong> 4.4 meses<br>
+        <strong>Incluye:</strong> DCS + APC + SCADA en 1 horno<br>
+        <strong>Ideal:</strong> Prueba de concepto real
+      </div>
+    </div>
+  </div>
+  
+  <div class="pitch-card" style="background:linear-gradient(135deg,#1a3a5c 0%,#0d2240 100%);color:white;border:none;">
+    <div class="pitch-label" style="color:#fbbf24;">Ejemplo: Cristalerías Chile (6 hornos)</div>
+    <div class="pitch-text" style="color:rgba(255,255,255,0.9);">
+      <strong>FASE 1:</strong> APC Standalone en 1 horno — US$140K — payback 2-3 meses<br>
+      <strong>FASE 2:</strong> Escalar a 6 hornos — US$700K adicional — payback 3 meses<br>
+      <strong>FASE 3:</strong> Full DCS + SCADA — US$1.0M adicional<br>
+      <strong style="color:#4ade80;">Total: US$1.84M (vs US$2.0M full upfront) + Ahorro acumulado Fases 1-2: ~US$1.2M</strong>
+    </div>
+  </div>
+  
+  <div class="data-grid" style="margin-top:16px;">
+    <div class="data-item" style="background:#f0fdf4;border-color:#22c55e;">
+      <div class="data-label" style="color:#166534;">Full DCS (Cristalerías)</div>
+      <div class="data-value" style="color:#166534;font-size:14pt;">US$2.0M</div>
+      <div style="font-size:8pt;color:#166534;">Payback: 4.9 meses</div>
+    </div>
+    <div class="data-item" style="background:#f0fdf4;border-color:#22c55e;">
+      <div class="data-label" style="color:#166534;">Piloto 1 horno</div>
+      <div class="data-value" style="color:#166534;font-size:14pt;">US$290K</div>
+      <div style="font-size:8pt;color:#166534;">Payback: 4.4 meses</div>
+    </div>
+    <div class="data-item" style="background:#f0fdf4;border-color:#22c55e;">
+      <div class="data-label" style="color:#166534;">Full APC (6 hornos)</div>
+      <div class="data-value" style="color:#166534;font-size:14pt;">US$840K</div>
+      <div style="font-size:8pt;color:#166534;">Payback: 2-3 meses</div>
+    </div>
+    <div class="data-item" style="background:#f0fdf4;border-color:#22c55e;">
+      <div class="data-label" style="color:#166534;">Edge+Cloud</div>
+      <div class="data-value" style="color:#166534;font-size:14pt;">US$55K</div>
+      <div style="font-size:8pt;color:#166534;">Payback: 2-4 meses</div>
+    </div>
+  </div>
+</div>
+
+<div style="page-break-after:always;height:1px;"></div>
+
+<!-- COMPETIDORES + PRÓXIMOS PASOS -->
+<div class="section-header" style="background:#444">
+  <div class="num">3</div>
+  <h2>Competidores en el espacio vidrio — ¿Qué responder?</h2>
+</div>
+<div class="content-card">
+  <table class="comp-table">
+    <thead><tr><th>Competidor</th><th>Qué tienen</th><th>Debilidad vs. SUPCON</th><th>Respuesta</th></tr></thead>
+    <tbody>
+      <tr><td><strong>ABB</strong></td><td>PLCs en Cristalerías. DCS en Polpaico. Expertise en vidrio.</td><td>Precio, soporte local débil en Chile</td><td>Mejor precio, soporte directo, redundancia comparable</td></tr>
+      <tr><td><strong>Siemens</strong></td><td>PCS 7 para vidrio continuo</td><td>2-3× más caro, implementación lenta</td><td>Costo TCO 40% menor, delivery más rápido</td></tr>
+      <tr><td><strong>Schneider Electric</strong></td><td>Caso Saint-Gobain Vicasa — control de hornos de vidrio</td><td>Sin referencia local en Chile vidrio</td><td>Crear la referencia local con Cristalerías</td></tr>
+      <tr><td><strong>Vidrala</strong></td><td>Dueño de Cristoro. Estándar DCS en todas sus plantas.</td><td>No definido aún en Chile. Abren proceso.</td><td><strong>Ir directamente a Vidrala España — propuesta grupal</strong></td></tr>
+      <tr><td><strong>Honeywell</strong></td><td>Experion para procesos continuos</td><td>Overkill para vidrio, precio elevado</td><td>Escala correcta para el proceso</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section-header" style="background:var(--green)">
+  <div class="num">4</div>
+  <h2>Próximos Pasos — Plan de Acción</h2>
+</div>
+<div class="content-card">
+  <ul class="checklist">
+    <li><div class="checkbox"></div><span><strong>LinkedIn stalking Cristoro</strong> — Francisco Ruiz (GM), Pedro Toro (Gerente Operaciones), nuevo contacto Vidrala Chile</span></li>
+    <li><div class="checkbox"></div><span><strong>LinkedIn stalking Cristalerías Chile</strong> — Pablo Saavedra (Gerente Operaciones), Nelson Cuello (Mantenimiento)</span></li>
+    <li><div class="checkbox"></div><span><strong>Buscar contacto Vidrala España</strong> — linkedin.com / web Vidrala — propuesta grupal para toda Latinoamérica</span></li>
+    <li><div class="checkbox"></div><span><strong>Descargar memoria 2024</strong> de Cristalerías Chile desde CMF — buscar señales de inversión en automatización</span></li>
+    <li><div class="checkbox"></div><span><strong>Preparar demo SCADA</strong> de horno con simulación de temperatura y alarms</span></li>
+    <li><div class="checkbox"></div><span><strong>Visitar planta Llay-Llay</strong> — recorridos disponibles según cristalchile.cl (sección Nosotros → Plantas)</span></li>
+    <li><div class="checkbox"></div><span><strong>Visitar planta Maipú Cristoro</strong> — nuevo horno híbrido en especificación — momento ideal</span></li>
+    <li><div class="checkbox"></div><span><strong>Contactar Cristoro</strong> vía cristoro.cl o linkedin — hablar nuevo horno Maipú</span></li>
+    <li><div class="checkbox"></div><span><strong>Proponer opciones económicas</strong> — SCADA-only (US$110K), APC standalone (US$140K/horno), Piloto (US$290K) — reducir barrera de entrada</span></li>
+    <li><div class="checkbox"></div><span><strong>Preparar pitch "Starter → Scale"</strong> — mostrar evolución de US$55K a US$2M según confianza del cliente</span></li>
+  </ul>
+</div>
+
+<div class="page-num">ProcessFDV Intelligence · Vidrio Chile · SUPCON Chile KAM · 2026</div>
+
+<button class="print-btn no-print" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+
+<script>
+function showTab(btn,id){
+  btn.parentElement.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  btn.closest('.content-card').querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+</body>
+</html>

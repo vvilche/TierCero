@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUPCON Chile — Oportunidades Industriales 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+  :root {
+    --supcon-red: #E63946;
+    --supcon-dark: #1A1A2E;
+    --supcon-blue: #16213E;
+    --supcon-gray: #0F3460;
+    --accent: #F77F00;
+    --text-dark: #1A1A2E;
+    --text-light: #E8E8E8;
+    --bg-light: #F8F9FA;
+    --card-bg: #FFFFFF;
+    --border: #DEE2E6;
+    --green: #2D6A4F;
+    --amber: #E9C46A;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #1A1A2E;
+    color: var(--text-dark);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* ─── SLIDE CONTAINER ─── */
+  .slide {
+    width: 1280px;
+    height: 720px;
+    margin: 24px auto;
+    background: var(--card-bg);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ─── HEADER ─── */
+  .slide-header {
+    background: linear-gradient(135deg, var(--supcon-dark) 0%, var(--supcon-blue) 50%, var(--supcon-gray) 100%);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  .header-left { display: flex; align-items: center; gap: 16px; }
+  .logo-mark {
+    width: 44px; height: 44px;
+    background: var(--supcon-red);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900; font-size: 22px; color: white;
+  }
+  .header-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+  .header-subtitle {
+    color: rgba(255,255,255,0.6);
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .header-right {
+    text-align: right;
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+  }
+  .header-right .confidential {
+    background: rgba(230,57,70,0.3);
+    border: 1px solid rgba(230,57,70,0.5);
+    color: #FFB3B3;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* ─── SLIDE BODY ─── */
+  .slide-body {
+    flex: 1;
+    padding: 24px 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ─── SLIDE FOOTER ─── */
+  .slide-footer {
+    background: var(--bg-light);
+    border-top: 1px solid var(--border);
+    padding: 8px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 9px;
+    color: #888;
+    flex-shrink: 0;
+  }
+
+  /* ─── ACCENT BAR ─── */
+  .accent-bar {
+    height: 4px;
+    background: linear-gradient(90deg, var(--supcon-red), var(--accent));
+    flex-shrink: 0;
+  }
+
+  /* ─── COVER SLIDE ─── */
+  .cover-slide .slide-body {
+    background: linear-gradient(160deg, var(--supcon-dark) 0%, var(--supcon-blue) 40%, #0F3460 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 80px;
+    position: relative;
+  }
+
+  .cover-slide .cover-bg-pattern {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image:
+      radial-gradient(circle at 80% 20%, rgba(230,57,70,0.15) 0%, transparent 50%),
+      radial-gradient(circle at 20% 80%, rgba(247,127,0,0.1) 0%, transparent 40%);
+    pointer-events: none;
+  }
+
+  .cover-tag {
+    background: rgba(230,57,70,0.2);
+    border: 1px solid rgba(230,57,70,0.4);
+    color: #FFB3B3;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .cover-title {
+    font-size: 46px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+    max-width: 900px;
+  }
+
+  .cover-title .highlight {
+    color: var(--supcon-red);
+  }
+
+  .cover-subtitle {
+    font-size: 18px;
+    color: rgba(255,255,255,0.6);
+    font-weight: 300;
+    margin-bottom: 36px;
+    max-width: 700px;
+  }
+
+  .cover-stats {
+    display: flex;
+    gap: 0;
+    margin-top: 10px;
+  }
+
+  .cover-stat {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 16px 28px;
+  }
+  .cover-stat:first-child { border-radius: 8px 0 0 8px; }
+  .cover-stat:last-child { border-radius: 0 8px 8px 0; border-left: none; }
+
+  .cover-stat .stat-num {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+  }
+  .cover-stat .stat-num.red { color: var(--supcon-red); }
+  .cover-stat .stat-num.orange { color: var(--accent); }
+
+  .cover-stat .stat-label {
+    font-size: 9px;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2px;
+    font-weight: 500;
+  }
+
+  /* ─── SECTION TITLE ─── */
+  .section-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--supcon-dark);
+    margin-bottom: 4px;
+    letter-spacing: -0.3px;
+  }
+  .section-subtitle {
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+
+  /* ─── TWO COLUMN LAYOUT ─── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .col { display: flex; flex-direction: column; gap: 10px; }
+
+  /* ─── TARGET CARDS ─── */
+  .target-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    background: var(--bg-light);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 0;
+  }
+
+  .target-card.urgent {
+    border-left: 4px solid var(--supcon-red);
+  }
+  .target-card.high {
+    border-left: 4px solid var(--accent);
+  }
+  .target-card.medium {
+    border-left: 4px solid #4CAF50;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--supcon-dark);
+    line-height: 1.2;
+  }
+  .card-sector {
+    font-size: 9px;
+    color: white;
+    background: var(--supcon-gray);
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .card-sector.red { background: var(--supcon-red); }
+  .card-sector.orange { background: var(--accent); }
+  .card-sector.blue { background: var(--supcon-gray); }
+  .card-sector.green { background: var(--green); }
+
+  .card-rut {
+    font-size: 10px;
+    color: #888;
+    font-family: 'Courier New', monospace;
+  }
+
+  .card-body { display: flex; flex-direction: column; gap: 5px; }
+
+  .card-row {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-size: 11px;
+  }
+  .card-row .label {
+    font-weight: 600;
+    color: #555;
+    min-width: 90px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .card-row .value { color: var(--text-dark); font-weight: 500; }
+  .card-row .value.highlight { color: var(--supcon-red); font-weight: 700; }
+  .card-row .value.green { color: var(--green); font-weight: 700; }
+
+  .card-pitch {
+    background: rgba(230,57,70,0.06);
+    border: 1px solid rgba(230,57,70,0.15);
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 10px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.4;
+    flex: 1;
+  }
+
+  .card-pitch strong { color: var(--supcon-dark); font-style: normal; }
+
+  .card-footer {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-size: 9px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .badge.priority { background: #FFEBEE; color: var(--supcon-red); }
+  .badge.roi { background: #E8F5E9; color: var(--green); }
+  .badge.payback { background: #FFF3E0; color: #E65100; }
+  .badge.decision { background: #E3F2FD; color: #1565C0; }
+
+  /* ─── GAP TABLE ─── */
+  .gap-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+  }
+  .gap-table th {
+    background: var(--supcon-dark);
+    color: white;
+    padding: 7px 10px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .gap-table td {
+    padding: 7px 10px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .gap-table tr:nth-child(even) td { background: var(--bg-light); }
+  .gap-table .gap-name { font-weight: 600; color: var(--supcon-dark); }
+  .gap-table .gap-opp { color: #555; }
+  .gap-table .gap-priority {
+    font-weight: 700;
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .gap-priority.high { background: #FFEBEE; color: var(--supcon-red); }
+  .gap-priority.med { background: #FFF3E0; color: #E65100; }
+  .gap-priority.low { background: #E8F5E9; color: var(--green); }
+
+  /* ─── ROI BAR CHART ─── */
+  .roi-chart { display: flex; flex-direction: column; gap: 8px; flex: 1; justify-content: center; }
+  .roi-bar-row { display: flex; align-items: center; gap: 10px; }
+  .roi-bar-label { font-size: 11px; font-weight: 600; color: var(--supcon-dark); min-width: 140px; }
+  .roi-bar-track {
+    flex: 1;
+    height: 28px;
+    background: #E9ECEF;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+  }
+  .roi-bar-fill {
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    min-width: 50px;
+  }
+  .roi-bar-fill.red { background: linear-gradient(90deg, #C62828, var(--supcon-red)); }
+  .roi-bar-fill.orange { background: linear-gradient(90deg, #E65100, var(--accent)); }
+  .roi-bar-fill.blue { background: linear-gradient(90deg, #1565C0, #1976D2); }
+  .roi-bar-fill.green { background: linear-gradient(90deg, #1B5E20, var(--green)); }
+  .roi-bar-val { font-size: 11px; font-weight: 700; color: var(--supcon-dark); min-width: 60px; text-align: right; }
+  .roi-bar-val.payback { color: var(--supcon-red); }
+
+  /* ─── PROCESS FLOW ─── */
+  .process-flow {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin: 8px 0;
+  }
+  .process-step {
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: center;
+    min-width: 90px;
+  }
+  .process-step .step-num {
+    font-size: 8px;
+    color: white;
+    background: var(--supcon-red);
+    border-radius: 50%;
+    width: 16px; height: 16px;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 4px;
+    font-weight: 700;
+  }
+  .process-step .step-name { font-size: 9px; font-weight: 700; color: var(--supcon-dark); }
+  .process-step .step-detail { font-size: 8px; color: #888; }
+  .process-arrow { color: #CCC; font-size: 14px; font-weight: 300; }
+
+  /* ─── COMPETITOR GRID ─── */
+  .competitor-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .competitor-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background: var(--bg-light);
+  }
+  .competitor-card .comp-name { font-size: 10px; font-weight: 700; color: var(--supcon-dark); margin-bottom: 4px; }
+  .competitor-card .comp-weak { font-size: 9px; color: var(--supcon-red); font-weight: 500; }
+
+  /* ─── TIMELINE ─── */
+  .timeline {
+    display: flex;
+    gap: 0;
+    flex: 1;
+    align-items: stretch;
+    margin-top: 6px;
+  }
+  .timeline-col {
+    flex: 1;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .timeline-header {
+    background: var(--supcon-dark);
+    color: white;
+    padding: 10px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .timeline-header.mes1 { background: var(--supcon-red); }
+  .timeline-header.mes2 { background: var(--supcon-gray); }
+  .timeline-header.mes3 { background: var(--green); }
+  .timeline-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+  }
+  .timeline-item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 10px;
+  }
+  .timeline-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--supcon-red);
+    margin-top: 3px;
+    flex-shrink: 0;
+  }
+  .timeline-dot.orange { background: var(--accent); }
+  .timeline-dot.green { background: var(--green); }
+  .timeline-text { color: #333; line-height: 1.4; }
+  .timeline-text strong { color: var(--supcon-dark); }
+
+  /* ─── CTA BOX ─── */
+  .cta-box {
+    background: linear-gradient(135deg, var(--supcon-red), #C62828);
+    border-radius: 10px;
+    padding: 14px 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+    margin-top: 8px;
+  }
+  .cta-box .cta-icon { font-size: 28px; flex-shrink: 0; }
+  .cta-box .cta-text { flex: 1; }
+  .cta-box .cta-headline { font-size: 13px; font-weight: 800; margin-bottom: 2px; }
+  .cta-box .cta-detail { font-size: 10px; opacity: 0.85; }
+
+  /* ─── DECISOR TABLE ─── */
+  .decisor-table { width: 100%; border-collapse: collapse; font-size: 10px; }
+  .decisor-table th {
+    background: var(--supcon-dark);
+    color: white;
+    padding: 6px 10px;
+    text-align: left;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .decisor-table td {
+    padding: 7px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .decisor-table tr:nth-child(even) td { background: var(--bg-light); }
+  .decisor-name { font-weight: 700; color: var(--supcon-dark); }
+  .decisor-role { font-size: 9px; color: #888; }
+  .decisor-focus { color: #555; font-size: 9px; }
+
+  /* ─── PRINT OVERRIDE ─── */
+  @media print {
+    body { background: white; }
+    .slide {
+      width: 100%;
+      height: auto;
+      min-height: 720px;
+      margin: 0;
+      box-shadow: none;
+      page-break-after: always;
+      page-break-inside: avoid;
+    }
+    @page { size: landscape; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SLIDE 1: COVER                                         -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="slide cover-slide">
+  <div class="slide-body">
+    <div class="cover-bg-pattern"></div>
+    <div class="cover-tag">Chile KAM — Inteligencia Comercial 2026</div>
+    <div class="cover-title">
+      Oportunidades de <span class="highlight">Automatización Industrial</span> en Chile
+    </div>
+    <div class="cover-subtitle">
+      DCS, SCADA y APC para los sectores de Vidrio y Cemento — 
+      Targets priorizados con señales de expansión, ROI confirmado y decisores identificados
+    </div>
+    <div class="cover-stats">
+      <div class="cover-stat">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Targets priorizados</div>
+      </div>
+      <div class="cover-stat">
+        <div class="stat-num red">US$11.4M</div>
+        <div class="stat-label">Ahorro/año estimado</div>
+      </div>
+      <div class="cover-stat">
+        <div class="stat-num orange">&lt;8 meses</div>
+        <div class="stat-label">Payback promedio</div>
+      </div>
+      <div class="cover-stat">
+        <div class="stat-num">14</div>
+        <div class="stat-label">Plantas Vidrala LatAm</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>SUPCON Chile KAM — Victoria Vilches</span>
+    <span>CONFIDENTIAL — SOLO USO INTERNO</span>
+    <span>13-abr-2026</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SLIDE 2: TARGETS + ROI                                 -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="header-left">
+      <div class="logo-mark">S</div>
+      <div>
+        <div class="header-title">Targets Priorizados — ROI Confirmado</div>
+        <div class="header-subtitle">Los 3 targets con mayor urgencia y retorno inmediato</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="confidential">CONFIDENTIAL</div>
+    </div>
+  </div>
+  <div class="accent-bar"></div>
+  <div class="slide-body" style="gap: 14px;">
+    <div class="two-col">
+      <!-- LEFT: TARGET CARDS -->
+      <div class="col" style="gap: 10px;">
+        <div class="target-card urgent">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Cristoro — Cristalerías Toro</div>
+              <div class="card-rut">RUT: 93.372.000-4</div>
+            </div>
+            <span class="card-sector red">VIDRIO</span>
+          </div>
+          <div class="card-body">
+            <div class="card-row">
+              <span class="label">Situación</span>
+              <span class="value">Adquirida por <strong>VIDRALA</strong> (ES) en mar-2026</span>
+            </div>
+            <div class="card-row">
+              <span class="label">Expansión</span>
+              <span class="value highlight">US$100M — 2° horno híbrido Maipú (300→700 ton/día)</span>
+            </div>
+            <div class="card-row">
+              <span class="label">Contacto HP</span>
+              <span class="value">Ricardo Munizaga — Gerente Operaciones</span>
+            </div>
+          </div>
+          <div class="card-pitch">
+            <strong>Pitch:</strong> "El horno nuevo se especifica ahora. <strong>SUPCON entra como DCS redundante desde día cero</strong>, y Vidrala tiene 14 plantas en LatAm sin estándar DCS. Chile = lighthouse."
+          </div>
+          <div class="card-footer">
+            <span class="badge priority">PRIORIDAD #1</span>
+            <span class="badge roi">ROI +33%</span>
+            <span class="badge payback">Payback 9m</span>
+          </div>
+        </div>
+
+        <div class="target-card high">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Grupo CBB — Cementos Bío Bío</div>
+              <div class="card-rut">RUT: 91.755.000-K</div>
+            </div>
+            <span class="card-sector orange">CEMENTO</span>
+          </div>
+          <div class="card-body">
+            <div class="card-row">
+              <span class="label">Situación</span>
+              <span class="value">Sin DCS central — PLCs dispersos + SAP</span>
+            </div>
+            <div class="card-row">
+              <span class="label">Expansión</span>
+              <span class="value highlight">Plan inversión US$150M activo — nueva planta Arica</span>
+            </div>
+            <div class="card-row">
+              <span class="label">Contacto HP</span>
+              <span class="value">Claudio Hurtado — Gerente Comercial Cementos</span>
+            </div>
+          </div>
+          <div class="card-pitch">
+            <strong>Pitch:</strong> "SCADA parcial y 3 plantas con hornos operando en silos. <strong>SUPCON entrega DCS unificado con payback en 7 meses</strong> — empezamos por el módulo APC."
+          </div>
+          <div class="card-footer">
+            <span class="badge priority">PRIORIDAD #2</span>
+            <span class="badge roi">ROI +80%</span>
+            <span class="badge payback">Payback 6.7m</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: ROI CHART + PROCESS -->
+      <div class="col">
+        <div class="target-card" style="flex:0;">
+          <div class="card-title" style="margin-bottom: 10px;">Ahorro anual por target — Escenario base</div>
+          <div class="roi-chart" style="gap: 10px;">
+            <div class="roi-bar-row">
+              <div class="roi-bar-label">Cristalerías Chile</div>
+              <div class="roi-bar-track"><div class="roi-bar-fill red" style="width:100%;">US$4.9M/año</div></div>
+            </div>
+            <div class="roi-bar-row">
+              <div class="roi-bar-label">Polpaico (overlayer)</div>
+              <div class="roi-bar-track"><div class="roi-bar-fill orange" style="width:87%;">US$4.3M/año</div></div>
+            </div>
+            <div class="roi-bar-row">
+              <div class="roi-bar-label">Grupo CBB (APC módulo)</div>
+              <div class="roi-bar-track"><div class="roi-bar-fill blue" style="width:37%;">US$1.8M/año</div></div>
+            </div>
+            <div class="roi-bar-row">
+              <div class="roi-bar-label">Cristoro / Vidrala</div>
+              <div class="roi-bar-track"><div class="roi-bar-fill green" style="width:41%;">US$2.0M/año</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="target-card" style="flex:1;">
+          <div class="card-title" style="margin-bottom: 6px;">Proceso de venta recomendado — Cristoro</div>
+          <div class="process-flow">
+            <div class="process-step">
+              <div class="step-num">1</div>
+              <div class="step-name">LinkedIn</div>
+              <div class="step-detail">Ricardo Munizaga</div>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <div class="step-num">2</div>
+              <div class="step-name">Video call</div>
+              <div class="step-detail">Demo horno + APC</div>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <div class="step-num">3</div>
+              <div class="step-name">Visita</div>
+              <div class="step-detail">Planta Maipú</div>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <div class="step-num">4</div>
+              <div class="step-name">Propuesta</div>
+              <div class="step-detail">Vidrala LatAm</div>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <div class="step-num">5</div>
+              <div class="step-name">Contrato</div>
+              <div class="step-detail">ECS-700 + APC</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <div class="competitor-grid">
+              <div class="competitor-card">
+                <div class="comp-name">ABB</div>
+                <div class="comp-weak">Caro + legacy en Polpaico</div>
+              </div>
+              <div class="competitor-card">
+                <div class="comp-name">Siemens</div>
+                <div class="comp-weak">2-3× más caro, lento</div>
+              </div>
+              <div class="competitor-card">
+                <div class="comp-name">Schneider</div>
+                <div class="comp-weak">Sin profundidad local</div>
+              </div>
+              <div class="competitor-card">
+                <div class="comp-name">Rockwell</div>
+                <div class="comp-weak">Discrete mfg, no proceso continuo</div>
+              </div>
+              <div class="competitor-card">
+                <div class="comp-name">Honeywell</div>
+                <div class="comp-weak">Overkill, precio alto</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>SUPCON Chile KAM — Victoria Vilches</span>
+    <span>CONFIDENTIAL — SOLO USO INTERNO</span>
+    <span>13-abr-2026</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SLIDE 3: GAPS + SOLUCIÓN                               -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="header-left">
+      <div class="logo-mark">S</div>
+      <div>
+        <div class="header-title">Gaps de Automatización — Solución SUPCON</div>
+        <div class="header-subtitle">Procesos industriales de vidrio hueco y cemento con gaps críticos de automatización</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="confidential">CONFIDENTIAL</div>
+    </div>
+  </div>
+  <div class="accent-bar"></div>
+  <div class="slide-body" style="gap: 14px;">
+    <div class="two-col">
+      <!-- VIDRIO -->
+      <div class="col">
+        <div class="target-card" style="border-left: 4px solid var(--supcon-red);">
+          <div class="card-header" style="margin-bottom: 4px;">
+            <span class="card-title">Cristalerías Chile — 6 Hornos</span>
+            <span class="card-sector red">VIDRIO</span>
+          </div>
+          <div style="overflow:hidden;">
+            <table class="gap-table">
+              <thead>
+                <tr>
+                  <th>Gap detectado</th>
+                  <th>Impacto</th>
+                  <th>Solución SUPCON</th>
+                  <th>Nivel</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="gap-name">Sin DCS integrado</td>
+                  <td class="gap-opp">6 PLCs aislados sin supervisión central</td>
+                  <td class="gap-opp">ECS-700 redundante hot-standby</td>
+                  <td><span class="gap-priority high">ALTO</span></td>
+                </tr>
+                <tr>
+                  <td class="gap-name">Sin SCADA central</td>
+                  <td class="gap-opp">Operadores sin visibilidad en tiempo real</td>
+                  <td class="gap-opp">SUPCON SCADA + HMI multi-horno</td>
+                  <td><span class="gap-priority high">ALTO</span></td>
+                </tr>
+                <tr>
+                  <td class="gap-name">Combustión sub-óptima</td>
+                  <td class="gap-opp">3-8% ineficiencia en gas (US$122M/año)</td>
+                  <td class="gap-opp">APC control predictivo combustión</td>
+                  <td><span class="gap-priority high">ALTO</span></td>
+                </tr>
+                <tr>
+                  <td class="gap-name">Sin APC (Predictivo)</td>
+                  <td class="gap-opp">Variabilidad T° = defectos + cortos campaña</td>
+                  <td class="gap-opp">ECS-700 + módulo multivariable</td>
+                  <td><span class="gap-priority med">MEDIO</span></td>
+                </tr>
+                <tr>
+                  <td class="gap-name">Sin historian industrial</td>
+                  <td class="gap-opp">2.3M+ datapuntos/día sin análisis</td>
+                  <td class="gap-opp">SUPCON PlantStation (historian + trending)</td>
+                  <td><span class="gap-priority med">MEDIO</span></td>
+                </tr>
+                <tr>
+                  <td class="gap-name">Alarmas aisladas</td>
+                  <td class="gap-opp">Alarmas por zona sin correlación</td>
+                  <td class="gap-opp">Alarm management centralizado</td>
+                  <td><span class="gap-priority low">BAJO</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <!-- OPCIONES ECONÓMICAS -->
+          <div style="margin-top: 10px; padding: 8px 10px; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #93c5fd; border-radius: 8px;">
+            <div style="font-size: 9px; font-weight: 700; color: #1e40af; text-transform: uppercase; margin-bottom: 6px;">💡 Opciones de Entrada Económica</div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <div style="flex: 1; min-width: 100px; background: white; border-radius: 6px; padding: 6px 8px; border: 1px solid #ddd;">
+                <div style="font-size: 10px; font-weight: 700; color: #166534;">SCADA-only</div>
+                <div style="font-size: 11px; font-weight: 600; color: #15803d;">US$110K</div>
+                <div style="font-size: 9px; color: #666;">Payback: 4 meses</div>
+              </div>
+              <div style="flex: 1; min-width: 100px; background: white; border-radius: 6px; padding: 6px 8px; border: 1px solid #ddd;">
+                <div style="font-size: 10px; font-weight: 700; color: #166534;">APC Standalone</div>
+                <div style="font-size: 11px; font-weight: 600; color: #15803d;">US$140K/horno</div>
+                <div style="font-size: 9px; color: #666;">Payback: 2-3 meses</div>
+              </div>
+              <div style="flex: 1; min-width: 100px; background: white; border-radius: 6px; padding: 6px 8px; border: 1px solid #ddd;">
+                <div style="font-size: 10px; font-weight: 700; color: #166534;">Piloto 1 horno</div>
+                <div style="font-size: 11px; font-weight: 600; color: #15803d;">US$290K</div>
+                <div style="font-size: 9px; color: #666;">Payback: 4.4 meses</div>
+              </div>
+              <div style="flex: 1; min-width: 100px; background: white; border-radius: 6px; padding: 6px 8px; border: 1px solid #ddd;">
+                <div style="font-size: 10px; font-weight: 700; color: #166534;">Edge+Cloud</div>
+                <div style="font-size: 11px; font-weight: 600; color: #15803d;">US$55K</div>
+                <div style="font-size: 9px; color: #666;">Payback: 2-4 meses</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CEMENTO -->
+      <div class="col">
+        <div class="target-card" style="border-left: 4px solid var(--accent);">
+          <div class="card-header" style="margin-bottom: 4px;">
+            <span class="card-title">Polpaico + CBB — Hornos Rotatorios</span>
+            <span class="card-sector orange">CEMENTO</span>
+          </div>
+          <div style="overflow:hidden;">
+            <table class="gap-table">
+              <thead>
+                <tr>
+                  <th>Gap detectado</th>
+                  <th>Impacto</th>
+                  <th>Solución SUPCON</th>
+                  <th>Nivel</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="gap-name">ABB legacy (2006)</td>
+                  <td class="gap-opp">Polpaico: sistema obsoleto sin updates</td>
+                  <td class="gap-opp">Overlayer ABB — coexistencia SUPCON</td>
+                  <td><span class="gap-priority high">ALTO</span></td>
+                </tr>
+                <tr>
+                  <td class="gap-name">Sin DCS central (CBB)</td>
+                  <td class="gap-opp">3 plantas con PLCs dispersos + SCADA fragmentado</td>
+                  <td class="gap-opp">ECS-700 unificado 3 plantas</td>
+                  <td><span class="gap-priority high">ALTO</span></td>
+                </tr>
+                <tr>
+                  <td class="gap-name">Sin APC multivariable</td>
+                  <td class="gap-opp">+10-15% consumo gas por setpoints manuales</td>
+                  <td class="gap-opp">APC para horno rotatorio — 4-8% ahorro</td>
+                  <td><span class="gap-priority high">ALTO</span></td>
+                </tr>
+                <tr>
+                  <td class="gap-name">Sin integración SAP</td>
+                  <td class="gap-opp">ERP desconectado de piso de planta</td>
+                  <td class="gap-opp">Gateway MES SUPCON → SAP</td>
+                  <td><span class="gap-priority med">MEDIO</span></td>
+                </tr>
+                <tr>
+                  <td class="gap-name">Sin historian (CBB)</td>
+                  <td class="gap-opp">Datos de planta no disponibles para análisis</td>
+                  <td class="gap-opp">PlantStation historian + Power BI connector</td>
+                  <td><span class="gap-priority med">MEDIO</span></td>
+                </tr>
+                <tr>
+                  <td class="gap-name">Coprocesamiento RDF</td>
+                  <td class="gap-opp">Control complejo mezcla combustibles altern.</td>
+                  <td class="gap-opp">Control multivariable combustibles alt.</td>
+                  <td><span class="gap-priority med">MEDIO</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKU BOX -->
+    <div style="background: var(--bg-light); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; display: flex; gap: 20px; flex-shrink: 0;">
+      <div style="flex: 1;">
+        <div style="font-size: 10px; font-weight: 700; color: var(--supcon-red); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">SKU Vidrio (Full)</div>
+        <div style="font-size: 12px; font-weight: 600;">ECS-700 + SCADA + APC + PlantStation</div>
+        <div style="font-size: 10px; color: #666;">6 hornos: ~US$2.0M | Payback: 4.9 meses</div>
+        <div style="margin-top: 6px; padding-top: 6px; border-top: 1px dashed #ccc;">
+          <div style="font-size: 9px; font-weight: 600; color: #166534;">💡 OPCIONES LIGHT:</div>
+          <div style="font-size: 9px; color: #444;">SCADA-only US$110K | APC US$140K/horno | Piloto US$290K</div>
+        </div>
+      </div>
+      <div style="flex: 1;">
+        <div style="font-size: 10px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">SKU Cemento</div>
+        <div style="font-size: 12px; font-weight: 600;">ECS-700 + APC kiln + SCADA + MES gateway</div>
+        <div style="font-size: 10px; color: #666;">Polpaico: ~US$2.2M | CBB APC: US$1.0M</div>
+        <div style="margin-top: 6px; padding-top: 6px; border-top: 1px dashed #ccc;">
+          <div style="font-size: 9px; font-weight: 600; color: #166534;">💡 OPCIONES LIGHT:</div>
+          <div style="font-size: 9px; color: #444;">APC standalone US$200K/horno | Payback: 6-7 meses</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>SUPCON Chile KAM — Victoria Vilches</span>
+    <span>CONFIDENTIAL — SOLO USO INTERNO</span>
+    <span>13-abr-2026</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SLIDE 4: MAPA DE DECISORES                             -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="header-left">
+      <div class="logo-mark">S</div>
+      <div>
+        <div class="header-title">Mapa de Decisores — Targets Cristoro y CBB</div>
+        <div class="header-subtitle">Contacts clave con LinkedIn verificados y enfoque por rol</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="confidential">CONFIDENTIAL</div>
+    </div>
+  </div>
+  <div class="accent-bar"></div>
+  <div class="slide-body" style="gap: 14px;">
+    <div class="two-col">
+
+      <!-- CRISTORO DECISORES -->
+      <div class="col">
+        <div class="target-card" style="border-left: 4px solid var(--supcon-red); flex: 0;">
+          <div class="card-header">
+            <span class="card-title">Cristoro — Vidrala Chile</span>
+            <span class="card-sector red">PRIORIDAD #1</span>
+          </div>
+        </div>
+        <table class="decisor-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Cargo</th>
+              <th>LinkedIn</th>
+              <th>Enfoque</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="decisor-name">Ricardo Munizaga</div>
+                <div class="decisor-role">Gerente Operaciones</div>
+              </td>
+              <td>
+                <div style="font-size:10px; font-weight:700; color: var(--supcon-dark);">HP #1</div>
+                <div class="decisor-focus">Ingeniero Electrónico UC<br>Control Automático — 31+ años</div>
+              </td>
+              <td style="font-size:9px; color:#1565C0; font-family:monospace;">
+                linkedin.com/in/<br>ricardo-munizaga-560a715b
+              </td>
+              <td class="decisor-focus">DCS, APC, control predictivo,<br>especificación horno nuevo</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="decisor-name">Francisco Ruiz</div>
+                <div class="decisor-role">Gerente General</div>
+              </td>
+              <td>
+                <div style="font-size:10px; font-weight:700; color: var(--supcon-dark);">Decision maker</div>
+                <div class="decisor-focus">Estrategia Vidrala LatAm</div>
+              </td>
+              <td style="font-size:9px; color:#888;">(por buscar)</td>
+              <td class="decisor-focus">ROI grupal, estándar Vidrala,<br>pipeline US$15-20M</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="decisor-name">Contacto Vidrala España</div>
+                <div class="decisor-role">HQ — Dirección técnica</div>
+              </td>
+              <td>
+                <div style="font-size:10px; font-weight:700; color: var(--supcon-red);">PENDIENTE</div>
+                <div class="decisor-focus">(buscar en web Vidrala)</div>
+              </td>
+              <td style="font-size:9px; color:#888;">—</td>
+              <td class="decisor-focus">Propuesta estándar DCS grupo,<br>14 plantas × 1 DCS</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CBB DECISORES -->
+      <div class="col">
+        <div class="target-card" style="border-left: 4px solid var(--accent); flex: 0;">
+          <div class="card-header">
+            <span class="card-title">Grupo CBB — Cementos Bío Bío</span>
+            <span class="card-sector orange">PRIORIDAD #2</span>
+          </div>
+        </div>
+        <table class="decisor-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Cargo</th>
+              <th>Contacto</th>
+              <th>Enfoque</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="decisor-name">Jorge Matus</div>
+                <div class="decisor-role">Gerente General</div>
+              </td>
+              <td>
+                <div style="font-size:10px; font-weight:700; color: var(--supcon-dark);">Decision maker</div>
+                <div class="decisor-focus">Inversiones US$150M</div>
+              </td>
+              <td style="font-size:9px; color:#888;">(por buscar LinkedIn)</td>
+              <td class="decisor-focus">ROI DCS completo,<br>estrategia数字化</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="decisor-name">Claudio Hurtado</div>
+                <div class="decisor-role">Gerente Comercial Cementos</div>
+              </td>
+              <td>
+                <div style="font-size:10px; font-weight:700; color: var(--supcon-dark);">HP #1</div>
+                <div class="decisor-focus">Portal proveedores</div>
+              </td>
+              <td style="font-size:9px; color:#888;">(por buscar LinkedIn)</td>
+              <td class="decisor-focus">Automatización plantas,<br>módulo APC por horno</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="decisor-name">Emilio Cisternas</div>
+                <div class="decisor-role">Ventas — Los Andes, R5</div>
+              </td>
+              <td>
+                <div style="font-size:10px; font-weight:700; color: #555;">Contacto secundario</div>
+                <div class="decisor-focus">Planta Concón</div>
+              </td>
+              <td style="font-size:9px; color:#888;">(por buscar LinkedIn)</td>
+              <td class="decisor-focus">Visita planta Concón,<br>relación previa</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="decisor-name">Ingeniero Automatización</div>
+                <div class="decisor-role">IT/OT — por identificar</div>
+              </td>
+              <td>
+                <div style="font-size:10px; font-weight:700; color: var(--supcon-red);">PENDIENTE</div>
+                <div class="decisor-focus">(buscar en LinkedIn)</div>
+              </td>
+              <td style="font-size:9px; color:#888;">—</td>
+              <td class="decisor-focus">Deep dive técnico,<br>demo SCADA + APC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CRUCES CBB + CRISTORIAS -->
+    <div style="display: flex; gap: 12px; flex-shrink: 0;">
+      <div style="flex:1; border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; background: var(--bg-light);">
+        <div style="font-size: 10px; font-weight: 700; color: var(--supcon-red); margin-bottom: 4px;">CRISTORIAS CHILE — HP #1</div>
+        <div style="font-size: 11px; font-weight: 600; margin-bottom: 2px;">Pablo Saavedra — Gerente Operaciones</div>
+        <div style="font-size: 9px; color: #666;">linkedin.com/in/pablo-saavedra-gerente-manufactura | Ing. Civil Química — 25+ años</div>
+      </div>
+      <div style="flex:1; border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; background: var(--bg-light);">
+        <div style="font-size: 10px; font-weight: 700; color: var(--accent); margin-bottom: 4px;">CEMENTERAS — Polpaico</div>
+        <div style="font-size: 11px; font-weight: 600; margin-bottom: 2px;">Nelson Cuello — Subgerente Mantención (ex)</div>
+        <div style="font-size: 9px; color: #666;">Conecta con Maximo/LinkOne → enfoque integración Phase 4</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>SUPCON Chile KAM — Victoria Vilches</span>
+    <span>CONFIDENTIAL — SOLO USO INTERNO</span>
+    <span>13-abr-2026</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SLIDE 5: PRÓXIMOS PASOS + CTA                          -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="header-left">
+      <div class="logo-mark">S</div>
+      <div>
+        <div class="header-title">Roadmap de Acción — 90 Días</div>
+        <div class="header-subtitle">Próximos pasos priorizados con timeline y owners asignados</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="confidential">CONFIDENTIAL</div>
+    </div>
+  </div>
+  <div class="accent-bar"></div>
+  <div class="slide-body" style="gap: 14px;">
+    <div class="timeline">
+      <!-- MES 1 -->
+      <div class="timeline-col">
+        <div class="timeline-header mes1">MES 1 — ABRIL 2026</div>
+        <div class="timeline-body">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-text">
+              <strong>LinkedIn Ricardo Munizaga</strong> — mensaje introductorio sobre horno Maipú + propuesta DCS (enviar esta semana)
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-text">
+              <strong>Buscar contacto Vidrala España</strong> — web IR Vidrala, LinkedIn CFO/CTO para propuesta grupo LatAm
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-text">
+              <strong>LinkedIn Claudio Hurtado CBB</strong> — mensaje introductorio sobre plan inversión US$150M
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-text">
+              <strong>LinkedIn Pablo Saavedra</strong> — mensaje introductorio sobre SCADA para Cristalerías Chile
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-text">
+              <strong>Descargar memorias CBB + Cristoro</strong> — desde CMF (cmfchile.cl) para señales de inversión
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MES 2 -->
+      <div class="timeline-col">
+        <div class="timeline-header mes2">MES 2 — MAYO 2026</div>
+        <div class="timeline-body">
+          <div class="timeline-item">
+            <div class="timeline-dot orange"></div>
+            <div class="timeline-text">
+              <strong>Video call Ricardo Munizaga</strong> — demo SCADA horno con simulación temperatura + alarms + pitch Vidrala
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot orange"></div>
+            <div class="timeline-text">
+              <strong>Preparar demo SCADA</strong> — simulación de horno de vidrio con temperatura, alarms, trending (PowerPoint o proto)
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot orange"></div>
+            <div class="timeline-text">
+              <strong>Video call Claudio Hurtado</strong> — pitch CBB: módulo APC por horno con ROI < 7 meses
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot orange"></div>
+            <div class="timeline-text">
+              <strong>LinkedIn Eduardo Carvallo</strong> — Cristalerías Chile (GB que busca eficiencia urgente con EBIT negativo)
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot orange"></div>
+            <div class="timeline-text">
+              <strong>Buscar refs. SUPCON vidrio</strong> — casos de referencia en Perú, Argentina o global para usar en pitches
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MES 3 -->
+      <div class="timeline-col">
+        <div class="timeline-header mes3">MES 3 — JUNIO 2026</div>
+        <div class="timeline-body">
+          <div class="timeline-item">
+            <div class="timeline-dot green"></div>
+            <div class="timeline-text">
+              <strong>Visita planta Maipú (Cristoro)</strong> — recorrido técnico con Ricardo Munizaga + Francisco Ruiz
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot green"></div>
+            <div class="timeline-text">
+              <strong>Propuesta formal Cristoro</strong> — ECS-700 + APC para horno nuevo Maipú + propuesta Vidrala LatAm
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot green"></div>
+            <div class="timeline-text">
+              <strong>Visita planta Teno/Concón (CBB)</strong> — recorrido con Claudio Hurtado + ingeniero automatización
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot green"></div>
+            <div class="timeline-text">
+              <strong>Verificar Polpaico ABB</strong> — investigar contratos ABB vigentes post-Hurtado Vicuña, satisfacción
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot green"></div>
+            <div class="timeline-text">
+              <strong>Primera propuesta CBB</strong> — APC módulo (1 horno) como entry point con payback 6-7 meses
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <div class="cta-icon">🎯</div>
+      <div class="cta-text">
+        <div class="cta-headline">Objetivo Q2 2026: 2 LOIs firmados — Cristoro (abril) + CBB (mayo)</div>
+        <div class="cta-detail">Cristoro: ECS-700 + APC horno nuevo Maipú (~US$1.5M) | CBB: APC módulo horno (~US$1.0M) | Pipeline total: US$16.5M+ con Vidrala LatAm</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>SUPCON Chile KAM — Victoria Vilches</span>
+    <span>CONFIDENTIAL — SOLO USO INTERNO</span>
+    <span>13-abr-2026</span>
+  </div>
+</div>
+
+</body>
+</html>
