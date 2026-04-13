@@ -48,9 +48,18 @@ Para vidrio: Opciones de entrada económica sin comprometer full DCS upfront
 ### Archivos clave
 - `data/processed/analisis_*.md` - Análisis detallados
 - `data/processed/ficha_*.html` - Fichas imprimibles
+- `data/processed/guia_contacto_kam.md` - Estrategia de contacto decisores (NUEVO)
 - `presentacion_5_slides.html` - Presentación KAM
 - `index.js` - Dashboard táctico principal
 - `tier0_core.js` - Motor de inferencia TPT
+
+### Guía de Contacto KAM
+Decisores priorizados para contacto:
+1. **Claudio Hurtado** (CBB) - Gerente Comercial Cementos - PRIORIDAD ALTA
+2. **Pablo Saavedra** (Cristalerías Chile) - Gerente Operaciones
+3. **Ricardo Munizaga** (Cristoro) - Gerente Operaciones - Horno híbrido
+4. **Luis Felipe Ureta** (Polpaico) - Gerente Cementos
+5. **Contacto Vidrala España** - Propuesta estándar grupal
 
 ---
 
