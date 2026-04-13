@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CEMENTERAS CHILENAS — Ficha KAM SUPCON</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --primary: #1a3a5c;
+    --accent: #e85d04;
+    --green: #2d6a4f;
+    --bg: #fafaf7;
+    --paper: #ffffff;
+    --border: #d4d0c8;
+    --text: #1a1a1a;
+    --text-light: #555;
+    --text-muted: #888;
+    --highlight: #fff3cd;
+    --line: #e8e4de;
+    --col-pad: #1a3a5c;
+    --col-cbb: #6b4226;
+    --col-melon: #4a4e69;
+  }
+
+  @media print {
+    @page {
+      size: A4;
+      margin: 18mm 15mm 20mm 15mm;
+    }
+    body { background: white; }
+    .page-break { page-break-before: always; }
+    .cover { page-break-after: always; }
+    .no-print { display: none !important; }
+    .note-line { min-height: 28px; border-bottom: 1px solid var(--border) !important; }
+    .note-area { border: 1px solid var(--border) !important; }
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 9.5pt;
+    line-height: 1.5;
+  }
+
+  /* ===== COVER PAGE ===== */
+  .cover {
+    background: linear-gradient(135deg, var(--primary) 0%, #0d2240 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 50px;
+    position: relative;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+  .cover-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.9);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 8pt;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .cover h1 {
+    font-size: 28pt;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+  .cover h2 {
+    font-size: 13pt;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 40px;
+  }
+  .cover-divider {
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin-bottom: 40px;
+  }
+  .cover-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .cover-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .cover-card-name {
+    font-size: 10pt;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 4px;
+  }
+  .cover-card-sub {
+    font-size: 7.5pt;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 10px;
+  }
+  .cover-card-val {
+    font-size: 18pt;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .cover-card-lbl {
+    font-size: 7pt;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 3px;
+  }
+  .cover-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 8pt;
+    color: rgba(255,255,255,0.4);
+    margin-top: auto;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .cover-footer strong { color: rgba(255,255,255,0.7); }
+
+  /* ===== SECTION HEADER ===== */
+  .section-header {
+    background: var(--primary);
+    color: white;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px 8px 0 0;
+    margin-top: 24px;
+  }
+  .section-header h2 {
+    font-size: 11pt;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .section-header .num {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10pt;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* ===== CONTENT CARD ===== */
+  .content-card {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 20px 24px;
+  }
+
+  /* ===== COMPANY HEADER ===== */
+  .company-header {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--line);
+    margin-bottom: 16px;
+  }
+  .company-logo {
+    width: 56px; height: 56px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20pt;
+    flex-shrink: 0;
+    font-weight: 800;
+    color: white;
+  }
+  .company-info { flex: 1; }
+  .company-info h3 {
+    font-size: 13pt;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .company-info .subtitle {
+    font-size: 8pt;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+  .company-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 7pt;
+    font-weight: 600;
+  }
+
+  /* ===== DATA GRID ===== */
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .data-item {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 12px;
+  }
+  .data-label {
+    font-size: 7pt;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 3px;
+    font-weight: 500;
+  }
+  .data-value {
+    font-size: 9pt;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  /* ===== NOTE SECTIONS ===== */
+  .note-section {
+    margin-bottom: 16px;
+  }
+  .note-title {
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .note-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+  .note-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .note-line {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+    padding: 0 4px;
+    font-size: 8.5pt;
+    color: var(--text-light);
+  }
+  .note-line:last-child { border-bottom: none; }
+  .note-line::before {
+    content: attr(data-n) '.';
+    color: var(--text-muted);
+    font-size: 7pt;
+    width: 20px;
+    flex-shrink: 0;
+  }
+  .note-area {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 8.5pt;
+    color: var(--text-light);
+    min-height: 80px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  /* ===== PROCESS TABLE ===== */
+  .process-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8pt;
+    margin-bottom: 16px;
+  }
+  .process-table th {
+    background: var(--primary);
+    color: white;
+    padding: 7px 10px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 7pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .process-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .process-table tr:nth-child(even) td { background: #f8f7f4; }
+  .process-table .highlight { color: var(--accent); font-weight: 600; }
+  .process-table .gap { background: #fff8e7; }
+
+  /* ===== FLOW DIAGRAM ===== */
+  .flow-diagram {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    overflow-x: auto;
+    padding: 8px 0;
+    margin-bottom: 16px;
+    font-size: 7.5pt;
+  }
+  .flow-step {
+    background: var(--primary);
+    color: white;
+    padding: 7px 10px;
+    border-radius: 6px;
+    text-align: center;
+    white-space: nowrap;
+    min-width: 80px;
+    font-weight: 500;
+  }
+  .flow-step span { display: block; font-size: 6.5pt; opacity: 0.6; margin-top: 2px; }
+  .flow-arrow { color: var(--accent); font-weight: 700; font-size: 14pt; }
+
+  /* ===== TABS ===== */
+  .tab-bar {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0;
+  }
+  .tab-btn {
+    padding: 6px 16px;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 8pt;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px 6px 0 0;
+    transition: all 0.15s;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+  }
+  .tab-btn.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+    background: #eef3f8;
+  }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* ===== KPI STRIP ===== */
+  .kpi-strip {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .kpi-box {
+    flex: 1;
+    min-width: 80px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: center;
+  }
+  .kpi-num {
+    font-size: 16pt;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--primary);
+  }
+  .kpi-num.accent { color: var(--accent); }
+  .kpi-lbl {
+    font-size: 6.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
+
+  /* ===== PITCH CARD ===== */
+  .pitch-card {
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f0 100%);
+    border: 1px solid #c3d9e8;
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  .pitch-label {
+    font-size: 7pt;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .pitch-text {
+    font-size: 8.5pt;
+    color: var(--text);
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  /* ===== COMPETITOR TABLE ===== */
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8pt;
+    margin-bottom: 16px;
+  }
+  .comp-table th {
+    background: #f0f0ec;
+    color: var(--text);
+    padding: 6px 10px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid var(--border);
+  }
+  .comp-table td {
+    padding: 6px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .comp-table tr:hover td { background: #f8f8f5; }
+
+  /* ===== DECISION MAKERS ===== */
+  .dmaker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .dmaker-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 12px;
+  }
+  .dmaker-name {
+    font-size: 9pt;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .dmaker-role {
+    font-size: 7.5pt;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+  .dmaker-area {
+    font-size: 7pt;
+    color: var(--primary);
+    font-weight: 600;
+  }
+  .dmaker-note {
+    font-size: 7pt;
+    color: var(--text-light);
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  /* ===== SEPARATOR ===== */
+  .sep {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 20px 0;
+  }
+
+  /* ===== PRINT BUTTON ===== */
+  .print-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 9pt;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    transition: all 0.2s;
+    z-index: 999;
+  }
+  .print-btn:hover { background: #0d2240; transform: translateY(-2px); }
+
+  /* ===== PAGE NUMBERS ===== */
+  .page-num {
+    text-align: center;
+    font-size: 7pt;
+    color: var(--text-muted);
+    margin-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+
+  /* ===== PRIORITY BADGE ===== */
+  .priority-high { background: #fee2e2; color: #991b1b; }
+  .priority-med  { background: #fef3c7; color: #92400e; }
+  .priority-low  { background: #f0fdf4; color: #166534; }
+
+  /* ===== SIGNAL LIST ===== */
+  .signal-list {
+    list-style: none;
+    margin-bottom: 16px;
+  }
+  .signal-list li {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    font-size: 8.5pt;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .signal-list .bullet {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  .signal-list .signal-text { flex: 1; }
+  .signal-list .signal-type {
+    font-size: 7pt;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  /* ===== CHECKBOX ===== */
+  .checklist {
+    list-style: none;
+    margin-bottom: 16px;
+  }
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 5px 0;
+    font-size: 8.5pt;
+    border-bottom: 1px solid var(--line);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checkbox {
+    width: 12px; height: 12px;
+    border: 1.5px solid var(--border);
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+</style>
+</head>
+<body>
+
+<!-- =============================================== -->
+<!-- COVER PAGE                                      -->
+<!-- =============================================== -->
+<div class="cover">
+  <div class="cover-badge">ProcessFDV Intelligence · SUPCON Chile KAM · 2026</div>
+  <h1>Cementeras<br>Chilenas</h1>
+  <h2>Ficha de inteligencia comercial para visitsa a terreno</h2>
+  <div class="cover-divider"></div>
+  <div class="cover-grid">
+    <div class="cover-card">
+      <div class="cover-card-sub">Empresas Target</div>
+      <div class="cover-card-val">3</div>
+      <div class="cover-card-lbl">Polpaico · CBB · Melón</div>
+    </div>
+    <div class="cover-card">
+      <div class="cover-card-sub">Capacidad Total Chile</div>
+      <div class="cover-card-val">~6M</div>
+      <div class="cover-card-lbl">toneladas/año cemento</div>
+    </div>
+    <div class="cover-card">
+      <div class="cover-card-sub">Oportunidad</div>
+      <div class="cover-card-val">DCS</div>
+      <div class="cover-card-lbl">+ APC + SCADA</div>
+    </div>
+    <div class="cover-card">
+      <div class="cover-card-sub">Proceso Clave</div>
+      <div class="cover-card-val">Horno</div>
+      <div class="cover-card-lbl">~70% energía planta</div>
+    </div>
+    <div class="cover-card">
+      <div class="cover-card-sub">Ahorro APC</div>
+      <div class="cover-card-val">4-9%</div>
+      <div class="cover-card-lbl">combustible horno</div>
+    </div>
+    <div class="cover-card">
+      <div class="cover-card-sub">Costo Horno Parado</div>
+      <div class="cover-card-val">US$50K+</div>
+      <div class="cover-card-lbl">por hora</div>
+    </div>
+  </div>
+  <div class="cover-footer">
+    <div>
+      <strong>Preparado para:</strong> Visita a terreno KAM<br>
+      <strong>Versión:</strong> 1.0 — Abril 2026
+    </div>
+    <div style="text-align:right">
+      <strong>Clasificación:</strong> Interno<br>
+      No exponer sin autorización
+    </div>
+  </div>
+</div>
+
+<div style="page-break-after: always; height: 1px;"></div>
+
+<!-- =============================================== -->
+<!-- PROCESO DEL CEMENTO                            -->
+<!-- =============================================== -->
+<div class="section-header">
+  <div class="num">1</div>
+  <h2>Proceso Productivo del Cemento — Mapa General</h2>
+</div>
+<div class="content-card">
+
+  <div class="flow-diagram">
+    <div class="flow-step">Cantera<div><span>Extracción</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Trituración<div><span>Primaria</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Prehomogenización<div><span>Pila / Domo</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Molienda Crudo<div><span>Barras/Bolas</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step" style="background:var(--accent)">Horno<div><span>Rotatorio ~1.450°C</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Enfriador<div><span>Clinker</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Molienda<div><span>Cemento</span></div></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Ensacado<div><span>Despacho</span></div></div>
+  </div>
+
+  <table class="process-table">
+    <thead>
+      <tr>
+        <th style="width:15%">Proceso</th>
+        <th style="width:22%">Variables Críticas</th>
+        <th style="width:28%">Equipamiento</th>
+        <th style="width:35%">Oportunidad SUPCON</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Cantera</strong></td>
+        <td>Fragmentación, humedad, ratio sílice</td>
+        <td>Excavadoras, camiones, trituradoras</td>
+        <td>Instrumentación + monitoreo de consumo</td>
+      </tr>
+      <tr>
+        <td><strong>Molienda Crudo</strong></td>
+        <td>Finura Blaine, composición química, humedad</td>
+        <td>Molino crudo, separador dinámico</td>
+        <td><span class="highlight">Control de dosificación + APC</span></td>
+      </tr>
+      <tr class="gap">
+        <td><strong>★ Horno Rotatorio</strong></td>
+        <td>Temperatura 1.450°C, O₂, velocidad, alimentación, NOx</td>
+        <td>Horno 60-90m, quemadores, pirómetros</td>
+        <td><span class="highlight">DCS + APC + Control multivariable — MÁXIMA OPORTUNIDAD</span></td>
+      </tr>
+      <tr>
+        <td><strong>Enfriador</strong></td>
+        <td>Temperatura salida clinker, recuperación de calor</td>
+        <td>Enfriador de barras/planetary</td>
+        <td>Integración con control de horno</td>
+      </tr>
+      <tr>
+        <td><strong>Molienda Cemento</strong></td>
+        <td>Finura (Blaine 3.000-4.500 cm²/g), carga bolas</td>
+        <td>Molino cemento, clasificador</td>
+        <td><span class="highlight">Control de carga + optimización energética</span></td>
+      </tr>
+      <tr>
+        <td><strong>Ensacado</strong></td>
+        <td>Peso saco, velocidad, dosificación aditivos</td>
+        <td>Ensacadora automática, paletizador</td>
+        <td>PLC + SCADA para despacho</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pitch-card">
+    <div class="pitch-label">Datos clave del horno rotatorio</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center;font-size:8pt">
+      <div><div style="font-size:14pt;font-weight:800;color:var(--primary)">~1.450°C</div><div>Temp. material</div></div>
+      <div><div style="font-size:14pt;font-weight:800;color:var(--primary)">~2.000°C</div><div>Temp. llama</div></div>
+      <div><div style="font-size:14pt;font-weight:800;color:var(--accent)">60-90m</div><div>Largo horno</div></div>
+      <div><div style="font-size:14pt;font-weight:800;color:var(--accent)">3.000-10.000</div><div>TPD capacidad</div></div>
+    </div>
+  </div>
+
+  <div class="kpi-strip">
+    <div class="kpi-box"><div class="kpi-num">70%</div><div class="kpi-lbl">energía del horno</div></div>
+    <div class="kpi-box"><div class="kpi-num accent">4-9%</div><div class="kpi-lbl">ahorro combustible APC</div></div>
+    <div class="kpi-box"><div class="kpi-num">10-15%</div><div class="kpi-lbl">desperdicio actual</div></div>
+    <div class="kpi-box"><div class="kpi-num accent">US$50K+</div><div class="kpi-lbl">costo hora horno parado</div></div>
+    <div class="kpi-box"><div class="kpi-num">3-5%</div><div class="kpi-lbl">reducción NOx con APC</div></div>
+  </div>
+
+  <div class="note-section">
+    <div class="note-title">Notas proceso</div>
+    <div class="note-area" contenteditable="true"></div>
+  </div>
+</div>
+
+<div style="page-break-after: always; height: 1px;"></div>
+
+<!-- =============================================== -->
+<!-- POLPAICO                                        -->
+<!-- =============================================== -->
+<div class="section-header" style="background:var(--col-pad)">
+  <div class="num">A</div>
+  <h2>Polpaico — Cemento Polpaico S.A.</h2>
+</div>
+<div class="content-card">
+  <div class="company-header">
+    <div class="company-logo" style="background:var(--col-pad)">P</div>
+    <div class="company-info">
+      <h3>Cemento Polpaico S.A.</h3>
+      <div class="subtitle">Ex-Holcim Chile · Adquirido por Grupo Hurtado Vicuña 2017 · Grupo controlador: Inversiones Caburga</div>
+      <div class="company-tags">
+        <span class="tag priority-high">Alta Relevancia</span>
+        <span class="tag" style="background:#dbeafe;color:#1e40af">Líder ~35-40% mercado</span>
+        <span class="tag" style="background:#f3e8ff;color:#6b21a8">Capacidad 3.25M ton/año</span>
+        <span class="tag" style="background:#fef9c3;color:#854d0e">ABB DCS legacy</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="data-grid">
+    <div class="data-item"><div class="data-label">RUT</div><div class="data-value">91.337.000-7</div></div>
+    <div class="data-item"><div class="data-label">Teléfono</div><div class="data-value">600 620 6200</div></div>
+    <div class="data-item"><div class="data-label">Web</div><div class="data-value">polpaico.cl</div></div>
+    <div class="data-item"><div class="data-label">GM</div><div class="data-value">Andrés Ignacio Pérez A.</div></div>
+    <div class="data-item"><div class="data-label">Gerente Cementos</div><div class="data-value">Luis Felipe Ureta V.</div></div>
+    <div class="data-item"><div class="data-label">Gerente Gral. Coactiva</div><div class="data-value">Enrique Darío Peralta R.</div></div>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showTab(this,'p1')">Plantas</button>
+    <button class="tab-btn" onclick="showTab(this,'p2')">Tecnología Actual</button>
+    <button class="tab-btn" onclick="showTab(this,'p3')">Oportunidades</button>
+    <button class="tab-btn" onclick="showTab(this,'p4')">Pitch</button>
+  </div>
+
+  <div id="p1" class="tab-content active">
+    <table class="process-table">
+      <thead><tr><th>Planta</th><th>Ubicación</th><th>Tipo</th><th>Capacidad</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Cerro Blanco</strong></td><td>Til Til, RM</td><td>Integrada (horno clinker)</td><td>~1.6M ton/año</td></tr>
+        <tr><td><strong>Coronel</strong></td><td>Coronel, VIII Región</td><td>Molienda</td><td>~800K ton/año</td></tr>
+        <tr><td><strong>Mejillones</strong></td><td>Mejillones, II Región</td><td>Molienda</td><td>~300K ton/año</td></tr>
+        <tr><td><strong>Coactiva</strong></td><td>Cerro Blanco</td><td>Coprocesamiento residuos</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="p2" class="tab-content">
+    <ul class="signal-list">
+      <li><div class="bullet"></div><div class="signal-text"><strong>ABB Ability 800xA</strong> — DCS estandarizado por Holcim 2006-2011<br><span class="signal-type">¿Vigente post-venta 2017? Pendiente verificar</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>ABB Expert Optimizer</strong> — Sistema experto para horno y molinos<br><span class="signal-type">¿En uso actual? Posible migracion necesaria</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>SAP ERP</strong> — Gestión corporativa</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>ABB Asset Management</strong> — Gestión de activos</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Combustibles alternativos</strong> — Coprocesamiento RDF y residuos (Coactiva)<br><span class="signal-type">Requiere control multivariable avanzado</span></div></li>
+    </ul>
+  </div>
+
+  <div id="p3" class="tab-content">
+    <ul class="signal-list">
+      <li><div class="bullet"></div><div class="signal-text"><strong>Overlayer APC al DCS ABB</strong><br>Agregar APC para optimización de horno sin reemplazar el ABB existente — menor riesgo, mayor aceptación</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>SCADA moderno</strong><br>Sustituir o complementar visualización legacy del 800xA con SCADA abierto</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Control de combustibles alternativos</strong><br>El coprocesamiento de RDF requiere control preciso de mezcla de combustibles — oportunidad de diferenciación</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Historian industrial</strong><br>Conectar datos de proceso al SAP existente para análisis de tendencias</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Monitoreo de emisiones en línea</strong><br>Cumplimiento ambiental para coprocesamiento — SCADA + instrumentación</div></li>
+    </ul>
+  </div>
+
+  <div id="p4" class="tab-content">
+    <div class="pitch-card">
+      <div class="pitch-label">Pitch para Gerente de Cementos</div>
+      <div class="pitch-text">"Holcim les dejó un DCS ABB de hace 20 años. SUPCON puede overlayer ese sistema con APC para el horno — sin reemplazar el ABB, sin parar la planta — capturando el valor del control predictivo de inmediato. Así le damos al horno de Cerro Blanco la optimización que Expert Optimizer nunca terminó de entregar, con un costo total 40% menor que una migración completa."</div>
+    </div>
+    <div class="note-section">
+      <div class="note-title">Notas reunion</div>
+      <div class="note-area" contenteditable="true"></div>
+    </div>
+  </div>
+
+  <div class="note-section">
+    <div class="note-title">Contacto directo</div>
+    <div class="note-area" contenteditable="true"></div>
+  </div>
+</div>
+
+<div style="page-break-after: always; height: 1px;"></div>
+
+<!-- =============================================== -->
+<!-- GRUPO CBB                                       -->
+<!-- =============================================== -->
+<div class="section-header" style="background:var(--col-cbb)">
+  <div class="num">B</div>
+  <h2>Grupo CBB — Cementos Bío Bío</h2>
+</div>
+<div class="content-card">
+  <div class="company-header">
+    <div class="company-logo" style="background:var(--col-cbb)">C</div>
+    <div class="company-info">
+      <h3>Grupo CBB S.A. (Cementos Bío Bío)</h3>
+      <div class="subtitle">Nacional · Acciones en Bolsa · Presencia Chile, Argentina y Perú</div>
+      <div class="company-tags">
+        <span class="tag priority-high">Alta Relevancia</span>
+        <span class="tag" style="background:#dbeafe;color:#1e40af">~35% mercado</span>
+        <span class="tag" style="background:#f3e8ff;color:#6b21a8">Plan inversión US$150M</span>
+        <span class="tag" style="background:#fef9c3;color:#854d0b">SAP + SCADA parcial</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="data-grid">
+    <div class="data-item"><div class="data-label">RUT</div><div class="data-value">91.755.000-K</div></div>
+    <div class="data-item"><div class="data-label">Teléfono</div><div class="data-value">(56-2) 2560 7000</div></div>
+    <div class="data-item"><div class="data-label">Call center</div><div class="data-value">800 720 720</div></div>
+    <div class="data-item"><div class="data-label">Web</div><div class="data-value">cbb.cl</div></div>
+    <div class="data-item"><div class="data-label">Gerente General</div><div class="data-value">Jorge Matus</div></div>
+    <div class="data-item"><div class="data-label">Gerente Comercial</div><div class="data-value">Claudio Hurtado</div></div>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showTab(this,'c1')">Plantas</button>
+    <button class="tab-btn" onclick="showTab(this,'c2')">Tecnología Actual</button>
+    <button class="tab-btn" onclick="showTab(this,'c3')">Oportunidades</button>
+    <button class="tab-btn" onclick="showTab(this,'c4')">Pitch</button>
+  </div>
+
+  <div id="c1" class="tab-content active">
+    <table class="process-table">
+      <thead><tr><th>Planta</th><th>Ubicación</th><th>Tipo</th><th>Notas</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Talcahuano</strong></td><td>VIII Región</td><td>Integrada</td><td>Planta principal sur</td></tr>
+        <tr><td><strong>Concón</strong></td><td>V Región</td><td>Integrada</td><td>Zona centro-norte</td></tr>
+        <tr><td><strong>Teno</strong></td><td>VII Región</td><td>Integrada</td><td>Maule</td></tr>
+        <tr><td><strong>Arica</strong></td><td>XV Región</td><td>Molienda</td><td>150K ton/año — inaugurada ~2021</td></tr>
+        <tr><td colspan="3"><strong>CBB Ready Mix</strong> — 32 plantas hormigón (Arica a Puerto Montt)</td><td></td></tr>
+        <tr><td colspan="3"><strong>CBB Cales</strong> — Cal industrial (1.2M ton/año)</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="c2" class="tab-content">
+    <ul class="signal-list">
+      <li><div class="bullet"></div><div class="signal-text"><strong>SAP ERP</strong> — CRM, HCM, SD-WAN mencionados en tech stack</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>SCADA</strong> — Mentionado en tech stack público, pero sin claridad sobre alcance</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Power BI</strong> — Dashboard corporativo, pero sin conexión a piso de planta</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>RPA</strong> — Automatización de procesos administrativos</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>GPS tracking</strong> — Flotas de despacho</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Sin DCS centralizado</strong> — PLCs dispersos por planta<br><span class="signal-type">Sin sistema unificado de control de proceso</span></div></li>
+    </ul>
+  </div>
+
+  <div id="c3" class="tab-content">
+    <ul class="signal-list">
+      <li><div class="bullet"></div><div class="signal-text"><strong>DCS unificado para 3 plantas integradas</strong><br>Reemplazar/centralizar PLCs dispersos en Talcahuano, Concón y Teno bajo una plataforma SUPCON</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Gateway SAP-DCS</strong><br>Conectar datos de planta al SAP existente — romper el silo informativo</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>APC para hornos</strong><br>3 hornos integrados = 3× oportunidad de ahorro de combustible</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>SCADA para despacho hormigón</strong><br>Sistema integrado para las 32 plantas de hormigón Ready Mix</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Planta nueva Arica</strong><br>DCS para extensión o planta nueva — momento ideal para especificación SUPCON</div></li>
+    </ul>
+  </div>
+
+  <div id="c4" class="tab-content">
+    <div class="pitch-card">
+      <div class="pitch-label">Pitch para Gerente General / Comercial</div>
+      <div class="pitch-text">"CBB tiene SAP, tiene SCADA, tiene Power BI — pero ninguno se habla con el piso de planta. Cada planta opera con sus propios PLCs y los datos del horno terminan en un Excel. SUPCON les entrega un DCS completo que conecta los tres hornos de Talcahuano, Concón y Teno bajo una sola plataforma, con historian integrado y gateway directo al SAP. Así el Gerente de Planta tiene visibilidad real y el SAP se alimenta automáticamente."</div>
+    </div>
+    <div class="note-section">
+      <div class="note-title">Notas reunion</div>
+      <div class="note-area" contenteditable="true"></div>
+    </div>
+  </div>
+
+  <div class="note-section">
+    <div class="note-title">Contacto directo</div>
+    <div class="note-area" contenteditable="true"></div>
+  </div>
+</div>
+
+<div style="page-break-after: always; height: 1px;"></div>
+
+<!-- =============================================== -->
+<!-- MELÓN                                          -->
+<!-- =============================================== -->
+<div class="section-header" style="background:var(--col-melon)">
+  <div class="num">C</div>
+  <h2>Melón — Cementos Melón S.A.</h2>
+</div>
+<div class="content-card">
+  <div class="company-header">
+    <div class="company-logo" style="background:var(--col-melon)">M</div>
+    <div class="company-info">
+      <h3>Cementos Melón S.A.</h3>
+      <div class="subtitle">Pertenece al Grupo Brescia (Perú) · Estrategia: logística optimizada para largo país</div>
+      <div class="company-tags">
+        <span class="tag priority-med">Media-Alta</span>
+        <span class="tag" style="background:#dbeafe;color:#1e40af">~25% mercado</span>
+        <span class="tag" style="background:#f3e8ff;color:#6b21a8">Clinker importado Asia</span>
+        <span class="tag" style="background:#fef9c3;color:#854d0b">Sin DCS visible</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="data-grid">
+    <div class="data-item"><div class="data-label">RUT</div><div class="data-value">90.311.000-6</div></div>
+    <div class="data-item"><div class="data-label">Teléfono</div><div class="data-value">(56-51) 220 7000</div></div>
+    <div class="data-item"><div class="data-label">Web</div><div class="data-value">melon.cl</div></div>
+    <div class="data-item"><div class="data-label">Grupo</div><div class="data-value">Brescia (Perú)</div></div>
+    <div class="data-item"><div class="data-label">Planta Principal</div><div class="data-value">La Calera, V Región</div></div>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showTab(this,'m1')">Plantas</button>
+    <button class="tab-btn" onclick="showTab(this,'m2')">Tecnología</button>
+    <button class="tab-btn" onclick="showTab(this,'m3')">Oportunidades</button>
+    <button class="tab-btn" onclick="showTab(this,'m4')">Pitch</button>
+  </div>
+
+  <div id="m1" class="tab-content active">
+    <table class="process-table">
+      <thead><tr><th>Planta</th><th>Ubicación</th><th>Tipo</th><th>Notas</th></tr></thead>
+      <tbody>
+        <tr><td><strong>La Calera</strong></td><td>V Región</td><td>Integrada</td><td>Desde 1908 — horno antiguo, potencial modernización</td></tr>
+        <tr><td><strong>Puerto Montt</strong></td><td>X Región</td><td>Molienda</td><td>Molino Cemengal Plug&Grind Xtreme (desde 2008)</td></tr>
+        <tr><td><strong>Ventanas</strong></td><td>V Región</td><td>Molienda</td><td>Desde 2011</td></tr>
+      </tbody>
+    </table>
+    <div class="pitch-card">
+      <div class="pitch-label">Dato clave</div>
+      <div class="pitch-text">Melón importa clinker de Corea del Sur y China. La estrategia es competir por logística: planta en el sur para servir mercados a 300-500km sin competencia. Puerto Montt ya tiene 70% del mercado local.</div>
+    </div>
+  </div>
+
+  <div id="m2" class="tab-content">
+    <ul class="signal-list">
+      <li><div class="bullet"></div><div class="signal-text"><strong>Sin información pública</strong> sobre sistemas de automatización<br><span class="signal-type">Posible tecnología legacy en La Calera (desde 1908)</span></div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Molino Cemengal</strong> — tecnología moderna importada para Puerto Montt y Ventanas</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Matriz Brescia</strong> — podría tener estándar de automatización definido<br><span class="signal-type">Oportunidad: proponer a nivel grupo, no solo Chile</span></div></li>
+    </ul>
+  </div>
+
+  <div id="m3" class="tab-content">
+    <ul class="signal-list">
+      <li><div class="bullet"></div><div class="signal-text"><strong>Horno La Calera</strong><br>Planta desde 1908 — alto potencial de modernización de control si el horno sigue operativo</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>Estándar grupo Brescia</strong><br>Si Brescia busca estandarizar automatización en todas sus cemento, SUPCON puede ser la oferta</div></li>
+      <li><div class="bullet"></div><div class="signal-text"><strong>APC para molinos Cemengal</strong><br>Control avanzado de molienda en Puerto Montt y Ventanas</div></li>
+    </ul>
+  </div>
+
+  <div id="m4" class="tab-content">
+    <div class="pitch-card">
+      <div class="pitch-label">Pitch para Gerencia</div>
+      <div class="pitch-text">"Grupo Brescia tiene cemento en Perú, Chile y más países. La oportunidad es una: que SUPCON sea el estándar de automatización para todo el grupo. Empezamos con La Calera — modernización del control del horno — y escalamos a Puerto Montt, Ventanas y las plantas del Perú."</div>
+    </div>
+    <div class="note-section">
+      <div class="note-title">Notas reunion</div>
+      <div class="note-area" contenteditable="true"></div>
+    </div>
+  </div>
+
+  <div class="note-section">
+    <div class="note-title">Contacto directo</div>
+    <div class="note-area" contenteditable="true"></div>
+  </div>
+</div>
+
+<div style="page-break-after: always; height: 1px;"></div>
+
+<!-- =============================================== -->
+<!-- COMPARATIVA + COMPETIDORES + PRÓXIMOS PASOS -->
+<!-- =============================================== -->
+<div class="section-header">
+  <div class="num">2</div>
+  <h2>Comparativa de Targets — Cementeras Chilenas</h2>
+</div>
+<div class="content-card">
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>Empresa</th>
+        <th>Capacidad</th>
+        <th>Plantas</th>
+        <th>Tecnología Actual</th>
+        <th>Prioridad</th>
+        <th>Oportunidad SUPCON</th>
+        <th>Dificultad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Polpaico</strong></td>
+        <td>3.25M ton/año</td>
+        <td>3 + Coactiva</td>
+        <td>ABB 800xA (legacy)</td>
+        <td><span class="tag priority-high">Alta</span></td>
+        <td>Overlayer APC + SCADA moderno</td>
+        <td>Media — ABB es barrera</td>
+      </tr>
+      <tr>
+        <td><strong>Grupo CBB</strong></td>
+        <td>1.2M+ ton/año</td>
+        <td>3 + 32 hormigón</td>
+        <td>SAP + SCADA parcial</td>
+        <td><span class="tag priority-high">Alta</span></td>
+        <td>DCS unificado + gateway SAP</td>
+        <td>Baja — sin DCS</td>
+      </tr>
+      <tr>
+        <td><strong>Melón</strong></td>
+        <td>~1.5M ton/año</td>
+        <td>La Calera + 2 molinos</td>
+        <td>Sin info / legacy</td>
+        <td><span class="tag priority-med">Media</span></td>
+        <td>Estandar grupo + marrón La Calera</td>
+        <td>Alta — acceso grupo Perú</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section-header" style="background:#444">
+  <div class="num">3</div>
+  <h2>Competidores en el espacio — ¿Qué responder?</h2>
+</div>
+<div class="content-card">
+  <table class="comp-table">
+    <thead>
+      <tr><th>Competidor</th><th>Qué tienen</th><th>Debilidad vs. SUPCON</th><th>Respuesta</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>ABB</strong></td>
+        <td>800xA + Expert Optimizer en Polpaico</td>
+        <td>Legacy, caro, soporte local débil</td>
+        <td>Overlayer, no reemplazar. Mejor precio.</td>
+      </tr>
+      <tr>
+        <td><strong>Siemens</strong></td>
+        <td>PCS 7 / PCS Neo</td>
+        <td>2-3× más caro, implementación lenta</td>
+        <td>Costo TCO 40% menor, redundancia comparable</td>
+      </tr>
+      <tr>
+        <td><strong>Schneider</strong></td>
+        <td>EcoStruxure for Mining/Cement</td>
+        <td>Menor presencia cemento Chile</td>
+        <td>Soporte local directo, referencia regional</td>
+      </tr>
+      <tr>
+        <td><strong>FLSmidth</strong></td>
+        <td>ECS/ProcessExpert (APC puro)</td>
+        <td>No es DCS — necesita plataforma de control</td>
+        <td>Partner o complemento — SUPCON como DCS base</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section-header" style="background:var(--green)">
+  <div class="num">4</div>
+  <h2>Próximos Pasos — Plan de Acción</h2>
+</div>
+<div class="content-card">
+  <ul class="checklist">
+    <li><div class="checkbox"></div><span>Investigar estado actual ABB DCS en Polpaico post-Hurtado Vicuña (LinkedIn: personal técnico ABB)</span></li>
+    <li><div class="checkbox"></div><span>LinkedIn stalking: Claudio Hurtado (CBB), Luis Felipe Ureta (Polpaico), contact commercial Melón</span></li>
+    <li><div class="checkbox"></div><span>Buscar memorias CMF 2024 de CBB y Melón — señales de inversión en automatización</span></li>
+    <li><div class="checkbox"></div><span>Calcular ROI de APC para horno cemento: 5% ahorro gas × consumo anual → US$X/año por horno</span></li>
+    <li><div class="checkbox"></div><span>Preparar demo SCADA de horno con simulación de temperatura y alarms</span></li>
+    <li><div class="checkbox"></div><span>Buscar referencias SUPCON en cemento (Latinoamérica o global)</span></li>
+    <li><div class="checkbox"></div><span>Contactar CBB vía portal proveedores o LinkedIn — primera reunión exploración</span></li>
+    <li><div class="checkbox"></div><span>Contactar Polpaico vía LinkedIn o portal proveedores</span></li>
+    <li><div class="checkbox"></div><span>Descargar memorias CBB y Melón 2024 desde CMF para análisis de capex</span></li>
+    <li><div class="checkbox"></div><span>Preparar presentación de 5 slides: proceso cemento + gaps + solución SUPCON + ROI</span></li>
+  </ul>
+</div>
+
+<div class="page-num">ProcessFDV Intelligence · Cementeras Chilenas · SUPCON Chile KAM · 2026</div>
+
+<!-- PRINT BUTTON -->
+<button class="print-btn no-print" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+
+<script>
+function showTab(btn, id) {
+  btn.parentElement.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  btn.closest('.content-card').querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+</body>
+</html>
