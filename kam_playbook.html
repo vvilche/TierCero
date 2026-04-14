@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAM Playbook — SUPCON Chile | Conecta Ingeniería</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary: #1a3a5c;
+  --primary-dark: #0d2240;
+  --accent: #e85d04;
+  --accent2: #f77f00;
+  --success: #2d6a4f;
+  --danger: #dc2626;
+  --warning: #f59e0b;
+  --bg: #f8f9fa;
+  --paper: #ffffff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+  --text-light: #6b7280;
+  --text-muted: #9ca3af;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* ─── NAVIGATION ─── */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--primary-dark);
+  color: white;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo {
+  width: 36px;
+  height: 36px;
+  background: var(--accent);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.nav-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-subtitle {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+}
+
+.nav-link {
+  padding: 8px 14px;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+/* ─── MAIN CONTENT ─── */
+.main {
+  margin-top: 70px;
+  padding: 24px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ─── SECTIONS ─── */
+.section {
+  background: var(--paper);
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.section-header {
+  background: var(--primary);
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-header.success { background: var(--success); }
+.section-header.accent { background: var(--accent); }
+.section-header.danger { background: var(--danger); }
+
+.section-header h2 {
+  font-size: 14px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.section-header .badge {
+  background: rgba(255,255,255,0.2);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.section-body {
+  padding: 24px;
+}
+
+/* ─── COVER HERO ─── */
+.hero {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.9);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .highlight { color: var(--accent); }
+
+.hero p {
+  font-size: 16px;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.hero-stat {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 16px 24px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 140px;
+}
+
+.hero-stat-value {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--accent);
+}
+
+.hero-stat-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+/* ─── CARDS ─── */
+.card {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.card-icon.green { background: var(--success); }
+.card-icon.orange { background: var(--accent); }
+.card-icon.red { background: var(--danger); }
+
+.card h3 {
+  font-size: 13px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.card h4 {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+/* ─── GRID LAYOUTS ─── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
+
+/* ─── TABLES ─── */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.table th {
+  background: var(--primary);
+  color: white;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 9px;
+}
+
+.table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.table tr:nth-child(even) td {
+  background: #f9fafb;
+}
+
+.table tr:hover td {
+  background: #f3f4f6;
+}
+
+/* ─── TAGS / BADGES ─── */
+.tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.tag.primary { background: #dbeafe; color: #1e40af; }
+.tag.success { background: #d1fae5; color: #065f46; }
+.tag.warning { background: #fef3c7; color: #92400e; }
+.tag.danger { background: #fee2e2; color: #991b1b; }
+.tag.orange { background: #ffedd5; color: #9a3412; }
+
+/* ─── PIPELINE ─── */
+.pipeline-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #f9fafb;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.pipeline-rank {
+  width: 32px;
+  height: 32px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.pipeline-rank.gold { background: #f59e0b; }
+.pipeline-rank.silver { background: #9ca3af; }
+.pipeline-rank.bronze { background: #b45309; }
+
+.pipeline-content { flex: 1; }
+
+.pipeline-company {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.pipeline-meta {
+  font-size: 10px;
+  color: var(--text-light);
+}
+
+.pipeline-numbers {
+  text-align: right;
+}
+
+.pipeline-invest {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.pipeline-payback {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--success);
+}
+
+/* ─── CONTACTS ─── */
+.contact-card {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.contact-avatar {
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.contact-info h4 {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.contact-info .role {
+  font-size: 10px;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.contact-info .company {
+  font-size: 10px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.contact-info .approach {
+  font-size: 9px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ─── PITCH CARDS ─── */
+.pitch-card {
+  background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+  border: 1px solid #c7d2fe;
+  border-left: 4px solid var(--primary);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.pitch-card.green {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-color: #86efac;
+  border-left-color: var(--success);
+}
+
+.pitch-card.orange {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border-color: #fdba74;
+  border-left-color: var(--accent);
+}
+
+.pitch-label {
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.pitch-text {
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--text);
+  font-style: italic;
+}
+
+/* ─── OPTIONS CARDS ─── */
+.option-card {
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.option-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.option-card.recommended {
+  border-color: var(--success);
+  position: relative;
+}
+
+.option-card.recommended::before {
+  content: 'RECOMENDADO';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--success);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 10px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.option-name {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.option-price {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.option-price .small {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.option-payback {
+  font-size: 11px;
+  color: var(--success);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.option-desc {
+  font-size: 9px;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* ─── TIMELINE ─── */
+.timeline {
+  position: relative;
+  padding-left: 24px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.timeline-item.success::before { background: var(--success); }
+.timeline-item.warning::before { background: var(--warning); }
+.timeline-item.danger::before { background: var(--danger); }
+
+.timeline-date {
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.timeline-title {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.timeline-desc {
+  font-size: 10px;
+  color: var(--text-light);
+}
+
+/* ─── CHECKLIST ─── */
+.checklist {
+  list-style: none;
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+}
+
+.checklist li:last-child {
+  border-bottom: none;
+}
+
+.check-box {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.check-box.checked {
+  background: var(--success);
+  border-color: var(--success);
+  color: white;
+}
+
+/* ─── EMAIL TEMPLATE ─── */
+.email-template {
+  background: #f9fafb;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.email-to {
+  font-size: 10px;
+  color: var(--text-light);
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.email-to strong {
+  color: var(--text);
+}
+
+.email-subject {
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+
+.email-subject span {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.email-body {
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+/* ─── KPI STRIP ─── */
+.kpi-strip {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.kpi-box {
+  flex: 1;
+  min-width: 120px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.kpi-value {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.kpi-value.accent { color: var(--accent); }
+.kpi-value.success { color: var(--success); }
+
+.kpi-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-light);
+  margin-top: 4px;
+}
+
+/* ─── CALLOUT ─── */
+.callout {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.callout.info {
+  background: #eff6ff;
+  border: 1px solid #93c5fd;
+}
+
+.callout.success {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+}
+
+.callout.warning {
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+}
+
+.callout.danger {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+}
+
+.callout-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.callout-content { flex: 1; }
+
+.callout-title {
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.callout-text {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* ─── PRINT ─── */
+@media print {
+  .nav { display: none; }
+  .main { margin-top: 0; }
+  .section { break-inside: avoid; }
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hero h1 { font-size: 24px; }
+  .hero-stats { flex-direction: column; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav">
+  <div class="nav-brand">
+    <div class="nav-logo">S</div>
+    <div>
+      <div class="nav-title">KAM Playbook — SUPCON Chile</div>
+      <div class="nav-subtitle">Conecta Ingeniería | Inteligencia Comercial</div>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="#overview" class="nav-link active">Resumen</a>
+    <a href="#pipeline" class="nav-link">Pipeline</a>
+    <a href="#contacts" class="nav-link">Contactos</a>
+    <a href="#pitches" class="nav-link">Pitches</a>
+    <a href="#options" class="nav-link">Opciones</a>
+    <a href="#corfo" class="nav-link">CORFO</a>
+    <a href="#emails" class="nav-link">Emails</a>
+    <a href="#next" class="nav-link">Próximos Pasos</a>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Bala de Plata · SUPCON Chile KAM · 2026</div>
+    <h1>KAM <span class="highlight">Playbook</span></h1>
+    <p>Guía táctica para KAMs de SUPCON Chile — Automation & Control para cemento y vidrio</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-value">$15.5M</div>
+        <div class="hero-stat-label">Pipeline Total</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">5</div>
+        <div class="hero-stat-label">Targets Activos</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">4.9</div>
+        <div class="hero-stat-label">Mejor Payback (meses)</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">60%</div>
+        <div class="hero-stat-label">Cofinanciamiento CORFO</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 1: OVERVIEW -->
+<section id="overview" class="section">
+  <div class="section-header">
+    <h2>Resumen Ejecutivo — Pipeline SUPCON Chile</h2>
+    <span class="badge">5 Targets</span>
+  </div>
+  <div class="section-body">
+    <div class="kpi-strip">
+      <div class="kpi-box">
+        <div class="kpi-value accent">$15.5M</div>
+        <div class="kpi-label">Pipeline Total</div>
+      </div>
+      <div class="kpi-box">
+        <div class="kpi-value">$5.9M</div>
+        <div class="kpi-label">Top 3 (Payback &lt;12m)</div>
+      </div>
+      <div class="kpi-box">
+        <div class="kpi-value success">4.9</div>
+        <div class="kpi-label">Payback Promedio (meses)</div>
+      </div>
+      <div class="kpi-box">
+        <div class="kpi-value">2</div>
+        <div class="kpi-label">Sectores</div>
+      </div>
+    </div>
+    
+    <div class="grid-2">
+      <div>
+        <h4 style="margin-bottom: 12px; color: var(--text-light);">Sectores Analizados</h4>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon red">🏭</div>
+            <div>
+              <h3>Vidrio</h3>
+              <h4>Cristalerías Chile + Cristoro/Vidrala</h4>
+            </div>
+          </div>
+          <p style="font-size: 10px; color: var(--text-light);">
+            2 plantas principales, 9+ hornos operando. EBIT negativo de Cristalerías = urgencia. 
+            Adquisición de Cristoro por Vidrala = ventana estratégica.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon orange">🏗️</div>
+            <div>
+              <h3>Cemento</h3>
+              <h4>Polpaico + CBB + Melón</h4>
+            </div>
+          </div>
+          <p style="font-size: 10px; color: var(--text-light);">
+            3 grupos cementeros, 7+ plantas, 5 hornos rotatorios. 
+            CBB sin DCS central = oportunidad limpia. Melón/Brescia = estrategia grupal.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h4 style="margin-bottom: 12px; color: var(--text-light);">Propuesta de Valor</h4>
+        <div class="pitch-card">
+          <div class="pitch-label">DCS + APC + SCADA</div>
+          <div class="pitch-text">
+            SUPCON ofrece control redundante hot-standby para hornos de fusión y cemento, 
+            APC para optimización energética (3-8% ahorro gas), y SCADA unificado — 
+            a 30-40% menor costo que Siemens/ABB.
+          </div>
+        </div>
+        <div class="pitch-card green">
+          <div class="pitch-label">Diferenciadores</div>
+          <div class="pitch-text">
+            • Redundancia hot-standby nativa<br>
+            • Soporte local directo<br>
+            • SCADA abierto (no lock-in)<br>
+            • Costo TCO 40% menor
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: PIPELINE -->
+<section id="pipeline" class="section">
+  <div class="section-header">
+    <h2>Pipeline de Oportunidades</h2>
+    <span class="badge">Orden de Prioridad</span>
+  </div>
+  <div class="section-body">
+    
+    <div class="pipeline-item">
+      <div class="pipeline-rank gold">🥇</div>
+      <div class="pipeline-content">
+        <div class="pipeline-company">Cristalerías Chile</div>
+        <div class="pipeline-meta">Vidrio · 6 hornos · EBIT negativo · Grupo Claro</div>
+      </div>
+      <div class="pipeline-numbers">
+        <div class="pipeline-invest">US$2.0M</div>
+        <div class="pipeline-payback">Payback: 4.9 meses</div>
+      </div>
+      <span class="tag success">ROIs: +143%</span>
+    </div>
+
+    <div class="pipeline-item">
+      <div class="pipeline-rank silver">🥈</div>
+      <div class="pipeline-content">
+        <div class="pipeline-company">Grupo CBB — APC Módulo</div>
+        <div class="pipeline-meta">Cemento · 3 plantas · Sin DCS central · Plan inversión US$150M</div>
+      </div>
+      <div class="pipeline-numbers">
+        <div class="pipeline-invest">US$1.0M</div>
+        <div class="pipeline-payback">Payback: 6.7 meses</div>
+      </div>
+      <span class="tag success">ROIs: +80%</span>
+    </div>
+
+    <div class="pipeline-item">
+      <div class="pipeline-rank bronze">🥉</div>
+      <div class="pipeline-content">
+        <div class="pipeline-company">Polpaico — Overlayer ABB</div>
+        <div class="pipeline-meta">Cemento · 3 plantas · ABB legacy 2006 · Cerro Blanco Til Til</div>
+      </div>
+      <div class="pipeline-numbers">
+        <div class="pipeline-invest">US$2.2M</div>
+        <div class="pipeline-payback">Payback: 6.1 meses</div>
+      </div>
+      <span class="tag success">ROIs: +95%</span>
+    </div>
+
+    <div class="pipeline-item">
+      <div class="pipeline-rank">4</div>
+      <div class="pipeline-content">
+        <div class="pipeline-company">Melón — Horno La Calera</div>
+        <div class="pipeline-meta">Cemento · La Calera · Horno desde 1908 · Grupo Brescia (Perú)</div>
+      </div>
+      <div class="pipeline-numbers">
+        <div class="pipeline-invest">US$1.2M</div>
+        <div class="pipeline-payback">Payback: 14-18 meses</div>
+      </div>
+      <span class="tag warning">Estratégico</span>
+    </div>
+
+    <div class="pipeline-item">
+      <div class="pipeline-rank">5</div>
+      <div class="pipeline-content">
+        <div class="pipeline-company">Cristoro + Vidrala LatAm</div>
+        <div class="pipeline-meta">Vidrio · Horno híbrido US$100M · Adquirida por Vidrala</div>
+      </div>
+      <div class="pipeline-numbers">
+        <div class="pipeline-invest">US$1.5M</div>
+        <div class="pipeline-payback">Payback: 19 meses</div>
+      </div>
+      <span class="tag primary">Pipeline: $21M</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 3: CONTACTS -->
+<section id="contacts" class="section">
+  <div class="section-header success">
+    <h2>Mapa de Decisores — Targets Prioritarios</h2>
+    <span class="badge">5 Contactos</span>
+  </div>
+  <div class="section-body">
+    
+    <div class="grid-2">
+      <div>
+        <div class="contact-card">
+          <div class="contact-avatar" style="background: var(--danger);">CH</div>
+          <div class="contact-info">
+            <h4>Claudio Hurtado</h4>
+            <div class="role">Gerente Comercial Cementos</div>
+            <div class="company">Cementos Bío Bío (CBB)</div>
+            <div class="approach">→ Pitch APC: payback 6.7 meses, inversión US$1.0M</div>
+          </div>
+          <span class="tag danger">PRIORIDAD ALTA</span>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-avatar">PS</div>
+          <div class="contact-info">
+            <h4>Pablo Saavedra</h4>
+            <div class="role">Gerente de Operaciones</div>
+            <div class="company">Cristalerías Chile</div>
+            <div class="approach">→ Pitch técnico: DCS unificado, 6 hornos, SCADA</div>
+          </div>
+          <span class="tag warning">TÉCNICO</span>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-avatar" style="background: var(--accent);">RM</div>
+          <div class="contact-info">
+            <h4>Ricardo Munizaga</h4>
+            <div class="role">Gerente de Operaciones</div>
+            <div class="company">Cristoro (Vidrala)</div>
+            <div class="approach">→ Pitch horno híbrido: optimización gas/eléctrico</div>
+          </div>
+          <span class="tag orange">ESTRATÉGICO</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="contact-card">
+          <div class="contact-avatar" style="background: #6366f1;">LF</div>
+          <div class="contact-info">
+            <h4>Luis Felipe Ureta</h4>
+            <div class="role">Gerente Cementos</div>
+            <div class="company">Polpaico (Holcim)</div>
+            <div class="approach">→ Pitch overlayer ABB: coexistencia, no reemplazo</div>
+          </div>
+          <span class="tag primary">MEDIANO PLAZO</span>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-avatar" style="background: #10b981;">VV</div>
+          <div class="contact-info">
+            <h4>Vidrala España</h4>
+            <div class="role">Contacto Corporativo</div>
+            <div class="company">Vidrala S.A. (Grupo)</div>
+            <div class="approach">→ Pitch grupal: estándar DCS LatAm, 4-14 plantas</div>
+          </div>
+          <span class="tag primary">LARGOPLAZO</span>
+        </div>
+
+        <div class="card" style="background: #f0fdf4; border-color: #86efac;">
+          <h4 style="color: var(--success); margin-bottom: 8px;">📍 Datos de Contacto</h4>
+          <div style="font-size: 10px; line-height: 1.8;">
+            <strong>CBB:</strong> (56-2) 2560 7000 · Av. Andrés Bello 2457, Santiago<br>
+            <strong>Cristalerías:</strong> +56 2 2787 8888 · cristalchile.cl<br>
+            <strong>Cristoro:</strong> (56-2) 2437 4500 · cristoro.cl<br>
+            <strong>Polpaico:</strong> 600 620 6200 · polpaico.cl
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 4: PITCHES -->
+<section id="pitches" class="section">
+  <div class="section-header accent">
+    <h2>Pitches para Decisores</h2>
+    <span class="badge">Talking Points</span>
+  </div>
+  <div class="section-body">
+    
+    <div class="grid-2">
+      <div>
+        <div class="pitch-card">
+          <div class="pitch-label">Cristalerías Chile — GG Eduardo Carvallo</div>
+          <div class="pitch-text">
+            "6 hornos quemando ~US$122M en gas al año. Con un control de combustión avanzado, 
+            podemos ahorrarle entre US$3.7M y US$6.1M anuales — con una inversión de US$2M 
+            y payback de menos de 6 meses."
+          </div>
+        </div>
+
+        <div class="pitch-card">
+          <div class="pitch-label">Cristalerías Chile — Ops Pablo Saavedra</div>
+          <div class="pitch-text">
+            "Vimos que Cristalerías tiene la mejor planta de vidrio de Latinoamérica, pero los 
+            hornos que sostienen toda la producción operan con PLCs que no se hablan entre sí. 
+            ¿Cuánto le cuesta una parada no planificada de horno?"
+          </div>
+        </div>
+
+        <div class="pitch-card green">
+          <div class="pitch-label">Cristoro + Vidrala</div>
+          <div class="pitch-text">
+            "Vidrala acaba de adquirir Cristoro en Chile — una de las plantas más modernas de 
+            Sudamérica con un horno híbrido de US$100M en especificación. Este es el momento 
+            para definir el DCS de esa inversión. Empezamos con Chile como lighthouse."
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="pitch-card orange">
+          <div class="pitch-label">CBB — GG Jorge Matus</div>
+          <div class="pitch-text">
+            "Tienen 3 plantas con hornos operando con PLCs dispersos y SCADA fragmentado. 
+            Les entregamos un DCS unificado con payback en 28 meses, pero el módulo de APC 
+            para los 3 hornos se paga solo en 7 meses. Empezamos por ahí."
+          </div>
+        </div>
+
+        <div class="pitch-card orange">
+          <div class="pitch-label">CBB — Claudio Hurtado</div>
+          <div class="pitch-text">
+            "CBB tiene SAP, tiene SCADA, tiene Power BI — pero ninguno se habla con el piso 
+            de planta. Cada planta opera con sus propios PLCs y los datos del horno terminan 
+            en un Excel."
+          </div>
+        </div>
+
+        <div class="pitch-card">
+          <div class="pitch-label">Polpaico — Overlayer ABB</div>
+          <div class="pitch-text">
+            "ABB les dejó un sistema de 2006 con Expert Optimizer que probablemente no se ha 
+            actualizado. SUPCON overlayer el ABB existente con SCADA moderno, APC nuevo y 
+            historian — sin tocar lo que funciona. Ahorro de US$4.3M/año, payback de 6 meses."
+          </div>
+        </div>
+
+        <div class="pitch-card">
+          <div class="pitch-label">Melón / Grupo Brescia</div>
+          <div class="pitch-text">
+            "Melón tiene un horno en La Calera que opera hace más de un siglo. SUPCON puede 
+            modernizar el control del horno con un DCS redundante y APC, capturando 5-7% de 
+            ahorro en gas — US$785K-1.1M anuales."
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 5: OPTIONS -->
+<section id="options" class="section">
+  <div class="section-header">
+    <h2>Opciones de Entrada — Starter → Scale</h2>
+    <span class="badge">4 Opciones</span>
+  </div>
+  <div class="section-body">
+    
+    <div class="callout info">
+      <div class="callout-icon">💡</div>
+      <div class="callout-content">
+        <div class="callout-title">Estrategia de Entrada</div>
+        <div class="callout-text">
+          No siempre necesitas vender US$2M upfront. Ofrece opciones de entrada con inversión baja 
+          y payback rápido para generar confianza y escalar después.
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-4">
+      <div class="option-card">
+        <div class="option-name">Edge + Cloud</div>
+        <div class="option-price">US$55K</div>
+        <div class="option-payback">Payback: 2-4 meses</div>
+        <div class="option-desc">
+          IoT gateway + cloud analytics.<br>
+          Conexión a PLCs existentes.<br>
+          Dashboard en 2 semanas.<br>
+          <strong>Ideal:</strong> Primera reunión
+        </div>
+      </div>
+
+      <div class="option-card">
+        <div class="option-name">SCADA-only</div>
+        <div class="option-price">US$110K</div>
+        <div class="option-payback">Payback: 4 meses</div>
+        <div class="option-desc">
+          Supervisión sin DCS.<br>
+          Visualización multi-horno.<br>
+          No reemplaza PLCs.<br>
+          <strong>Ideal:</strong> Sin riesgo
+        </div>
+      </div>
+
+      <div class="option-card recommended">
+        <div class="option-name">APC Standalone</div>
+        <div class="option-price">US$140K<span class="small">/horno</span></div>
+        <div class="option-payback">Payback: 2-3 meses</div>
+        <div class="option-desc">
+          Control predictivo.<br>
+          Conecta a PLCs existentes.<br>
+          Operador decide.<br>
+          <strong>Ideal:</strong> Decisor técnico
+        </div>
+      </div>
+
+      <div class="option-card">
+        <div class="option-name">Piloto 1 Horno</div>
+        <div class="option-price">US$290K</div>
+        <div class="option-payback">Payback: 4.4 meses</div>
+        <div class="option-desc">
+          DCS + APC + SCADA.<br>
+          1 horno completo.<br>
+          Prueba de concepto.<br>
+          <strong>Ideal:</strong> Demostrar valor
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 20px; background: #f0fdf4; border-color: #86efac;">
+      <h4 style="color: var(--success); margin-bottom: 12px;">📈 Evolución Típica: Cristalerías Chile (6 hornos)</h4>
+      <div class="timeline">
+        <div class="timeline-item success">
+          <div class="timeline-date">Fase 1 — Meses 1-3</div>
+          <div class="timeline-title">APC Standalone en 1 horno</div>
+          <div class="timeline-desc">Inversión: US$140K · Ahorro: US$800K/año · Payback: 2-3 meses</div>
+        </div>
+        <div class="timeline-item success">
+          <div class="timeline-date">Fase 2 — Meses 4-6</div>
+          <div class="timeline-title">Escalar a los 6 hornos</div>
+          <div class="timeline-desc">Inversión adicional: US$700K · Ahorro total: US$4.8M/año</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Fase 3 — Meses 7-12</div>
+          <div class="timeline-title">Full DCS + SCADA</div>
+          <div class="timeline-desc">Inversión adicional: US$1.0M · Control completo integrado</div>
+        </div>
+      </div>
+      <div style="margin-top: 12px; font-size: 10px; color: var(--success); font-weight: 600;">
+        Total: US$1.84M (vs US$2.0M full upfront) + Ahorro acumulado Fases 1-2: ~US$1.2M
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 6: CORFO -->
+<section id="corfo" class="section">
+  <div class="section-header success">
+    <h2>Financiamiento CORFO — Cofinanciamiento 60%</h2>
+    <span class="badge">5 Convocatorias</span>
+  </div>
+  <div class="section-body">
+    
+    <div class="grid-2">
+      <div>
+        <div class="card" style="border-left: 4px solid var(--success);">
+          <div class="card-header">
+            <div class="card-icon green">⭐</div>
+            <div>
+              <h3>PATI — Absorción Tecnológica</h3>
+              <h4>Mejor opción actual</h4>
+            </div>
+          </div>
+          <table class="table" style="margin-top: 12px;">
+            <tr><td><strong>Estado</strong></td><td><span class="tag success">ABIERTA</span></td></tr>
+            <tr><td><strong>Monto</strong></td><td>Hasta $390M (~$430K USD)</td></tr>
+            <tr><td><strong>Cofinanciamiento</strong></td><td>60% del costo total</td></tr>
+            <tr><td><strong>Cierre</strong></td><td>Sin fecha de cierre</td></tr>
+          </table>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--accent);">
+          <div class="card-header">
+            <div class="card-icon orange">⭐⭐</div>
+            <div>
+              <h3>Innova Alta Tecnología 2026</h3>
+              <h4>Para proyectos ambiciosos</h4>
+            </div>
+          </div>
+          <table class="table" style="margin-top: 12px;">
+            <tr><td><strong>Estado</strong></td><td><span class="tag warning">ABIERTA</span></td></tr>
+            <tr><td><strong>Monto</strong></td><td>Hasta $1.000M (~$1.1M USD)</td></tr>
+            <tr><td><strong>Cierre</strong></td><td>14-abr-2026</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <div class="callout success">
+          <div class="callout-icon">💰</div>
+          <div class="callout-content">
+            <div class="callout-title">Impacto para Clientes</div>
+            <div class="callout-text">
+              <strong>Cristalerías Chile (US$2.0M):</strong><br>
+              Sin CORFO: US$2.0M · Con PATI (60%): <strong>US$0.8M</strong><br>
+              Ahorro para cliente: <strong>US$1.2M</strong><br><br>
+              <strong>Grupo CBB APC (US$1.0M):</strong><br>
+              Sin CORFO: US$1.0M · Con PATI (60%): <strong>US$0.4M</strong><br>
+              Ahorro para cliente: <strong>US$0.6M</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom: 8px;">📋 Otras Convocatorias</h4>
+          <ul style="font-size: 10px; line-height: 1.8; padding-left: 16px;">
+            <li><strong>Capital Humano:</strong> Financiar especialista en automatización</li>
+            <li><strong>Crea y Valida ZIM:</strong> Chile-Alemania, proyectos colaborativos</li>
+            <li><strong>Innova Región:</strong> Para plantas en regiones específicas</li>
+          </ul>
+        </div>
+
+        <div class="card" style="background: #eff6ff; border-color: #93c5fd;">
+          <h4 style="margin-bottom: 8px;">📞 Contacto CORFO</h4>
+          <div style="font-size: 10px; line-height: 1.8;">
+            <strong>Teléfono:</strong> 600 586 8000<br>
+            <strong>Email:</strong> difusioninnova@corfo.cl<br>
+            <strong>Web:</strong> www.corfo.gob.cl<br>
+            <strong>Dirección:</strong> Moneda 921, Santiago
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 7: EMAILS -->
+<section id="emails" class="section">
+  <div class="section-header danger">
+    <h2>Templates de Email — Contacto Inicial</h2>
+    <span class="badge">Listos para usar</span>
+  </div>
+  <div class="section-body">
+    
+    <div class="grid-2">
+      <div>
+        <div class="email-template">
+          <div class="email-to">
+            <strong>Para:</strong> Claudio Hurtado (CBB) · claudio.hurtado@cbb.cl<br>
+            <strong>CC:</strong> —
+          </div>
+          <div class="email-subject">
+            <strong>Asunto:</strong> <span>Optimización de hornos rotatorios — CBB</span>
+          </div>
+          <div class="email-body">
+            <p>Estimado Claudio,</p>
+            <br>
+            <p>Te contacté hace unas semanas sobre una propuesta para los hornos de CBB. Como sé que estás ocupado, voy directo al punto:</p>
+            <br>
+            <p>CBB tiene 3 plantas con hornos operando y <strong>ningún sistema centralizado que las conecte</strong>. Cada planta opera con sus propios PLCs y los datos terminan en un Excel.</p>
+            <br>
+            <p>Les proponemos empezar con <strong>un módulo de APC para los 3 hornos</strong>:</p>
+            <br>
+            <p>• Inversión: <strong>US$1.0M</strong><br>
+            • Ahorro: <strong>US$1.8M/año</strong> (5% del costo de gas)<br>
+            • Payback: <strong>6-7 meses</strong></p>
+            <br>
+            <p>Si funciona — y va a funcionar — escalamos a SCADA y eventualmente a DCS completo.</p>
+            <br>
+            <p>¿Te parece si lo presentamos formalmente al equipo de automatización?</p>
+            <br>
+            <p>Saludos,<br>
+            <strong>Victoria Vilches</strong><br>
+            KAM | SUPCON Chile</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="email-template">
+          <div class="email-to">
+            <strong>Para:</strong> Pablo Saavedra (Cristalerías Chile)
+          </div>
+          <div class="email-subject">
+            <strong>Asunto:</strong> <span>Brecha de visibilidad en hornos de fusión</span>
+          </div>
+          <div class="email-body">
+            <p>Hola Pablo,</p>
+            <br>
+            <p>Vi en LinkedIn que lideras las operaciones en Cristalerías Chile. Me encontré con algo interesante: una planta de vidrio en Perú tuvo 3 paradas no planificadas el año pasado por desviaciones térmicas que un operador no vio a tiempo. Perdieron ~US$800K.</p>
+            <br>
+            <p>No te escribo a venderte nada. Solo me preguntaba: <strong>¿cómo están monitoreando la temperatura de los 6 hornos hoy?</strong></p>
+            <br>
+            <p>Si te parece, en 15 minutos te muestro cómo lo están solucionando plantas similares en LatAm.</p>
+            <br>
+            <p>¿Tienes 15 min esta o próxima semana?</p>
+            <br>
+            <p>Saludos,<br>
+            <strong>Victoria Vilches</strong><br>
+            KAM | SUPCON Chile</p>
+          </div>
+        </div>
+
+        <div class="email-template">
+          <div class="email-to">
+            <strong>Para:</strong> Vidrala España (Contacto Corporativo)
+          </div>
+          <div class="email-subject">
+            <strong>Asunto:</strong> <span>Estándar DCS para Vidrala LatAm — oportunidad Chile</span>
+          </div>
+          <div class="email-body">
+            <p>Dear [Name],</p>
+            <br>
+            <p>I work with SUPCON in Chile. I understand Vidrala recently acquired Cristoro — congratulations on the deal.</p>
+            <br>
+            <p>Cristoro is currently spec'ing a new hybrid furnace (US$100M investment) and this is the ideal moment to define the DCS for that investment.</p>
+            <br>
+            <p>SUPCON proposes being the standard DCS for Vidrala's LatAm platform. If Cristoro Chile works, we scale to your 4 plants in Argentina, Uruguay, and Chile — and potentially to all 14 Vidrala plants globally.</p>
+            <br>
+            <p>Could we schedule 30 minutes to present the proposal formally to your team?</p>
+            <br>
+            <p>Best regards,<br>
+            <strong>Victoria Vilches</strong><br>
+            KAM | SUPCON Chile</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 8: NEXT STEPS -->
+<section id="next" class="section">
+  <div class="section-header">
+    <h2>Próximos Pasos — Plan de Acción</h2>
+    <span class="badge">To-Do List</span>
+  </div>
+  <div class="section-body">
+    
+    <div class="grid-2">
+      <div>
+        <h4 style="margin-bottom: 12px; color: var(--text-light);">Semana 1-2: Investigación</h4>
+        <ul class="checklist">
+          <li>
+            <div class="check-box"></div>
+            <span>LinkedIn stalking: Claudio Hurtado (CBB), Pablo Saavedra (Cristalerías), Ricardo Munizaga (Cristoro)</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>Descargar memorias 2024 de Cristalerías Chile y CBB desde CMF</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>Buscar contacto Vidrala España en LinkedIn</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>Contactar CORFO (difusioninnova@corfo.cl) sobre PATI</span>
+          </li>
+        </ul>
+
+        <h4 style="margin: 20px 0 12px; color: var(--text-light);">Semana 3-4: Contacto Inicial</h4>
+        <ul class="checklist">
+          <li>
+            <div class="check-box"></div>
+            <span>Enviar email a Claudio Hurtado (CBB)</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>Enviar email a Pablo Saavedra (Cristalerías)</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>LinkedIn message a Ricardo Munizaga (Cristoro)</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>Research: Investigar contratos ABB vigentes en Polpaico</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="margin-bottom: 12px; color: var(--text-light);">Semana 5-6: Seguimiento</h4>
+        <ul class="checklist">
+          <li>
+            <div class="check-box"></div>
+            <span>Follow-up a quienes no respondieron (5 días)</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>Llamadas en frío a quienes no respondieron al mensaje</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>Preparar demo SCADA de horno con simulación</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>Buscar referencias SUPCON en vidrio (LatAm)</span>
+          </li>
+        </ul>
+
+        <h4 style="margin: 20px 0 12px; color: var(--text-light);">Semana 7-8: Reuniones</h4>
+        <ul class="checklist">
+          <li>
+            <div class="check-box"></div>
+            <span>Reuniones técnicas con decisores interesados</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>Visitar planta Llay-Llay (Cristalerías)</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>Visitar planta Maipú (Cristoro)</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span>Presentar propuestas formales</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 24px; background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%); border: none;">
+      <h4 style="margin-bottom: 12px;">📅 Calendario Sugerido de Actividades</h4>
+      <div class="grid-4" style="gap: 12px;">
+        <div style="text-align: center;">
+          <div style="font-size: 20px; margin-bottom: 4px;">🔍</div>
+          <div style="font-size: 11px; font-weight: 700;">Semana 1-2</div>
+          <div style="font-size: 9px; color: var(--text-light);">Research + LinkedIn</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 20px; margin-bottom: 4px;">📧</div>
+          <div style="font-size: 11px; font-weight: 700;">Semana 3-4</div>
+          <div style="font-size: 9px; color: var(--text-light);">Emails + Messages</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 20px; margin-bottom: 4px;">📞</div>
+          <div style="font-size: 11px; font-weight: 700;">Semana 5-6</div>
+          <div style="font-size: 9px; color: var(--text-light);">Follow-up + Calls</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 20px; margin-bottom: 4px;">🤝</div>
+          <div style="font-size: 11px; font-weight: 700;">Semana 7-8</div>
+          <div style="font-size: 9px; color: var(--text-light);">Reuniones + Visitas</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div style="text-align: center; padding: 40px; color: var(--text-light); font-size: 10px;">
+  <p><strong>KAM Playbook — SUPCON Chile</strong> | Conecta Ingeniería</p>
+  <p>Intelligence Comercial · 13-abr-2026</p>
+  <p style="margin-top: 8px;">
+    <span class="tag primary">Confidencial</span>
+    <span class="tag" style="background: #f3f4f6; color: var(--text-light);">Solo uso interno</span>
+  </p>
+</div>
+
+</main>
+
+<script>
+// Smooth scroll for nav links
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+    }
+  });
+});
+
+// Highlight active section on scroll
+window.addEventListener('scroll', function() {
+  const sections = document.querySelectorAll('.section');
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 100) {
+      current = section.getAttribute('id');
+    }
+  });
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('active');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
