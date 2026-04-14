@@ -808,11 +808,12 @@ body {
   <div class="nav-links">
     <a href="#overview" class="nav-link active">Resumen</a>
     <a href="#estrategia" class="nav-link">📈 Estrategia</a>
+    <a href="#demo" class="nav-link">🎮 Demo</a>
     <a href="#pipeline-full" class="nav-link">📊 170 Empresas</a>
+    <a href="#pipeline" class="nav-link">Pipeline</a>
     <a href="#contacts" class="nav-link">Contactos</a>
     <a href="#contacts-excel" class="nav-link">Excel</a>
     <a href="#pitches" class="nav-link">Pitches</a>
-    <a href="#options" class="nav-link">Opciones</a>
     <a href="#actions" class="nav-link">Acciones</a>
   </div>
 </nav>
@@ -846,6 +847,167 @@ body {
     </div>
   </div>
 </div>
+
+<!-- SECTION DEMO -->
+<section id="demo" class="section">
+  <div class="section-header accent">
+    <h2>🎮 Demo Center — Kit SUPCON Chile</h2>
+    <span class="badge">Equipos reales para demos</span>
+  </div>
+  <div class="section-body">
+    
+    <div class="callout info" style="margin-bottom: 20px;">
+      <div class="callout-icon">💡</div>
+      <div class="callout-content">
+        <div class="callout-title">Ventaja competitiva</div>
+        <div class="callout-text">
+          No conocemos SUPCON en Chile. <strong>La demo es nuestra carta de presentación.</strong>
+          Mostrar equipos reales funcionando es más poderoso que cualquier pptto.
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div>
+        <div class="card" style="border-top: 4px solid var(--primary);">
+          <h3>🏭 Hardware DCS</h3>
+          <ul style="font-size: 9px; line-height: 1.6; padding-left: 14px;">
+            <li>2× Controladores <strong>FCU713-S01</strong></li>
+            <li>2× Racks I/O <strong>CN721-S11</strong></li>
+            <li>Módulos AI, AO, DI, DO</li>
+            <li>1× COM741 (Comunicación serial)</li>
+            <li>Bases MB735, MB712, MB727</li>
+            <li>2× Fuentes PW732 24V</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="border-top: 4px solid var(--success);">
+          <h3>📡 Instrumentación</h3>
+          <ul style="font-size: 9px; line-height: 1.6; padding-left: 14px;">
+            <li>Transmisor presión <strong>SKP</strong> (6000 psi)</li>
+            <li>Radar nivel <strong>SL901</strong></li>
+            <li>Temperatura <strong>WZPKB</strong></li>
+            <li>Flujómetro <strong>SFE9001</strong> (electromagnético)</li>
+            <li>Válvula control <strong>LN8100</strong></li>
+            <li>Válvula bola <strong>SN5100</strong></li>
+            <li>Sensor wireless <strong>WS300</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="border-top: 4px solid var(--accent);">
+          <h3>💻 Software</h3>
+          <ul style="font-size: 9px; line-height: 1.6; padding-left: 14px;">
+            <li><strong>supOS</strong> — Plataforma industrial</li>
+            <li><strong>PRIDE</strong> — Dynamic Equipment Access</li>
+            <li>VFCES Foundation + Plus licenses</li>
+            <li>Windows 10 Enterprise LTSC</li>
+            <li>Servidor supOS (R760XS)</li>
+            <li>Servidor App T3680</li>
+            <li>HMI PRIDE (Lenovo P2)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h4 style="margin: 20px 0 12px;">📺 Escenario: Horno de Vidrio</h4>
+    <div style="background: #f9fafb; border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 16px;">
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 200px;">
+          <strong style="font-size: 10px;">FÍSICO (Equipos reales)</strong>
+          <p style="font-size: 9px; color: var(--text-light); margin-top: 4px;">
+            Sensor Temp WZPKB → AI711 → FCU713 → Válvula LN8100
+          </p>
+        </div>
+        <div style="flex: 1; min-width: 200px;">
+          <strong style="font-size: 10px;">DIGITAL (supOS)</strong>
+          <p style="font-size: 9px; color: var(--text-light); margin-top: 4px;">
+            FCU713 → Ethernet → Servidor supOS → Dashboard PRIDE
+          </p>
+        </div>
+        <div style="flex: 1; min-width: 200px;">
+          <strong style="font-size: 10px;">RESULTADO</strong>
+          <p style="font-size: 9px; color: var(--text-light); margin-top: 4px;">
+            "Temp: 1,520°C | Flujo gas: 12.3 MMBTU/h | Eficiencia: 87%"
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h4 style="margin: 20px 0 12px;">⏱️ Guion Demo (20 min)</h4>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">0-2 min</div>
+        <div class="timeline-title">Introducción</div>
+        <div class="timeline-desc">"Hoy vamos a ver SUPCON funcionando en tiempo real — no pptos"</div>
+      </div>
+      <div class="timeline-item warning">
+        <div class="timeline-date">2-5 min</div>
+        <div class="timeline-title">El Problema</div>
+        <div class="timeline-desc">"Sin control: temp oscila ±30°C, cuesta US$50K/mes"</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">5-10 min</div>
+        <div class="timeline-title">La Solución</div>
+        <div class="timeline-desc">"Con SUPCON: datos reales del kit, control en tiempo real"</div>
+      </div>
+      <div class="timeline-item success">
+        <div class="timeline-date">10-15 min</div>
+        <div class="timeline-title">El ROI</div>
+        <div class="timeline-desc">"4-5% ahorro gas = US$1M/año. Payback 5 meses"</div>
+      </div>
+      <div class="timeline-item success">
+        <div class="timeline-date">15-20 min</div>
+        <div class="timeline-title">Call to Action</div>
+        <div class="timeline-desc">"¿Visitamos su planta? ¿Empezamos con un piloto?"</div>
+      </div>
+    </div>
+
+    <h4 style="margin: 20px 0 12px;">📱 Variantes de Demo</h4>
+    <div class="grid-4">
+      <div class="card" style="text-align: center;">
+        <div style="font-size: 24px; margin-bottom: 8px;">🏢</div>
+        <strong>Presencial</strong>
+        <p style="font-size: 9px; color: var(--text-light);">Oficina Conecta, 45 min</p>
+        <p style="font-size: 9px; color: var(--text-light);">Mejor para: Técnicos</p>
+      </div>
+      <div class="card" style="text-align: center;">
+        <div style="font-size: 24px; margin-bottom: 8px;">💻</div>
+        <strong>Remota Teams</strong>
+        <p style="font-size: 9px; color: var(--text-light);">20-30 min</p>
+        <p style="font-size: 9px; color: var(--text-light);">Mejor para: Gerentes</p>
+      </div>
+      <div class="card" style="text-align: center;">
+        <div style="font-size: 24px; margin-bottom: 8px;">🏭</div>
+        <strong>En planta</strong>
+        <p style="font-size: 9px; color: var(--text-light);">1-2 horas</p>
+        <p style="font-size: 9px; color: var(--text-light);">Mejor para: Técnicos + GG</p>
+      </div>
+      <div class="card" style="text-align: center;">
+        <div style="font-size: 24px; margin-bottom: 8px;">🎬</div>
+        <strong>Video</strong>
+        <p style="font-size: 9px; color: var(--text-light);">5-10 min</p>
+        <p style="font-size: 9px; color: var(--text-light);">Mejor para: Email intro</p>
+      </div>
+    </div>
+
+    <div class="callout success" style="margin-top: 20px;">
+      <div class="callout-icon">🎯</div>
+      <div class="callout-content">
+        <div class="callout-title">Próximo paso</div>
+        <div class="callout-text">
+          <strong>1.</strong> Configurar kit de demo en oficina<br>
+          <strong>2.</strong> Instalar supOS + PRIDE<br>
+          <strong>3.</strong> Conectar sensores al rack I/O<br>
+          <strong>4.</strong> Probar demo completa<br>
+          <strong>5.</strong> Grabar video para enviar por email
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- SECTION ESTRATEGIA -->
 <section id="estrategia" class="section">
