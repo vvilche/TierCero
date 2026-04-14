@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top 50 Industrial Chile — ProcessFDV Intelligence</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f1117;color:#e6edf3}
+a{color:#58a6ff;text-decoration:none}
+a:hover{text-decoration:underline}
+.c{max-width:1600px;margin:0 auto;padding:0 16px 40px}
+header{background:linear-gradient(135deg,#0d1a2d 0%,#0f1117 100%);border:1px solid #1e2a3a;padding:28px 20px;margin-bottom:24px;border-radius:14px}
+header .inner{max-width:1600px;margin:0 auto}
+h1{color:#fff;font-size:1.7em;font-weight:800;letter-spacing:-.02em}
+h1 span{color:#58a6ff}
+.subh{color:#4a5568;font-size:.88em;margin-top:5px;font-weight:400}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.st{background:#161d2e;border:1px solid #1e2a3a;border-radius:10px;padding:12px 20px;min-width:100px}
+.st .n{font-size:1.7em;font-weight:800;color:#fff;line-height:1}
+.st .l{font-size:.68em;color:#4a5568;text-transform:uppercase;letter-spacing:.08em;margin-top:3px;font-weight:500}
+.tabs{display:flex;gap:5px;margin-bottom:16px;background:#161d2e;border:1px solid #1e2a3a;padding:5px;border-radius:12px;width:fit-content}
+.tab{padding:8px 22px;border-radius:8px;cursor:pointer;font-size:.85em;color:#4a5568;border:none;background:transparent;transition:all .2s;font-weight:500}
+.tab:hover{color:#94a3b8;background:#1e2a3a}
+.tab.active{background:#2563eb;color:#fff;font-weight:700;box-shadow:0 2px 8px rgba(37,99,235,.3)}
+.tab .cnt{font-size:.72em;opacity:.65;margin-left:4px}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px;background:#161d2e;border:1px solid #1e2a3a;border-radius:10px;padding:10px 14px}
+.bar label{color:#4a5568;font-size:.8em}
+.bar input,.bar select{background:#0a0f1a;border:1px solid #1e2a3a;border-radius:6px;color:#e6edf3;padding:6px 10px;font-size:.8em}
+.bar input:focus,.bar select:focus{border-color:#2563eb;outline:none;box-shadow:0 0 0 2px rgba(37,99,235,.2)}
+.bar input{flex:1;min-width:160px}
+select{cursor:pointer}
+.cnt-row{margin-left:auto;color:#4a5568;font-size:.78em}
+table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;font-size:.8em;box-shadow:0 0 0 1px #1e2a3a}
+thead tr{background:#0d1520}
+th{padding:10px 9px;text-align:left;color:#4a5568;font-weight:600;text-transform:uppercase;font-size:.65em;letter-spacing:.07em;border-bottom:1px solid #1e2a3a;white-space:nowrap;position:sticky;top:0;z-index:1}
+td{padding:10px 9px;border-bottom:1px solid #161d2e;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:hover td{filter:brightness(1.15);transition:filter .1s}
+.n{color:#2d3748;font-size:.75em;width:44px;vertical-align:middle;text-align:center;font-weight:700}
+.r5tag{display:inline-block;background:#f59e0b;color:#000;font-size:.58em;font-weight:800;padding:1px 4px;border-radius:3px;margin-left:3px;vertical-align:middle;letter-spacing:.05em}
+.co strong{font-size:.98em;font-weight:600}
+.sub{color:#3d4a5c;font-size:.8em;margin-top:3px;display:block}
+.badge{display:inline-block;border-radius:6px;padding:2px 8px;font-size:.7em;font-weight:700;white-space:nowrap;letter-spacing:.02em}
+.rut{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:5px;padding:1px 6px;font-size:.88em;color:#fb923c;font-family:monospace;letter-spacing:.02em}
+.reg{font-size:.85em;color:inherit;opacity:.85}
+.dir{font-size:.8em;opacity:.8}
+.tel{font-size:.83em}
+.em{font-size:.78em;max-width:170px;word-break:break-all;opacity:.9}
+.wb{text-align:center;opacity:.8}
+.lnk{color:#58a6ff;opacity:.9}
+.muted{color:#2d3748;font-size:.9em}
+.rel{font-size:.82em;font-weight:700;letter-spacing:.01em}
+.ra{color:#f87171}
+.rm{color:#fb923c}
+.rb{color:#3d4a5c}
+.mem-ok{background:#052e16;color:#4ade80;border-radius:5px;padding:2px 7px;font-size:.72em;font-weight:700;display:inline-block;white-space:nowrap}
+.mem-pend{background:#271c02;color:#fbbf24;border-radius:5px;padding:2px 7px;font-size:.72em;font-weight:700;display:inline-block;white-space:nowrap}
+.mem-lim{background:#1a1a1a;color:#4a5568;border-radius:5px;padding:2px 7px;font-size:.72em;display:inline-block;white-space:nowrap}
+.mem-none{color:#2d3748;font-size:.8em}
+.web{font-size:1.1em}
+.sector-tags{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 14px}
+.sg{background:#161d2e;border:1px solid #1e2a3a;border-radius:20px;padding:4px 12px;font-size:.78em;color:#3d4a5c}
+.sg strong{color:#64748b}
+.footer{text-align:center;color:#1e2a3a;font-size:.72em;margin-top:30px;padding:12px}
+</style>
+</head>
+<body>
+<header>
+<div class="inner">
+  <h1>Top 50 Industrial Chile &#8212; <span>ProcessFDV</span></h1>
+  <div class="subh">SUPCON Chile KAM &middot; Target companies for automation &amp; control &middot; 13-abr-2026</div>
+  <div class="stats">
+    <div class="st"><div class="n">47</div><div class="l">Empresas Target</div></div>
+    <div class="st"><div class="n">29</div><div class="l">Alta Relevancia</div></div>
+    <div class="st"><div class="n">6</div><div class="l">Energ&iacute;a</div></div>
+    <div class="st"><div class="n">23</div><div class="l">Miner&iacute;a / Litio</div></div>
+    <div class="st"><div class="n">16</div><div class="l">Memorias</div></div>
+  </div>
+</div>
+</header>
+<div class="c">
+<div class="tabs">
+  <button class="tab active" onclick="setTab('all',this)">Todas <span class="cnt">(47)</span></button>
+  <button class="tab" onclick="setTab('alta',this)">Alta <span class="cnt">(29)</span></button>
+  <button class="tab" onclick="setTab('energia',this)">Energ&iacute;a <span class="cnt">(6)</span></button>
+  <button class="tab" onclick="setTab('mineria',this)">Miner&iacute;a / Litio <span class="cnt">(23)</span></button>
+  <button class="tab" onclick="setTab('memoria',this)">Con Memoria <span class="cnt">(16)</span></button>
+</div>
+<div class="sector-tags"><option value="Minería/Cobre">Minería/Cobre (16)</option><option value="Energía">Energía (6)</option><option value="Materiales">Materiales (3)</option><option value="Silvoagropecuario">Silvoagropecuario (3)</option><option value="Químico">Químico (3)</option><option value="Forestal/Celulosa">Forestal/Celulosa (2)</option><option value="Agro/Cárnico">Agro/Cárnico (2)</option><option value="Litio">Litio (2)</option><option value="Minería/Oro">Minería/Oro (2)</option><option value="Minería/Litio">Minería/Litio (1)</option><option value="Agro/Pork">Agro/Pork (1)</option><option value="Minería/Servicios">Minería/Servicios (1)</option><option value="Sanitaria">Sanitaria (1)</option><option value="Agro/Avícola">Agro/Avícola (1)</option><option value="Forestal/Madera">Forestal/Madera (1)</option><option value="Forestal">Forestal (1)</option><option value="Minería/Metalurgia">Minería/Metalurgia (1)</option></div>
+<div class="bar">
+  <label>&#128269;</label>
+  <input type="text" id="search" placeholder="Buscar empresa, sector, regi&oacute;n..." oninput="filter()">
+  <select id="sec"><option value="">Todos los sectores</option><option value="Minería/Cobre">Minería/Cobre (16)</option><option value="Energía">Energía (6)</option><option value="Materiales">Materiales (3)</option><option value="Silvoagropecuario">Silvoagropecuario (3)</option><option value="Químico">Químico (3)</option><option value="Forestal/Celulosa">Forestal/Celulosa (2)</option><option value="Agro/Cárnico">Agro/Cárnico (2)</option><option value="Litio">Litio (2)</option><option value="Minería/Oro">Minería/Oro (2)</option><option value="Minería/Litio">Minería/Litio (1)</option><option value="Agro/Pork">Agro/Pork (1)</option><option value="Minería/Servicios">Minería/Servicios (1)</option><option value="Sanitaria">Sanitaria (1)</option><option value="Agro/Avícola">Agro/Avícola (1)</option><option value="Forestal/Madera">Forestal/Madera (1)</option><option value="Forestal">Forestal (1)</option><option value="Minería/Metalurgia">Minería/Metalurgia (1)</option></select>
+  <select id="rel"><option value="">Relevancia</option><option>Alta</option><option>Media</option><option>Baja</option></select>
+  <select id="mem"><option value="">Memoria</option><option value="ok">&#10003; Descargada</option><option value="pend">Pendiente</option></select>
+  <span class="cnt-row" id="cnt"></span>
+</div>
+<div style="overflow-x:auto">
+<table>
+<thead>
+<tr><th>#</th><th>Empresa</th><th>Sector / Subsector</th><th>RUT</th><th>Regi&oacute;n</th><th>Direcci&oacute;n</th><th>Tel&eacute;fono</th><th>Email</th><th>Web</th><th>Relevancia</th><th>Memoria</th></tr>
+</thead>
+<tbody id="tbody"><tr data-sector="Forestal/Celulosa" data-region="Santiago — Región del Biobío y Maule" data-rel="Alta" data-mem="Memoria_ARAUCO_2024.pdf" style="background:#0a1f2e;color:#7dd3fc">
+  <td class="n">1</td>
+  <td class="co"><strong>Celulosa Arauco y Constitución S.A.</strong><br><span class="sub">Arauco</span></td>
+  <td><span class="badge" style="background:#164e63;color:#38bdf8">Forestal/Celulosa</span><br><span class="sub">Pasta celulosa</span></td>
+  <td><code class="rut">93.458.000-1</code></td>
+  <td class="reg">Santiago — Región del Biobío y Maule</td>
+  <td class="dir">Av. El Golf 150, Las Condes, Santiago</td>
+  <td class="tel">+56 2 2461 7200</td>
+  <td class="em"><a href="mailto:contacto@arauco.cl" class="lnk">contacto@arauco.cl</a></td>
+  <td class="wb"><a href="https://arauco.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-ok">&#10003; Memoria_ARAUCO_2024.pdf</span></td>
+</tr>
+<tr data-sector="Forestal/Celulosa" data-region="Santiago — Región del Biobío" data-rel="Alta" data-mem="Reporte_CMPC_2024.pdf" style="background:#0a1f2e;color:#7dd3fc">
+  <td class="n">2</td>
+  <td class="co"><strong>CMPC S.A.</strong><br><span class="sub">CMPC</span></td>
+  <td><span class="badge" style="background:#164e63;color:#38bdf8">Forestal/Celulosa</span><br><span class="sub">Pasta celulosa/biopackaging</span></td>
+  <td><code class="rut">90.222.000-3</code></td>
+  <td class="reg">Santiago — Región del Biobío</td>
+  <td class="dir">Agustinas 1343, Santiago</td>
+  <td class="tel">+56 2 2441 2000</td>
+  <td class="em"><a href="mailto:info@cmpc.cl" class="lnk">info@cmpc.cl</a></td>
+  <td class="wb"><a href="https://www.cmpc.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-ok">&#10003; Reporte_CMPC_2024.pdf</span></td>
+</tr>
+<tr data-sector="Minería/Litio" data-region="Antofagasta — Región de Antofagasta" data-rel="Alta" data-mem="Memoria_SQM_2024.pdf" style="background:#2a1f05;color:#fde68a">
+  <td class="n">3</td>
+  <td class="co"><strong>SQM S.A.</strong><br><span class="sub">SQM</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Litio</span><br><span class="sub">Litio y sales de potasio</span></td>
+  <td><code class="rut">93.007.000-1</code></td>
+  <td class="reg">Antofagasta — Región de Antofagasta</td>
+  <td class="dir">El Trovador 4285, Las Condes, Santiago</td>
+  <td class="tel">+56 2 2425 2000</td>
+  <td class="em"><a href="mailto:contactoinversionistas@sqm.com" class="lnk">contactoinversionistas@sqm.com</a></td>
+  <td class="wb"><a href="https://ir.sqm.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-ok">&#10003; Memoria_SQM_2024.pdf</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Santiago — Región de Antofagasta" data-rel="Alta" data-mem="Memoria_Codelco_2024.pdf" style="background:#2a1f05;color:#fde68a">
+  <td class="n">4</td>
+  <td class="co"><strong>Codelco</strong><br><span class="sub">Codelco</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre</span></td>
+  <td><code class="rut">61.704.000-K</code></td>
+  <td class="reg">Santiago — Región de Antofagasta</td>
+  <td class="dir">Teatinos 280, Santiago</td>
+  <td class="tel">+56 2 2393 0000</td>
+  <td class="em"><a href="mailto:inversionistas@codelco.cl" class="lnk">inversionistas@codelco.cl</a></td>
+  <td class="wb"><a href="https://www.codelco.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-ok">&#10003; Memoria_Codelco_2024.pdf</span></td>
+</tr>
+<tr data-sector="Energía" data-region="Las Condes — Región Metropolitana" data-rel="Alta" data-mem="Memoria_ENGIE_2024.pdf" style="background:#0d2818;color:#a8e6a3">
+  <td class="n">5</td>
+  <td class="co"><strong>ENGIE Chile</strong><br><span class="sub">ENGIE Chile</span></td>
+  <td><span class="badge" style="background:#14532d;color:#86efac">Energía</span><br><span class="sub">Generación eléctrica</span></td>
+  <td><code class="rut">94.226.000-1</code></td>
+  <td class="reg">Las Condes — Región Metropolitana</td>
+  <td class="dir">Santa Cruz 2225, Las Condes</td>
+  <td class="tel">+56 2 2465 8000</td>
+  <td class="em"><a href="mailto:contacto@engie.cl" class="lnk">contacto@engie.cl</a></td>
+  <td class="wb"><a href="https://www.engie.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-ok">&#10003; Memoria_ENGIE_2024.pdf</span></td>
+</tr>
+<tr data-sector="Energía" data-region="Santiago — Región Metropolitana" data-rel="Alta" data-mem="Memoria_Enel_Chile_2024.pdf" style="background:#0d2818;color:#a8e6a3">
+  <td class="n">6</td>
+  <td class="co"><strong>Enel Chile S.A.</strong><br><span class="sub">Enel Chile</span></td>
+  <td><span class="badge" style="background:#14532d;color:#86efac">Energía</span><br><span class="sub">Generación y distribución</span></td>
+  <td><code class="rut">76.901.050-8</code></td>
+  <td class="reg">Santiago — Región Metropolitana</td>
+  <td class="dir">Av. Santa Rosa 76, Santiago</td>
+  <td class="tel">+56 2 2353 4000</td>
+  <td class="em"><a href="mailto:info.enel@enel.com" class="lnk">info.enel@enel.com</a></td>
+  <td class="wb"><a href="https://www.enel.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-ok">&#10003; Memoria_Enel_Chile_2024.pdf</span></td>
+</tr>
+<tr data-sector="Energía" data-region="Las Condes — Región Metropolitana" data-rel="Alta" data-mem="Memoria_AES_Andes_2024.pdf" style="background:#0d2818;color:#a8e6a3">
+  <td class="n">7</td>
+  <td class="co"><strong>AES Andes</strong><br><span class="sub">AES Andes</span></td>
+  <td><span class="badge" style="background:#14532d;color:#86efac">Energía</span><br><span class="sub">Generación eléctrica</span></td>
+  <td><code class="rut">94.272.000-9</code></td>
+  <td class="reg">Las Condes — Región Metropolitana</td>
+  <td class="dir">Los Militares 5900, Las Condes</td>
+  <td class="tel">+56 2 2420 5000</td>
+  <td class="em"><a href="mailto:info@aes.com" class="lnk">info@aes.com</a></td>
+  <td class="wb"><a href="https://ir.aes.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-ok">&#10003; Memoria_AES_Andes_2024.pdf</span></td>
+</tr>
+<tr data-sector="Energía" data-region="Las Condes — Región Metropolitana" data-rel="Alta" data-mem="Memoria_Colbun_2024.pdf" style="background:#0d2818;color:#a8e6a3">
+  <td class="n">8</td>
+  <td class="co"><strong>Colbún S.A.</strong><br><span class="sub">Colbún</span></td>
+  <td><span class="badge" style="background:#14532d;color:#86efac">Energía</span><br><span class="sub">Generación eléctrica</span></td>
+  <td><code class="rut">94.370.000-1</code></td>
+  <td class="reg">Las Condes — Región Metropolitana</td>
+  <td class="dir">Apoquindo 4775 Piso 11, Las Condes</td>
+  <td class="tel">+56 2 2360 6000</td>
+  <td class="em"><a href="mailto:contacto@colbun.cl" class="lnk">contacto@colbun.cl</a></td>
+  <td class="wb"><a href="https://www.colbun.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-ok">&#10003; Memoria_Colbun_2024.pdf</span></td>
+</tr>
+<tr data-sector="Agro/Pork" data-region="Rancagua — Región de O'Higgins" data-rel="Alta" data-mem="PENDING" style="background:#2a0a18;color:#fda4af">
+  <td class="n">9</td>
+  <td class="co"><strong>Agrosuper S.A.</strong><br><span class="sub">Agrosuper</span></td>
+  <td><span class="badge" style="background:#881337;color:#fb7185">Agro/Pork</span><br><span class="sub">Producción porcina y avícola</span></td>
+  <td><code class="rut">76.129.263-3</code></td>
+  <td class="reg">Rancagua — Región de O'Higgins</td>
+  <td class="dir">Camino a Pilís s/n, Rancagua</td>
+  <td class="tel">+56 72 246 2000</td>
+  <td class="em"><a href="mailto:mlavagnino@agrosuper.com" class="lnk">mlavagnino@agrosuper.com</a></td>
+  <td class="wb"><a href="https://www.agrosuper.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Materiales" data-region="Las Condes — Región Metropolitana" data-rel="Media-Alta" data-mem="PENDING" style="background:#1a1d24;color:#d1d5db">
+  <td class="n">10</td>
+  <td class="co"><strong>Cemento Polpaico S.A.</strong><br><span class="sub">Polpaico</span></td>
+  <td><span class="badge" style="background:#374151;color:#9ca3af">Materiales</span><br><span class="sub">Cemento</span></td>
+  <td><code class="rut">91.337.000-7</code></td>
+  <td class="reg">Las Condes — Región Metropolitana</td>
+  <td class="dir">Av. El Bosque Norte 0177 Piso 5, Las Condes</td>
+  <td class="tel">+56 2 2670 0600</td>
+  <td class="em"><a href="mailto:clientes@polpaico.cl" class="lnk">clientes@polpaico.cl</a></td>
+  <td class="wb"><a href="https://www.cementopolpaico.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Media-Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Materiales" data-region="Providencia — Región Metropolitana" data-rel="Media" data-mem="LIMITED" style="background:#1a1d24;color:#d1d5db">
+  <td class="n">11</td>
+  <td class="co"><strong>Cementos Bío Bío S.A.</strong><br><span class="sub">Cementos Bío Bío</span></td>
+  <td><span class="badge" style="background:#374151;color:#9ca3af">Materiales</span><br><span class="sub">Cemento</span></td>
+  <td><code class="rut">96.561.420-6</code></td>
+  <td class="reg">Providencia — Región Metropolitana</td>
+  <td class="dir">Av. Andres Bello 2457 Piso 18, Providencia</td>
+  <td class="tel">+56 2 2560 7000</td>
+  <td class="em"><a href="mailto:cbiobio@biobio.cl" class="lnk">cbiobio@biobio.cl</a></td>
+  <td class="wb"><a href="https://www.cementosbbio.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rm">&#9674; Media</span></td>
+  <td><span class="mem-lim">&#9651; Info limitada</span></td>
+</tr>
+<tr data-sector="Minería/Servicios" data-region="Las Condes — Región Metropolitana" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">12</td>
+  <td class="co"><strong>Enaex S.A.</strong><br><span class="sub">Enaex</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Servicios</span><br><span class="sub">Explosivos y servicios mineros</span></td>
+  <td><code class="rut">90.266.000-3</code></td>
+  <td class="reg">Las Condes — Región Metropolitana</td>
+  <td class="dir">El Trovador 4253, Las Condes</td>
+  <td class="tel">+56 2 2837 7600</td>
+  <td class="em"><a href="mailto:info@enaex.cl" class="lnk">info@enaex.cl</a></td>
+  <td class="wb"><a href="https://www.enaex.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Sanitaria" data-region="Santiago — Región Metropolitana" data-rel="Media" data-mem="PENDING" style="background:#0a1929;color:#93c5fd">
+  <td class="n">13</td>
+  <td class="co"><strong>Aguas Andinas S.A.</strong><br><span class="sub">Aguas Andinas</span></td>
+  <td><span class="badge" style="background:#1e3a5f;color:#60a5fa">Sanitaria</span><br><span class="sub">Agua potable y alcantarillado</span></td>
+  <td><code class="rut">61.808.000-5</code></td>
+  <td class="reg">Santiago — Región Metropolitana</td>
+  <td class="dir">Av. Presidente Balmaceda 1398, Santiago</td>
+  <td class="tel">+56 2 2688 1000</td>
+  <td class="em"><a href="mailto:contacto@aguasandinas.cl" class="lnk">contacto@aguasandinas.cl</a></td>
+  <td class="wb"><a href="https://www.aguasandinas.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rm">&#9674; Media</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Silvoagropecuario" data-region="Las Condes — Región de Los Lagos" data-rel="Alta" data-mem="PENDING" style="background:#2a0a18;color:#fda4af">
+  <td class="n">14</td>
+  <td class="co"><strong>Salmones Camanchaca S.A.</strong><br><span class="sub">Camanchaca</span></td>
+  <td><span class="badge" style="background:#881337;color:#fb7185">Silvoagropecuario</span><br><span class="sub">Salmonicultura</span></td>
+  <td><code class="rut">76.065.596-1</code></td>
+  <td class="reg">Las Condes — Región de Los Lagos</td>
+  <td class="dir">Av. El Golf 99 Piso 10, Las Condes</td>
+  <td class="tel">+56 2 2873 2900</td>
+  <td class="em"><a href="mailto:inversionistas@camanchaca.cl" class="lnk">inversionistas@camanchaca.cl</a></td>
+  <td class="wb"><a href="https://www.camanchaca.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Agro/Cárnico" data-region="Providencia — Región Metropolitana" data-rel="Media" data-mem="PENDING" style="background:#2a0a18;color:#fda4af">
+  <td class="n">15</td>
+  <td class="co"><strong>AASA / Lo Valledor</strong><br><span class="sub">AASA</span></td>
+  <td><span class="badge" style="background:#881337;color:#fb7185">Agro/Cárnico</span><br><span class="sub">Frigorífico y distribución</span></td>
+  <td><code class="rut">92.196.000-K</code></td>
+  <td class="reg">Providencia — Región Metropolitana</td>
+  <td class="dir">Los Conquistadores 1700, Providencia</td>
+  <td class="tel">+56 2 2589 5600</td>
+  <td class="em"><a href="mailto:aasa@valledor.cl" class="lnk">aasa@valledor.cl</a></td>
+  <td class="wb"><a href="https://www.valledor.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rm">&#9674; Media</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Agro/Avícola" data-region="La Calera — Región de Valparaíso" data-rel="Media" data-mem="PENDING" style="background:#2a0a18;color:#fda4af">
+  <td class="n">16<span class="r5tag">R5</span></td>
+  <td class="co"><strong>Sopraval S.A.</strong><br><span class="sub">Sopraval</span></td>
+  <td><span class="badge" style="background:#881337;color:#fb7185">Agro/Avícola</span><br><span class="sub">Producción de pavo</span></td>
+  <td><code class="rut">82.366.700-0</code></td>
+  <td class="reg">La Calera — Región de Valparaíso</td>
+  <td class="dir">Camino La Calera s/n, La Calera</td>
+  <td class="tel">+56 32 248 2000</td>
+  <td class="em"><a href="mailto:contacto@sopraval.cl" class="lnk">contacto@sopraval.cl</a></td>
+  <td class="wb"><a href="https://www.sopraval.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rm">&#9674; Media</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Antofagasta" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">17</td>
+  <td class="co"><strong>Cerro Colorado S.A. (BHP)</strong><br><span class="sub">Cerro Colorado</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre</span></td>
+  <td><code class="rut">96.712.620-8</code></td>
+  <td class="reg">Región de Antofagasta</td>
+  <td class="dir">Av. de la Universidad 1775, Antofagasta</td>
+  <td class="tel">+56 55 250 5000</td>
+  <td class="em"><a href="mailto:info.chile@bhp.com" class="lnk">info.chile@bhp.com</a></td>
+  <td class="wb"><a href="https://www.bhp.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Antofagasta" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">18</td>
+  <td class="co"><strong>Minera Centinela</strong><br><span class="sub">Centinela</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre y subproductos</span></td>
+  <td><code class="rut">96.989.300-6</code></td>
+  <td class="reg">Región de Antofagasta</td>
+  <td class="dir">Covarrubias 1740, Las Condes</td>
+  <td class="tel">+56 2 2770 3000</td>
+  <td class="em"><a href="mailto:contacto@centinera.cl" class="lnk">contacto@centinera.cl</a></td>
+  <td class="wb"><a href="https://www.centinera.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Santiago — Región de Antofagasta" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">19</td>
+  <td class="co"><strong>Antofagasta Minerals S.A.</strong><br><span class="sub">Antofagasta Minerals</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre</span></td>
+  <td><code class="rut">76.275.324-7</code></td>
+  <td class="reg">Santiago — Región de Antofagasta</td>
+  <td class="dir">Agustinas 975, Santiago</td>
+  <td class="tel">+56 2 2790 7000</td>
+  <td class="em"><a href="mailto:contacto@antofagasta.cl" class="lnk">contacto@antofagasta.cl</a></td>
+  <td class="wb"><a href="https://www.aminerals.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Antofagasta" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">20</td>
+  <td class="co"><strong>Sierra Gorda SCM</strong><br><span class="sub">Sierra Gorda</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre y molibdeno</span></td>
+  <td><code class="rut">76.249.870-9</code></td>
+  <td class="reg">Región de Antofagasta</td>
+  <td class="dir">Covarrubias 1740, Las Condes</td>
+  <td class="tel">+56 2 2770 3000</td>
+  <td class="em"><a href="mailto:sgcontacto@sierragorda.cl" class="lnk">sgcontacto@sierragorda.cl</a></td>
+  <td class="wb"><a href="https://www.sierragorda.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Atacama y Antofagasta" data-rel="PENDING" data-mem="None" style="background:#2a1f05;color:#fde68a">
+  <td class="n">21</td>
+  <td class="co"><strong>Luminex Resources</strong><br><span class="sub">Luminex</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre y oro</span></td>
+  <td><span class="muted">&#8212;</span></td>
+  <td class="reg">Región de Atacama y Antofagasta</td>
+  <td class="dir"></td>
+  <td class="tel"><span class="muted">&#8212;</span></td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="Por definir" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rb">&#9675; PENDING</span></td>
+  <td><span class="mem-none">&#8212;</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Atacama" data-rel="PENDING" data-mem="None" style="background:#2a1f05;color:#fde68a">
+  <td class="n">22</td>
+  <td class="co"><strong>Aldebaran Resources</strong><br><span class="sub">Aldebaran</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre y oro</span></td>
+  <td><span class="muted">&#8212;</span></td>
+  <td class="reg">Región de Atacama</td>
+  <td class="dir"></td>
+  <td class="tel"><span class="muted">&#8212;</span></td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="Por definir" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rb">&#9675; PENDING</span></td>
+  <td><span class="mem-none">&#8212;</span></td>
+</tr>
+<tr data-sector="Materiales" data-region="La Serena — Región de Coquimbo" data-rel="Media" data-mem="PENDING" style="background:#1a1d24;color:#d1d5db">
+  <td class="n">23</td>
+  <td class="co"><strong>Cementos Melón S.A.</strong><br><span class="sub">Melón</span></td>
+  <td><span class="badge" style="background:#374151;color:#9ca3af">Materiales</span><br><span class="sub">Cemento</span></td>
+  <td><code class="rut">90.311.000-6</code></td>
+  <td class="reg">La Serena — Región de Coquimbo</td>
+  <td class="dir">Av. Estadio 1935, La Serena</td>
+  <td class="tel">+56 51 220 7000</td>
+  <td class="em"><a href="mailto:contacto@melon.cl" class="lnk">contacto@melon.cl</a></td>
+  <td class="wb"><a href="https://www.melon.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rm">&#9674; Media</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Forestal/Madera" data-region="Santiago — Región del Biobío" data-rel="Media" data-mem="PENDING" style="background:#0a1f2e;color:#7dd3fc">
+  <td class="n">24</td>
+  <td class="co"><strong>Masisa S.A.</strong><br><span class="sub">Masisa</span></td>
+  <td><span class="badge" style="background:#164e63;color:#38bdf8">Forestal/Madera</span><br><span class="sub">Tableros de madera</span></td>
+  <td><code class="rut">93.628.000-4</code></td>
+  <td class="reg">Santiago — Región del Biobío</td>
+  <td class="dir">Huérfanos 707 Piso 6, Santiago</td>
+  <td class="tel">+56 2 2642 6000</td>
+  <td class="em"><a href="mailto:contacto@masisa.com" class="lnk">contacto@masisa.com</a></td>
+  <td class="wb"><a href="https://www.masisa.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rm">&#9674; Media</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Forestal" data-region="Región del Biobío y Araucanía" data-rel="Media" data-mem="PENDING" style="background:#0a1f2e;color:#7dd3fc">
+  <td class="n">25</td>
+  <td class="co"><strong>Forestal Mininco S.A.</strong><br><span class="sub">Mininco</span></td>
+  <td><span class="badge" style="background:#164e63;color:#38bdf8">Forestal</span><br><span class="sub">Plantaciones y aserraderos</span></td>
+  <td><code class="rut">90.458.000-7</code></td>
+  <td class="reg">Región del Biobío y Araucanía</td>
+  <td class="dir">Edificio Forum, Santiago</td>
+  <td class="tel">+56 2 2470 5000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.mininco.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rm">&#9674; Media</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Metalurgia" data-region="Santiago — Región Metropolitana" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">26</td>
+  <td class="co"><strong>Molymet</strong><br><span class="sub">Molymet</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Metalurgia</span><br><span class="sub">Molibdeno y renio</span></td>
+  <td><code class="rut">89.773.000-2</code></td>
+  <td class="reg">Santiago — Región Metropolitana</td>
+  <td class="dir">Lo Echevers 129, Talagante</td>
+  <td class="tel">+56 2 2830 9000</td>
+  <td class="em"><a href="mailto:contacto@molymet.cl" class="lnk">contacto@molymet.cl</a></td>
+  <td class="wb"><a href="https://www.molymet.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Tarapacá" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">27</td>
+  <td class="co"><strong>Quebrada Blanca (Teck)</strong><br><span class="sub">Quebrada Blanca</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre</span></td>
+  <td><code class="rut">76.068.351-7</code></td>
+  <td class="reg">Región de Tarapacá</td>
+  <td class="dir">Teck Quebrada Blanca, Collahuasi</td>
+  <td class="tel">+56 57 240 2000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.teck.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Tarapacá" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">28</td>
+  <td class="co"><strong>Collahuasi</strong><br><span class="sub">Collahuasi SCM</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre y molibdeno</span></td>
+  <td><code class="rut">96.814.680-3</code></td>
+  <td class="reg">Región de Tarapacá</td>
+  <td class="dir">Av. Portales 3430, Santiago</td>
+  <td class="tel">+56 57 240 2000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.collahuasi.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Rancagua — Región de O'Higgins" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">29</td>
+  <td class="co"><strong>Minera El Teniente (Codelco)</strong><br><span class="sub">Codelco El Teniente</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre subterráneo</span></td>
+  <td><code class="rut">61.704.000-K</code></td>
+  <td class="reg">Rancagua — Región de O'Higgins</td>
+  <td class="dir">El Teniente, Rancagua</td>
+  <td class="tel">+56 72 253 0000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.codelco.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Antofagasta" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">30</td>
+  <td class="co"><strong>Radomiro Tomic (Codelco)</strong><br><span class="sub">Codelco RT</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre</span></td>
+  <td><code class="rut">61.704.000-K</code></td>
+  <td class="reg">Región de Antofagasta</td>
+  <td class="dir">Codelco Chuquicamata, Calama</td>
+  <td class="tel">+56 55 232 0000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.codelco.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Antofagasta" data-rel="PENDING" data-mem="None" style="background:#2a1f05;color:#fde68a">
+  <td class="n">31</td>
+  <td class="co"><strong>Minera Antucoya (Antofagasta Minerals)</strong><br><span class="sub">Antucoya</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre</span></td>
+  <td><code class="rut">76.275.324-7</code></td>
+  <td class="reg">Región de Antofagasta</td>
+  <td class="dir"></td>
+  <td class="tel"><span class="muted">&#8212;</span></td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="Por definir" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rb">&#9675; PENDING</span></td>
+  <td><span class="mem-none">&#8212;</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Coquimbo" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">32</td>
+  <td class="co"><strong>Los Pelambres (Antofagasta Minerals)</strong><br><span class="sub">Los Pelambres</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre y molibdeno</span></td>
+  <td><code class="rut">76.275.324-7</code></td>
+  <td class="reg">Región de Coquimbo</td>
+  <td class="dir">Los Pelambres, Salamanca</td>
+  <td class="tel">+56 52 220 3000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.lospelambres.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Antofagasta" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">33</td>
+  <td class="co"><strong>Minera Chuquicamata (Codelco)</strong><br><span class="sub">Codelco Chuquicamata</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre y subproductos</span></td>
+  <td><code class="rut">61.704.000-K</code></td>
+  <td class="reg">Región de Antofagasta</td>
+  <td class="dir">Cerro Chuquicamata, Calama</td>
+  <td class="tel">+56 55 232 0000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.codelco.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Energía" data-region="Las Condes — Región Metropolitana" data-rel="Media" data-mem="PENDING" style="background:#0d2818;color:#a8e6a3">
+  <td class="n">34</td>
+  <td class="co"><strong>Endesa Chile S.A.</strong><br><span class="sub">Endesa</span></td>
+  <td><span class="badge" style="background:#14532d;color:#86efac">Energía</span><br><span class="sub">Generación eléctrica</span></td>
+  <td><code class="rut">76.024.362-6</code></td>
+  <td class="reg">Las Condes — Región Metropolitana</td>
+  <td class="dir">Santa Cruz 2225, Las Condes</td>
+  <td class="tel">+56 2 2465 8000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.endesa.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rm">&#9674; Media</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Silvoagropecuario" data-region="Región de Magallanes" data-rel="Alta" data-mem="PENDING" style="background:#2a0a18;color:#fda4af">
+  <td class="n">35</td>
+  <td class="co"><strong>Nova Austral</strong><br><span class="sub">Nova Austral</span></td>
+  <td><span class="badge" style="background:#881337;color:#fb7185">Silvoagropecuario</span><br><span class="sub">Salmonicultura</span></td>
+  <td><code class="rut">76.347.696-2</code></td>
+  <td class="reg">Región de Magallanes</td>
+  <td class="dir">Punta Arenas</td>
+  <td class="tel">+56 61 240 0100</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.novaaustral.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Silvoagropecuario" data-region="Los Lagos — Región de Los Lagos" data-rel="Alta" data-mem="PENDING" style="background:#2a0a18;color:#fda4af">
+  <td class="n">36</td>
+  <td class="co"><strong>Multiexport Foods S.A.</strong><br><span class="sub">Multiexport</span></td>
+  <td><span class="badge" style="background:#881337;color:#fb7185">Silvoagropecuario</span><br><span class="sub">Salmón</span></td>
+  <td><code class="rut">76.080.171-7</code></td>
+  <td class="reg">Los Lagos — Región de Los Lagos</td>
+  <td class="dir">Antonio Bellet 302, Santiago</td>
+  <td class="tel">+56 2 2788 7000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.multiexportfoods.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Químico" data-region="Las Condes — Región Metropolitana" data-rel="Media-Alta" data-mem="PENDING" style="background:#1a0d2e;color:#c4b5fd">
+  <td class="n">37</td>
+  <td class="co"><strong>BASF Chile S.A.</strong><br><span class="sub">BASF</span></td>
+  <td><span class="badge" style="background:#4c1d95;color:#a78bfa">Químico</span><br><span class="sub">Químicos industriales</span></td>
+  <td><code class="rut">89.858.000-7</code></td>
+  <td class="reg">Las Condes — Región Metropolitana</td>
+  <td class="dir">Av. Pdte. Kennedy 5731, Las Condes</td>
+  <td class="tel">+56 2 2472 8000</td>
+  <td class="em"><a href="mailto:info.chile@basf.com" class="lnk">info.chile@basf.com</a></td>
+  <td class="wb"><a href="https://www.basf.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Media-Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Químico" data-region="Santiago — Región Metropolitana" data-rel="Media" data-mem="PENDING" style="background:#1a0d2e;color:#c4b5fd">
+  <td class="n">38</td>
+  <td class="co"><strong>Evonik Chile</strong><br><span class="sub">Evonik</span></td>
+  <td><span class="badge" style="background:#4c1d95;color:#a78bfa">Químico</span><br><span class="sub">Químicos especiales</span></td>
+  <td><code class="rut">96.572.540-1</code></td>
+  <td class="reg">Santiago — Región Metropolitana</td>
+  <td class="dir">Carmen 1105, Santiago</td>
+  <td class="tel">+56 2 2699 3800</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.evonik.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rm">&#9674; Media</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Químico" data-region="Las Condes — Región Metropolitana" data-rel="Media" data-mem="PENDING" style="background:#1a0d2e;color:#c4b5fd">
+  <td class="n">39</td>
+  <td class="co"><strong>Dow Chile</strong><br><span class="sub">Dow Chemical</span></td>
+  <td><span class="badge" style="background:#4c1d95;color:#a78bfa">Químico</span><br><span class="sub">Polímeros y plásticos</span></td>
+  <td><code class="rut">96.420.420-7</code></td>
+  <td class="reg">Las Condes — Región Metropolitana</td>
+  <td class="dir">Vitacura 2670, Las Condes</td>
+  <td class="tel">+56 2 2425 3000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.dow.cl" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rm">&#9674; Media</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Litio" data-region="Salar de Atacama — Región de Antofagasta" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">40</td>
+  <td class="co"><strong>Albemarle Chile</strong><br><span class="sub">Albemarle</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Litio</span><br><span class="sub">Litio y compuestos</span></td>
+  <td><code class="rut">77.029.879-8</code></td>
+  <td class="reg">Salar de Atacama — Región de Antofagasta</td>
+  <td class="dir">Cerro Colorado 5950, Las Condes</td>
+  <td class="tel">+56 2 2470 1000</td>
+  <td class="em"><a href="mailto:info@albemarle.com" class="lnk">info@albemarle.com</a></td>
+  <td class="wb"><a href="https://www.albemarle.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Litio" data-region="Región de Antofagasta" data-rel="Alta" data-mem="PENDING" style="background:#2a1f05;color:#fde68a">
+  <td class="n">41</td>
+  <td class="co"><strong>SQM Litio</strong><br><span class="sub">SQM Lithium Chile</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Litio</span><br><span class="sub">Litio y carbonato de litio</span></td>
+  <td><code class="rut">93.007.000-1</code></td>
+  <td class="reg">Región de Antofagasta</td>
+  <td class="dir">El Trovador 4285, Las Condes</td>
+  <td class="tel">+56 2 2425 2000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.sqmlithium.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Minería/Oro" data-region="Región de Atacama y Argentina" data-rel="PENDING" data-mem="None" style="background:#2a1f05;color:#fde68a">
+  <td class="n">42</td>
+  <td class="co"><strong>Pascua Lama (Barrick)</strong><br><span class="sub">Pascua Lama</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Oro</span><br><span class="sub">Oro y plata</span></td>
+  <td><span class="muted">&#8212;</span></td>
+  <td class="reg">Región de Atacama y Argentina</td>
+  <td class="dir"></td>
+  <td class="tel"><span class="muted">&#8212;</span></td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="Por definir" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rb">&#9675; PENDING</span></td>
+  <td><span class="mem-none">&#8212;</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Antofagasta" data-rel="PENDING" data-mem="None" style="background:#2a1f05;color:#fde68a">
+  <td class="n">43</td>
+  <td class="co"><strong>Minera El Abra</strong><br><span class="sub">El Abra</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre</span></td>
+  <td><span class="muted">&#8212;</span></td>
+  <td class="reg">Región de Antofagasta</td>
+  <td class="dir"></td>
+  <td class="tel"><span class="muted">&#8212;</span></td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="Por definir" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rb">&#9675; PENDING</span></td>
+  <td><span class="mem-none">&#8212;</span></td>
+</tr>
+<tr data-sector="Minería/Oro" data-region="Región de Antofagasta" data-rel="PENDING" data-mem="None" style="background:#2a1f05;color:#fde68a">
+  <td class="n">44</td>
+  <td class="co"><strong>Minera Lomas Bayas</strong><br><span class="sub">Lomas Bayas</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Oro</span><br><span class="sub">Cobre y oro</span></td>
+  <td><span class="muted">&#8212;</span></td>
+  <td class="reg">Región de Antofagasta</td>
+  <td class="dir"></td>
+  <td class="tel"><span class="muted">&#8212;</span></td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="Por definir" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rb">&#9675; PENDING</span></td>
+  <td><span class="mem-none">&#8212;</span></td>
+</tr>
+<tr data-sector="Minería/Cobre" data-region="Región de Antofagasta" data-rel="PENDING" data-mem="None" style="background:#2a1f05;color:#fde68a">
+  <td class="n">45</td>
+  <td class="co"><strong>Minera El Peñón</strong><br><span class="sub">El Peñón</span></td>
+  <td><span class="badge" style="background:#713f12;color:#fde047">Minería/Cobre</span><br><span class="sub">Cobre y oro</span></td>
+  <td><span class="muted">&#8212;</span></td>
+  <td class="reg">Región de Antofagasta</td>
+  <td class="dir"></td>
+  <td class="tel"><span class="muted">&#8212;</span></td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="Por definir" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rb">&#9675; PENDING</span></td>
+  <td><span class="mem-none">&#8212;</span></td>
+</tr>
+<tr data-sector="Energía" data-region="Las Condes — Región Metropolitana" data-rel="Alta" data-mem="PENDING" style="background:#0d2818;color:#a8e6a3">
+  <td class="n">46</td>
+  <td class="co"><strong>AES Chile Generación S.A.</strong><br><span class="sub">AES Chile</span></td>
+  <td><span class="badge" style="background:#14532d;color:#86efac">Energía</span><br><span class="sub">Generación eléctrica</span></td>
+  <td><code class="rut">94.272.000-9</code></td>
+  <td class="reg">Las Condes — Región Metropolitana</td>
+  <td class="dir">Los Militares 5900, Las Condes</td>
+  <td class="tel">+56 2 2420 5000</td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="https://www.aes.com" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel ra">&#9679; Alta</span></td>
+  <td><span class="mem-pend">&#9675; Pendiente</span></td>
+</tr>
+<tr data-sector="Agro/Cárnico" data-region="Arica — Región de Arica y Parinacota" data-rel="PENDING" data-mem="None" style="background:#2a0a18;color:#fda4af">
+  <td class="n">47</td>
+  <td class="co"><strong>Frigorífico Arica</strong><br><span class="sub">AASA / Lo Valledor</span></td>
+  <td><span class="badge" style="background:#881337;color:#fb7185">Agro/Cárnico</span><br><span class="sub">Frigorífico</span></td>
+  <td><code class="rut">92.196.000-K</code></td>
+  <td class="reg">Arica — Región de Arica y Parinacota</td>
+  <td class="dir"></td>
+  <td class="tel"><span class="muted">&#8212;</span></td>
+  <td class="em"><span class="muted">&#8212;</span></td>
+  <td class="wb"><a href="Por definir" target="_blank" class="lnk">&#127760;</a></td>
+  <td><span class="rel rb">&#9675; PENDING</span></td>
+  <td><span class="mem-none">&#8212;</span></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<div class="footer">ProcessFDV Intelligence &middot; No exponer en terreno sin autorizaci&oacute;n &middot; SUPCON Chile KAM</div>
+</div>
+<script>
+let at='all';
+function setTab(t,btn){at=t;document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active');filter()}
+function filter(){
+  const sr=document.getElementById('search').value.toLowerCase();
+  const sc=document.getElementById('sec').value;
+  const rl=document.getElementById('rel').value;
+  const mm=document.getElementById('mem').value;
+  let vis=0;
+  document.querySelectorAll('#tbody tr').forEach(row=>{
+    const txt=row.textContent.toLowerCase();
+    const sec=row.dataset.sector||'';
+    const rel=row.dataset.rel||'';
+    const mem=row.dataset.mem||'';
+    const memOk=mem&&mem!='PENDING'&&mem!='LIMITED'&&mem!='';
+    let ok=true;
+    if(sr&&!txt.includes(sr))ok=false;
+    if(sc&&!sec.includes(sc))ok=false;
+    if(rl&&!rel.includes(rl))ok=false;
+    if(mm==='ok'&&!memOk)ok=false;
+    if(mm==='pend'&&(memOk||mem==='LIMITED'))ok=false;
+    if(at==='alta'&&!rel.includes('Alta'))ok=false;
+    if(at==='energia'&&!sec.includes('Energ'))ok=false;
+    if(at==='mineria'&&!sec.includes('Miner')&&!sec.includes('Litio'))ok=false;
+    if(at==='memoria'&&!memOk)ok=false;
+    row.style.display=ok?'':'none';
+    if(ok)vis++;
+  });
+  document.getElementById('cnt').textContent=vis+' de 47';
+}
+filter();
+</script>
+</body>
+</html>

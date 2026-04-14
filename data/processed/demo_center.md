@@ -8,14 +8,101 @@
 
 | Categoría | Equipos | Valor estimado |
 |-----------|---------|---------------|
-| **Hardware DCS** | Controladores, I/O, Bases | US$15-20K |
-| **Red Industrial** | Switches APL, Ethernet | US$5-8K |
-| **Instrumentación** | Transmisores, válvulas, sensores | US$10-15K |
-| **IT** | Servidores, Workstations, Monitores | US$8-12K |
-| **Software** | supOS, PRIDE, Licencias | US$20-30K |
-| **Protección** | Aisladores, sobretensión | US$2-3K |
-| **Accesorios** | Gabinete, cables, conectividad | US$3-5K |
+| **Hardware DCS** | 2× FCU713, Racks CN721, módulos AI/AO/DI/DO, COM741 | US$15-20K |
+| **Red Industrial APL** | AEF6512, AEP6208, CP20.481 (fuente Ex) | US$8-12K |
+| **Instrumentación** | SKP, SL901, WZPKB, SFE9001, LN8100, SN5100, WS300 | US$10-15K |
+| **IT** | Servidores R760XS, T3680, Workstation P2, Monitores | US$8-12K |
+| **Software** | supOS, PRIDE, VFCES Foundation+Plus, Windows LTSC | US$20-30K |
+| **Protección** | Aisladores HD55xx, Protectores S-24-L2 Pro | US$2-3K |
+| **Accesorios** | Gabinete CN011-S7, Cables DB37, SPE, TUA | US$3-5K |
 | **TOTAL KIT** | | **~US$65-95K** |
+
+---
+
+## LISTA COMPLETA DE EQUIPOS
+
+### 1. Hardware DCS
+
+| Equipo | Modelo | Cantidad |
+|--------|--------|----------|
+| Controlador | FCU713-S01 | 2 |
+| Rack I/O | CN721-S11 | 2 |
+| Módulo Comunicación Serial | COM741-S01 | 1 |
+| Módulo Entrada Analógica (AI) | AI711-H11 | 1 |
+| Módulo Salida Analógica (AO) | AO711-H11 | 1 |
+| Módulo Entrada Digital (DI) | DI711-S11 | 1 |
+| Módulo Salida Digital (DO) | DO711-S11 | 1 |
+| Base para Módulo I/O | MB735-S11 | 2 |
+| Base para Controlador | MB712-S01 | 1 |
+| Base para Módulo COM | MB727-S11 | 1 |
+| Base para Rack | MB731-S01 | 2 |
+| Fuente de Poder | PW732 (24V, 10A) | 2 |
+
+### 2. Red Industrial Ethernet-APL
+
+| Equipo | Modelo | Cantidad |
+|--------|--------|----------|
+| **APL Field Switch** | AEF6512-2T-S | 1 |
+| **APL Power Switch** | AEP6208-2E2F-S | 1 |
+| **Fuente APL Intrínsecamente Segura** | CP20.481 (48V, Explosion-proof) | 1 |
+
+### 3. Instrumentación de Campo
+
+| Equipo | Modelo | Cantidad |
+|--------|--------|----------|
+| Transmisor Presión | CXT-SKP9SABM300A2AA000AEFLF1 (0~6000 psi) | 1 |
+| Transmisor Nivel Radar | SL901-1F03V2N120B202 | 1 |
+| Transmisor Temperatura | WZPKB1S-746/TH01ABX | 1 |
+| Flujómetro Electromagnético | SFE9001-025GF0W01300100Y3DC | 1 |
+| Válvula Control Asiento Simple | LN8100 | 1 |
+| Válvula Bola Sello Blando | SN5100 | 1 |
+| Sensor Wireless Temp+Vibración | WS300-AW-S-L | 1 |
+| Calibrador Inteligente | X700-EN | 1 |
+
+### 4. Servidores y Workstations
+
+| Equipo | Especificación | Cantidad |
+|--------|---------------|----------|
+| Servidor supOS | PRIDE R760XS (OS Ubuntu 20.04.02) | 1 |
+| Servidor Aplicación | T3680 (Intel Core i5-14600K, 1TB SSD) | 1 |
+| Workstation | Lenovo ThinkStation P2 (i5-14600K, 1TB SSD) | 1 |
+| Monitor | Lenovo ThinkVision P27q | 1 |
+| Monitor | Dell 24" LED widescreen | 1 |
+
+### 5. Software y Licencias
+
+| Producto | Descripción |
+|---------|------------|
+| supOS | Licencia base — Plataforma Industrial |
+| PRIDE | Dynamic Equipment Access |
+| VFCES Foundation | Licencia Sistema Operativo |
+| VFCES Plus | Licencia Avanzada (VF013, VF014, VF015) |
+| Windows 10 | Enterprise LTSC |
+
+### 6. Protección y Aisladores
+
+| Equipo | Modelo | Cantidad |
+|--------|--------|----------|
+| Aislador DO | HD5526 | 1 |
+| Aislador AI | HD5542 | 1 |
+| Aislador DI | HD5516.OC | 1 |
+| Aislador AO | HD5546 | 1 |
+| Protector Sobretensión (Ex) | S-24-L2 Pro | 4 |
+
+### 7. Gabinetes y Accesorios
+
+| Equipo | Modelo | Cantidad |
+|--------|--------|----------|
+| Gabinete | CN011-S7 | 1 |
+| Caja Distribución Poder 24Vdc | PW715 | 1 |
+| Switch E-BUS | SUP-5216 | 2 |
+| Switch Rack Industrial | TL-SG2422F | 1 |
+| TUA AIO16 | Unidad Terminal | 1 |
+| TUA DIO32 | Unidad Terminal | 1 |
+| TUA DIR32 | Unidad Terminal | 1 |
+| TUA DOR32 | Unidad Terminal | 1 |
+| Cables DB37 | 6m, negro | 4 |
+| Cables SPE | SPE-S/FTP-1P | 4 |
 
 ---
 

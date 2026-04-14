@@ -14,10 +14,8 @@ Para ganar el mercado, entendemos la interacción entre tres pilares fundamental
 
 ## 🛠️ Funcionalidades del Dashboard
 
-- **Digital Twin Dinámico**: Mapeo automático de activos industriales mediante escaneo MQTT.
-- **Copiloto TPT (GenAI)**: Asistente industrial que genera interfaces (tendencias, reportes OEE) en tiempo real mediante lenguaje natural.
-- **Soberanía de Datos**: Exportación directa de datasets históricos y de referencia en formato CSV.
 - **Calculadora TCO/IPC**: Herramienta de ventas para demostrar el aumento de costos de mantenimiento de marcas legacy (2009-2026).
+- **Industrial Big Data (2009-2026)**: Librería de referencia masiva con +1,500 puntos de datos y fallas históricas reales (BHP, Codelco, Arauco, CMPC).
 
 ---
 
@@ -37,8 +35,8 @@ Este script inicializa la infraestructura local (`Docker`, `EMQX Broker`) necesa
 
 - `index.html`: Dashboard táctico central (Estrategia 2026-2030).
 - `tier0.html`: Interfaz de ingeniería y simulación (Bala de Plata).
-- `tier0_core.js`: Motor de inferencia TPT y lógica de conectividad MQTT.
-- `reference_data.js`: Librería de benchmarks industriales (Minería, Celulosa, Energía).
+- `tier0_core.js`: Motor de inferencia TPT (Instancia Chile v2.4) y lógica de conectividad MQTT.
+- `reference_data.js`: BIG DATA Industrial (Fingerprints de falla 2009-2026 para Minería, Celulosa, Energía).
 - `style.css`: Sistema de diseño industrial con estética *Premium Glassmorphism*.
 
 ---

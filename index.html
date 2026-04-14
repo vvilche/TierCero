@@ -37,6 +37,31 @@
                 <h1>Tablero Táctico SUPCON Chile 2026-2030</h1>
                 <p>Herramienta Operativa para Subgerencia e Ingeniería de Ventas</p>
             </header>
+            <section class="tier-hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Tier Cero · Bala de Plata</p>
+                    <h2>UNS + IA Generativa en 30 minutos frente al cliente</h2>
+                    <p>Edge demo industrial con mapping automático de activos, soberanía de datos y Copiloto TPT listo para construir dashboards sobre tu telemetría.</p>
+                    <div class="hero-cta">
+                        <button class="btn-primary" onclick="window.open('tier0.html', '_blank')">🚀 Lanzar Demo Tier 0</button>
+                        <span>Broker MQTT + Dataset 2009-2026 pre-cargado.</span>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <label>Industrias Monitorizadas</label>
+                        <span id="hero-industries">4</span>
+                    </div>
+                    <div class="hero-stat">
+                        <label>Activos en UNS</label>
+                        <span id="hero-assets">0</span>
+                    </div>
+                    <div class="hero-stat">
+                        <label>Eventos Históricos</label>
+                        <span id="hero-failures">0</span>
+                    </div>
+                </div>
+            </section>
             <div class="module-grid">
                 <div class="action-card tier0-card" onclick="showModule('tier')">
                     <span class="icon">⚡</span>
@@ -69,6 +94,31 @@
                     <p>Pipeline Codelco, BHP, AMSA.</p>
                 </div>
             </div>
+            <section class="bigdata-panel">
+                <div class="bigdata-header">
+                    <div>
+                        <p class="eyebrow">Industrial Big Data 2009-2026</p>
+                        <h3>Base de datos para dashboards y reportes predictivos</h3>
+                    </div>
+                    <div class="bigdata-stats">
+                        <div class="stat">
+                            <span id="bigdata-tags">0</span>
+                            <label>Tags auditados</label>
+                        </div>
+                        <div class="stat">
+                            <span id="bigdata-failures">0</span>
+                            <label>Fallas documentadas</label>
+                        </div>
+                        <div class="stat">
+                            <span id="bigdata-customers">0</span>
+                            <label>Clientes referencia</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="bigdata-matrix" class="bigdata-matrix">
+                    <div class="muted">Sincronizando datos históricos...</div>
+                </div>
+            </section>
         </div>
 
         <!-- Module: Market (TAM) -->
@@ -521,6 +571,8 @@
         </div>
     </main>
 
+    <script src="generate_big_data.js"></script>
+    <script src="reference_data.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,373 @@
+fid,name,category,region,province,comuna,comuna_code,address,rut,longitude,latitude,source
+1,Ready Mix Centro S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5047222169999,-33.0497220799999,RETC_Valparaiso
+2,Compania De Petroleos De Chile Copec S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Av Jorge Montt,,-71.5472222499999,-32.996666532,RETC_Valparaiso
+3,Vidrieria Scheggia S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Victoria,,-71.6094443899999,-33.0474997969999,RETC_Valparaiso
+4,Inesa Chile S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Uno Poniente,,-71.5516666789999,-33.0199998509999,RETC_Valparaiso
+5,Banco Del Estado De Chile,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Condell,,-71.6233333429999,-33.0430554179999,RETC_Valparaiso
+6,Banco Del Estado De Chile,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Valparaiso,,-71.5475000199999,-33.0247220439999,RETC_Valparaiso
+7,Banco Del Estado De Chile,Exposición,Región de Valparaíso,San Antonio,El Quisco,,Isidoro Dubournais,,-71.6922222549999,-33.3949998609999,RETC_Valparaiso
+8,Banco Del Estado De Chile,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Brasil,,-71.6183333229999,-33.0436109889999,RETC_Valparaiso
+9,Banco Del Estado De Chile,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Centenario,,-71.6102777849999,-33.5769442449999,RETC_Valparaiso
+10,Banco Del Estado De Chile,Exposición,Región de Valparaíso,San Antonio,Cartagena,,Avda Cartagena,,-71.5999999909999,-33.5430553709999,RETC_Valparaiso
+11,Banco Del Estado De Chile,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Av Divina Providencia,,-71.6086111259999,-33.6088887179999,RETC_Valparaiso
+12,Banco Del Estado De Chile,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Playa Ancha,,-71.634722215,-33.0297220479999,RETC_Valparaiso
+13,Banco Del Estado De Chile,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Diego Portales,,-71.5727777749999,-33.0258331619999,RETC_Valparaiso
+14,Banco Del Estado De Chile,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Chacabuco,,-71.6066666159999,-33.0452776359999,RETC_Valparaiso
+15,Banco Del Estado De Chile,Exposición,Región de Valparaíso,Valparaíso,Concón,,Avda. Borgono,,-71.5108333389999,-32.9194442899999,RETC_Valparaiso
+16,Banco Del Estado De Chile,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Arlegui,,-71.5555555059999,-33.0224998109999,RETC_Valparaiso
+17,Banco Del Estado De Chile,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,San Antonio,,-71.5413888809999,-33.0083331369999,RETC_Valparaiso
+18,Banco Del Estado De Chile,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Arturo Prat,,-71.6272221899999,-33.0391665149999,RETC_Valparaiso
+19,Banco Del Estado De Chile,Exposición,Región de Valparaíso,Valparaíso,Casablanca,,Portales,,-71.4049999679999,-33.3180554339999,RETC_Valparaiso
+20,Banco De Chile,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Inmaculada Concepcion,,-71.6072221829999,-33.6074998259999,RETC_Valparaiso
+21,Banco De Chile,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Valparaiso,,-71.5522222319999,-33.0238887419999,RETC_Valparaiso
+22,Banco De Chile,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Libertad,,-71.5488888509999,-33.0138887759999,RETC_Valparaiso
+23,Banco De Chile,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Cochrane,,-71.6266667019999,-33.0388887009999,RETC_Valparaiso
+24,Banco De Chile,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Chacabuco,,-71.6077778219999,-33.045555368,RETC_Valparaiso
+25,Banco De Chile,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Arturo Prat,,-71.6155555399999,-33.5716664729999,RETC_Valparaiso
+26,Banco De Chile,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Arlegui,,-71.5566667139999,-33.0222220449999,RETC_Valparaiso
+27,Banco De Chile,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Esmeralda,,-71.6247222599999,-33.0402776089999,RETC_Valparaiso
+28,Banco De Chile,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,1 Norte,,-71.5513888339999,-33.0213886949999,RETC_Valparaiso
+29,Gasvalpo Sa,Exposición,Región de Valparaíso,Valparaíso,Casablanca,,Avenida Portales,,-71.3958333459999,-33.322499826,RETC_Valparaiso
+30,Hospital Clinico Vina Del Mar S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5380555279999,-33.0283332069999,RETC_Valparaiso
+31,Megasalud S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,3 Norte,,-71.5533333769999,-33.0191665019999,RETC_Valparaiso
+32,Clinica Ciudad Del Mar Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,13 Norte,,-71.5486111259999,-33.0091665399999,RETC_Valparaiso
+33,Terminal Pacifico Sur Valparaiso S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Antonio Varas,,-71.628888877,-33.0327775839999,RETC_Valparaiso
+34,San Antonio Terminal Internacional S A,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Av Ramon Barros Luco,,-71.6108332789999,-33.5902776299999,RETC_Valparaiso
+35,Carmencita S A,Exposición,Región de Valparaíso,Valparaíso,Concón,,Calle Siete,,-71.5155555569999,-32.922222073,RETC_Valparaiso
+36,Inmobiliaria Mall Vina Del Mar S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,13 Norte,,-71.5458333379999,-33.0097220659999,RETC_Valparaiso
+37,Inmobiliaria Mall Vina Del Mar S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,14 Norte,,-71.5458332849999,-33.008610937,RETC_Valparaiso
+38,Vina Del Mar Store Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Av Libertad,,-71.5477777499999,-33.0077775869999,RETC_Valparaiso
+39,Chilquinta Energia S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,General Cruz,,-71.6122221959999,-33.0449998679999,RETC_Valparaiso
+40,Sodimac S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,15 Norte,,-71.5425000159999,-33.0077776059999,RETC_Valparaiso
+41,Inmobiliaria Hippocampus Vina Del Mar S A,Exposición,Región de Valparaíso,Valparaíso,Concón,,Las Pimpinelas,,-71.5452777509999,-32.9288887069999,RETC_Valparaiso
+42,Empresa El Mercurio De Valparaiso  S A P,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Yungay,,-71.610555572,-33.0447220849999,RETC_Valparaiso
+43,Recauchajes Neumaflex Sociedad Anonima,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Pasaje Cuatro,,-71.5152777569999,-33.028333222,RETC_Valparaiso
+44,Empresa De Gas De La V Region S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Condell,,-71.6208333179999,-33.045277628,RETC_Valparaiso
+45,Empresa De Gas De La V Region S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Camino  Internacional,,-71.499999967,-32.9922220989999,RETC_Valparaiso
+46,Easy S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Av 1 Norte,,-71.5208333499999,-33.0369443139999,RETC_Valparaiso
+47,Easy S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Argentina,,-71.6041666819999,-33.0430553749999,RETC_Valparaiso
+48,Empresas Carozzi S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Camino Internacional,,-71.4997221979999,-32.9822220869999,RETC_Valparaiso
+49,Frigorifico Fiordosur Sa,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Phillippi,,-71.586944447,-33.0358331499999,RETC_Valparaiso
+50,Corpora Tresmontes S A,Exposición,Región de Valparaíso,Valparaíso,Casablanca,,Avenida Portales,,-71.3958333459999,-33.322499826,RETC_Valparaiso
+51,Corpora Tresmontes S A,Exposición,Región de Valparaíso,Valparaíso,Casablanca,,Avenida Portales,,-71.3958333459999,-33.322499826,RETC_Valparaiso
+52,Comercial Kaufmann S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avenida Francia,,-71.6116666629999,-33.045833179,RETC_Valparaiso
+53,Sermob S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,15 Norte,,-71.5425000159999,-33.0077776059999,RETC_Valparaiso
+54,Corpora Tresmontes S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avenida Brasil,,-71.6155554999999,-33.0441664649999,RETC_Valparaiso
+55,Corpora Tresmontes S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Rodriguez,,-71.6152777709999,-33.0444443189999,RETC_Valparaiso
+56,Corpora Tresmontes S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Rodriguez,,-71.6152777709999,-33.0444443189999,RETC_Valparaiso
+57,Litografia Sanchez S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Valparaiso,,-71.5424999569999,-33.0255554239999,RETC_Valparaiso
+58,Sitrans Servicios Integrados De Transportes Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Tupungato,,-71.5502777819999,-33.133610994,RETC_Valparaiso
+59,Hubner Industrias Opticas S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Uno Norte,,-71.5208333499999,-33.0369443139999,RETC_Valparaiso
+60,S K C Rental S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Camino Internacional,,-71.5041666779999,-32.9652776419999,RETC_Valparaiso
+61,S K C Rental S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Camino Internacional,,-71.5041666779999,-32.9652776419999,RETC_Valparaiso
+62,Soc Petreos S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Camino Internacional,,-71.4997221979999,-32.9822220869999,RETC_Valparaiso
+63,Hernandez Motores S A C I,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,15 Norte,,-71.5433332879999,-33.0080553769999,RETC_Valparaiso
+64,Melon Sa,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av. Brasil,,-71.6049999849999,-33.0436109659999,RETC_Valparaiso
+65,Molino De Casablanca S A,Exposición,Región de Valparaíso,Valparaíso,Casablanca,,Avenida Alejandro Galaz,,-71.4091666799999,-33.310833225,RETC_Valparaiso
+66,Melon Hormigones Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.4961111519999,-33.0541665019999,RETC_Valparaiso
+67,Trenzaduria Vina Sai,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda Brasil,,-71.6127778219999,-33.0441664619999,RETC_Valparaiso
+68,Cambiaso Hnos S A C,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Sauce,,-71.5702777809999,-33.112222072,RETC_Valparaiso
+69,Cambiaso Hnos S A C,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,El Sauce,,-71.5702777809999,-33.112222072,RETC_Valparaiso
+70,Cambiaso Hnos S A C,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Reten,,-71.5691666899999,-33.1136109109999,RETC_Valparaiso
+71,Abastecedora De Combustibles S A,Exposición,Región de Valparaíso,Valparaíso,Concón,,Dos Norte,,-71.4886110819999,-32.9280553819999,RETC_Valparaiso
+72,Saci Falabella,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Sucre,,-71.5513889339999,-33.0244442679999,RETC_Valparaiso
+73,Cia Nacional De Fuerza Electrica S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Trece Norte,,-71.546666678,-33.0097220979999,RETC_Valparaiso
+74,Cambiaso Hnos S A C,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Sauce,,-71.5702777809999,-33.112222072,RETC_Valparaiso
+75,Cia Manufacturera De Aconcagua S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5213889029999,-33.039444247,RETC_Valparaiso
+76,Esval S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,San Ignacio,,-71.6099999809999,-33.0458331889999,RETC_Valparaiso
+77,Esval S A,Exposición,Región de Valparaíso,San Antonio,Cartagena,,Av Cartagena,,-71.5999999909999,-33.5430553709999,RETC_Valparaiso
+78,Esval S A,Exposición,Región de Valparaíso,San Antonio,Algarrobo,,Av Penablanca,,-71.6708333509999,-33.367777607,RETC_Valparaiso
+79,Compania Sud Americana De Vapores Sa,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Plaza Sotomayor,,-71.6275000289999,-33.0372220329999,RETC_Valparaiso
+80,Esval S A,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Sotero Del Rio,,-71.5797221889999,-33.6372221029999,RETC_Valparaiso
+81,Esval S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,4 Poniente Con 2 Norte,,-71.555555566,-33.0202776489999,RETC_Valparaiso
+82,Esval S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,1 Norte,,-71.5561111489999,-33.020555429,RETC_Valparaiso
+83,Esval S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,San Ignacio,,-71.6099999809999,-33.0458331889999,RETC_Valparaiso
+84,Esval S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,San Ignacio,,-71.6099999809999,-33.0458331889999,RETC_Valparaiso
+85,Esval S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Cochrane,,-71.6266667019999,-33.0388887009999,RETC_Valparaiso
+86,Esval S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,1 Norte,,-71.5561111489999,-33.020555429,RETC_Valparaiso
+87,Esval S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,San Ignacio,,-71.6099999809999,-33.0458331889999,RETC_Valparaiso
+88,Electricidad Selectra Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Rodolfo Philippi,,-71.5844444779999,-33.0372220599999,RETC_Valparaiso
+89,Queirolo Y Bonino Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Victoria,,-71.6038888339999,-33.0483331319999,RETC_Valparaiso
+90,Claro Infraestructura 171 Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Managua,,-71.568333359,-33.0302776419999,RETC_Valparaiso
+91,Telefonica Moviles Chile S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av Pedro Montt,,-71.6180555699999,-33.0458331599999,RETC_Valparaiso
+92,Soc Panadera De La Costa Limitada,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Centenario,,-71.6091666729999,-33.5766664689999,RETC_Valparaiso
+93,Idiart Hermanos Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Serrano,,-71.6294443929999,-33.0363887689999,RETC_Valparaiso
+94,Gonzalez Y Hatte Ltda,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Arlegui,,-71.5475000409999,-33.0236109159999,RETC_Valparaiso
+95,Ingenieria Mecanica Inpromec Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5213889029999,-33.039444247,RETC_Valparaiso
+96,Empresa De Transportes Compania De Segur,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Imon Bolivar,,-71.5844444419999,-33.0305553819999,RETC_Valparaiso
+97,Irigoyen Y Mortalena Ltda,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Uno Poniente,,-71.5499999479999,-33.0127776599999,RETC_Valparaiso
+98,Recauchajes Francisco Llach Sociedad Anonima,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Hunneus,,-71.5927777309999,-33.0597220429999,RETC_Valparaiso
+99,Cartoni Y Cartoni Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Arlegui,,-71.5591666439999,-33.0219442739999,RETC_Valparaiso
+100,Panificadora Avenida Francia Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avenida Francia,,-71.612222201,-33.0497220699999,RETC_Valparaiso
+101,Manuel Regueiro Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda Rodelillo,,-71.5791666519999,-33.0524998499999,RETC_Valparaiso
+102,Cencosud Supermercados S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Uno Norte,,-71.5208333499999,-33.0369443139999,RETC_Valparaiso
+103,Cencosud Supermercados S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av Brasil,,-71.6202777799999,-33.0433331839999,RETC_Valparaiso
+104,Cencosud Supermercados S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda Argentina,,-71.6041666819999,-33.0430553749999,RETC_Valparaiso
+105,Cencosud Supermercados S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av Brasil,,-71.6202777799999,-33.0433331839999,RETC_Valparaiso
+106,Cencosud Supermercados S A,Exposición,Región de Valparaíso,Valparaíso,Concón,,Av Manantiales,,-71.5174999469999,-32.929722109,RETC_Valparaiso
+107,Vopak Chile Ltda,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Antonio Nunez De Fonseca,,-71.6222221729999,-33.5758331829999,RETC_Valparaiso
+108,Del Bene Bravo Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Pedro Aguirre Cerda,,-71.5391667179999,-33.037222073,RETC_Valparaiso
+109,Quimica Passol Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5047222169999,-33.0497220799999,RETC_Valparaiso
+110,German Guerra Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Orella,,-71.6075000429999,-33.0522220239999,RETC_Valparaiso
+111,Siclari Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda Pacifico,,-71.6422221889999,-33.0305554329999,RETC_Valparaiso
+112,Zacconi Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,20 Norte,,-71.5444444509999,-33.0033331989999,RETC_Valparaiso
+113,Lionel Kovacs Y Cia Sci Ltda,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,10 Norte,,-71.5430555599999,-33.0130554039999,RETC_Valparaiso
+114,Lionel Kovacs Y Cia Sci Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Victoria,,-71.6086110919999,-33.0477776319999,RETC_Valparaiso
+115,Panificadora Espiga De Oro Compania Limitada,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Maestranza,,-71.6069444919999,-33.5897220719999,RETC_Valparaiso
+116,Terquim S A,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Blanco Encalada,,-71.6083332919999,-33.583610948,RETC_Valparaiso
+117,Comercial Eccsa S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Plaza Sucre,,-71.5516666519999,-33.0249998749999,RETC_Valparaiso
+118,Multitiendas Corona S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Condell,,-71.6208333179999,-33.045277628,RETC_Valparaiso
+119,Multitiendas Corona S A,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Centenario,,-71.6052778029999,-33.5752775939999,RETC_Valparaiso
+120,Hospital De Ninos Y Cunas,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.539444478,-33.0277776329999,RETC_Valparaiso
+121,Recauchaje Insamar Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda Tupungato,,-71.5594444579999,-33.1330553789999,RETC_Valparaiso
+122,Pedro Irisarri Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av Uruguay,,-71.6074999689999,-33.0491665159999,RETC_Valparaiso
+123,Universidad Tecnica Federico Santa Maria,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av Espana,,-71.5958333849999,-33.0336109449999,RETC_Valparaiso
+124,Pontificia Universidad Catolica De Valparaiso,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av Brasil,,-71.6049999849999,-33.0436109659999,RETC_Valparaiso
+125,Comercial Buen Gusto Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Las Heras,,-71.6166666959999,-33.0472220929999,RETC_Valparaiso
+126,Juan Andreani Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,San Antonio,,-71.5424999589999,-33.0127776539999,RETC_Valparaiso
+127,Juan Olaechea Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Salvador Donoso,,-71.6219443939999,-33.043888723,RETC_Valparaiso
+128,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,1 Norte,,-71.5208333499999,-33.0369443139999,RETC_Valparaiso
+129,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Sotomayor,,-71.6283332969999,-33.0374998499999,RETC_Valparaiso
+130,Wienecke Camping Ltda,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.4972221819999,-33.0536109959999,RETC_Valparaiso
+131,Coop De Abast Y Serv De Los Ind De La Madera De Valpo Y Acon Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Juana Ross,,-71.6044444049999,-33.0491664629999,RETC_Valparaiso
+132,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av Pedro Montt,,-71.6166667069999,-33.045833195,RETC_Valparaiso
+133,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda Uruguay,,-71.6072221919999,-33.0461109539999,RETC_Valparaiso
+134,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda Argentina,,-71.6041666819999,-33.0430553749999,RETC_Valparaiso
+135,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Calle Quillota,,-71.5458333659999,-33.0177775979999,RETC_Valparaiso
+136,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Rafael Sotomayor,,-71.5411111359999,-32.9697221009999,RETC_Valparaiso
+137,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Villanelo,,-71.5563888339999,-33.0238887019999,RETC_Valparaiso
+138,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Av Valparaiso,,-71.5491666859999,-33.0244442669999,RETC_Valparaiso
+139,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Arlegui,,-71.5475000409999,-33.0236109159999,RETC_Valparaiso
+140,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Av 1 Norte,,-71.5208333499999,-33.0369443139999,RETC_Valparaiso
+141,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Concón,,Av Con Con Renaca,,-71.5455555349999,-32.9391665349999,RETC_Valparaiso
+142,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Concón,,Av Manatiales,,-71.5174999469999,-32.929722109,RETC_Valparaiso
+143,Cencosud Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Almirante Riveros,,-71.6302778019999,-33.0355553829999,RETC_Valparaiso
+144,Mecanica Bacigalupo Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Chacabuco,,-71.6130555989999,-33.0452776019999,RETC_Valparaiso
+145,E Kovacs S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda Colon,,-71.6022222329999,-33.050833135,RETC_Valparaiso
+146,E Kovacs S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Quillota,,-71.5461110569999,-33.0188887389999,RETC_Valparaiso
+147,E Kovacs S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Colon,,-71.6022222329999,-33.050833135,RETC_Valparaiso
+148,Brusco Engelbach Virgilio Conrado Y Otro,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Yungay,,-71.6094444279999,-33.0447220849999,RETC_Valparaiso
+149,Cia Maderera Chacabuco Ltda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Chacabuco,,-71.6144444559999,-33.0452776079999,RETC_Valparaiso
+150,Empresa De Transportes Rurales Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5213889029999,-33.039444247,RETC_Valparaiso
+151,Oxiquim S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5213889029999,-33.039444247,RETC_Valparaiso
+152,Rafael Fandos Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Agua Santa,,-71.5619444479999,-33.0269443249999,RETC_Valparaiso
+153,Panificadora La Maritima Limitada,Exposición,Región de Valparaíso,San Antonio,Cartagena,,Josefina Nieto De Gallardo,,-71.6005555639999,-33.5438887609999,RETC_Valparaiso
+154,Maestranza Lourdes Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,German Riesco,,-71.5813888929999,-33.0474998779999,RETC_Valparaiso
+155,Productos Alimenticios Biarritz Ltda,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Siete Norte,,-71.5525000039999,-33.014999815,RETC_Valparaiso
+156,Aleaciones Metalurgicas Y Odontologicas Bomm Ltda,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Los Limonares,,-71.5194444869999,-33.0366665349999,RETC_Valparaiso
+157,Antuan Jury S A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5208332799999,-33.0402776299999,RETC_Valparaiso
+158,Inversiones Y Rentas Santa Yolanda Limit,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Av Sn Martin,,-71.5547222619999,-33.0141665309999,RETC_Valparaiso
+159,Jaar Y Rubino Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Av Santa Julia,,-71.508333294,-32.9994442509999,RETC_Valparaiso
+160,Petrobras Chile Red Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Jorge Montt,,-71.5472222499999,-32.996666532,RETC_Valparaiso
+161,Ingenieria Construccion Y Mantencion Industrial Aconcagua Ltda,Exposición,Región de Valparaíso,Valparaíso,Concón,,Santa Margarita,,-71.5100000419999,-32.9219442979999,RETC_Valparaiso
+162,Ducci Y Swett Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Llay Llay,,-71.5374999659999,-33.0274998259999,RETC_Valparaiso
+163,Albornoz Hnos Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Palazuelo,,-71.6383332979999,-33.0358331279999,RETC_Valparaiso
+164,Panificadora Andina Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avenida Independencia,,-71.6158333689999,-33.0469442909999,RETC_Valparaiso
+165,Bruno Vaccarezza Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda Ecuador,,-71.6238889399999,-33.0461109419999,RETC_Valparaiso
+166,Inmobiliaria El Plomo Limitada,Exposición,Región de Valparaíso,San Antonio,Algarrobo,,Camino Algarrobo Mirasol,,-71.6486111429999,-33.3452775989999,RETC_Valparaiso
+167,Petrobras Chile Distribucion Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Avda Jorge Montt,,-71.5472222499999,-32.996666532,RETC_Valparaiso
+168,Petrobras Chile Distribucion Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av. Chacabuco,,-71.6055555109999,-33.0455553979999,RETC_Valparaiso
+169,Artes Graficas Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Tolson,,-71.5833333129999,-33.0347220669999,RETC_Valparaiso
+170,Truyol Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Diego Portales,,-71.5727778239999,-33.026110964,RETC_Valparaiso
+171,Carla Frioli G Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,El Sauce,,-71.566111137,-33.1124998629999,RETC_Valparaiso
+172,Master Tec Chile Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Retamo,,-71.6066666989999,-33.0502776429999,RETC_Valparaiso
+173,Soc Comercial Trimar Limitada Distribuidora De Productos Del Mar,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Zorobabel Rodriguez,,-71.6108333169999,-33.6061109089999,RETC_Valparaiso
+174,Comercial Automotriz Siglo Xxi S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Brasil,,-71.6147221779999,-33.0441665429999,RETC_Valparaiso
+175,Leonel Garcia Fuenzalida Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,1 Norte,,-71.5561111489999,-33.020555429,RETC_Valparaiso
+176,Soc Comercial Disoil Limitada,Exposición,Región de Valparaíso,San Antonio,Santo Domingo,,Las Rocas,,-71.6266666759999,-33.6258332129999,RETC_Valparaiso
+177,Comercial La Tahona Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Bellavista,,-71.6225000189999,-33.043610961,RETC_Valparaiso
+178,Clinica Oftalmologica Isv Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,4 Norte,,-71.5416666209999,-33.0194442899999,RETC_Valparaiso
+179,Industria De Bordado Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5213889029999,-33.039444247,RETC_Valparaiso
+180,Andrade E Hijo Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Levarte,,-71.6436111289999,-33.0372220289999,RETC_Valparaiso
+181,Fernandez Y Fernandez Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Los Guindos,,-71.5586111139999,-33.0444442909999,RETC_Valparaiso
+182,Comercial Maitena Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Avenida Valparaiso,,-71.5569444499999,-33.0233331559999,RETC_Valparaiso
+183,M C P Industrial Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Pasaje Maravillar,,-71.5374999949999,-33.0041664969999,RETC_Valparaiso
+184,Oikos Impresos Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,San Enrique,,-71.6286111089999,-33.0427776289999,RETC_Valparaiso
+185,Luis Fernandez Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Variante Agua Santa,,-71.5600000319999,-33.0480554349999,RETC_Valparaiso
+186,Comercial Crucero Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Avda Valparaiso,,-71.5444444139999,-33.025277636,RETC_Valparaiso
+187,Supermercado Vina Del Mar Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,15 Norte,,-71.5425000159999,-33.0077776059999,RETC_Valparaiso
+188,Soc Panificadora Progreso Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avenida Uruguay,,-71.6075000189999,-33.04833321,RETC_Valparaiso
+189,Servicios Portuarios Gta Sa,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Cochrane,,-71.627499956,-33.0383331319999,RETC_Valparaiso
+190,Comercial Sindempart Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Avda Valparaiso,,-71.5444444139999,-33.025277636,RETC_Valparaiso
+191,P Bosoni Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5413888819999,-33.0269442829999,RETC_Valparaiso
+192,Soc Panificadora El Mana Limitada,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Av Los Aromos,,-71.5955555929999,-33.6111109469999,RETC_Valparaiso
+193,Garcia Irusta Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Uno Norte,,-71.5208333499999,-33.0369443139999,RETC_Valparaiso
+194,Supermercado Miraflores Alto Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Av E Frei,,-71.5077777859999,-33.0227776169999,RETC_Valparaiso
+195,Soc Administradora De Cabanas Costa Brava Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Concón,,Los Tamarindos,,-71.5488889019999,-32.9297220649999,RETC_Valparaiso
+196,Teknogas Servicios Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Yerbas Buenas,,-71.6224999909999,-33.050833141,RETC_Valparaiso
+197,Procesadora Y Exportadora De Pescado South Tide Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Phillippi,,-71.586944447,-33.0358331499999,RETC_Valparaiso
+198,Juan Saldana Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Yerbas Buenas,,-71.6227777839999,-33.0461109709999,RETC_Valparaiso
+199,Manuel Rubino Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Veintitres Norte,,-71.5405555579999,-33.0016665429999,RETC_Valparaiso
+200,Transportes Mercotank-Chile Limitada,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Mexico,,-71.6158333039999,-33.6072220819999,RETC_Valparaiso
+201,Productos Daneses Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Quince Norte,,-71.5425000159999,-33.0077776059999,RETC_Valparaiso
+202,Panaderia Etchevers Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Etchevers,,-71.5547222429999,-33.0230553579999,RETC_Valparaiso
+203,Panaderia Vina Del Mar Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Agua Santa,,-71.5619444309999,-33.0244442769999,RETC_Valparaiso
+204,Soc De Cobranzas Payback S A,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av Brasil,,-71.6191666409999,-33.043610977,RETC_Valparaiso
+205,Alimentos Del Litoral Y Compania Limitada,Exposición,Región de Valparaíso,San Antonio,Cartagena,,Yungay,,-71.59083333,-33.5433331959999,RETC_Valparaiso
+206,Falabella Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Independencia,,-71.6172221879999,-33.046388761,RETC_Valparaiso
+207,Falabella Retail Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Sucre,,-71.5513889339999,-33.0244442679999,RETC_Valparaiso
+208,Productos Alimenticios Vina Del Mar Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Quillota,,-71.5480555929999,-33.0241665359999,RETC_Valparaiso
+209,Agustin Garibaldi Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Victorino Lastarria,,-71.5866666839999,-33.0311109819999,RETC_Valparaiso
+210,Comercial Doral Limitada,Exposición,Región de Valparaíso,Valparaíso,Concón,,Avenida Borgono,,-71.5080555629999,-32.9197220889999,RETC_Valparaiso
+211,Panaderia Los Vidales Limitada,Exposición,Región de Valparaíso,San Antonio,El Quisco,,Avenida Isidoro Dubournais,,-71.6924999669999,-33.3919443099999,RETC_Valparaiso
+212,Exportadora Y Comercializadora San Diego Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Phillippi,,-71.586944447,-33.0358331499999,RETC_Valparaiso
+213,"Pasteleria Y Confiteria Nino""S Limitada",Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Ecuador,,-71.5591666689999,-33.0236109139999,RETC_Valparaiso
+214,Estaciones De Servicios Fandos Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,1 Norte,,-71.5402777869999,-33.0238887029999,RETC_Valparaiso
+215,Estaciones De Servicios Fandos Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Agua Santa,,-71.5619444479999,-33.0269443249999,RETC_Valparaiso
+216,Perstorp Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5213889029999,-33.039444247,RETC_Valparaiso
+217,Perstorp Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5208332799999,-33.0402776299999,RETC_Valparaiso
+218,Sociedad Servicios Y Comercio Valparaiso Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Errazuriz,,-71.6261111039999,-33.0380553819999,RETC_Valparaiso
+219,Sociedad Servicios Y Comercio Valparaiso Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Errazuriz,,-71.6261111039999,-33.0380553819999,RETC_Valparaiso
+220,Comercial Agrosogo Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Quebrada Verde,,-71.6386111499999,-33.031388735,RETC_Valparaiso
+221,Industria De Golosinas Pares Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,John Kennedy,,-71.5041666719999,-32.9991665539999,RETC_Valparaiso
+222,Comercial Mortalena Y Compania Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Avenida Valparaiso,,-71.5552777269999,-33.023610947,RETC_Valparaiso
+223,Supermercados Del Sur Limitada,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Etchevers Alto,,-71.5558333769999,-33.026944296,RETC_Valparaiso
+224,Supermercados Del Sur Limitada,Exposición,Región de Valparaíso,Valparaíso,Casablanca,,Portales,,-71.4061110919999,-33.3177776519999,RETC_Valparaiso
+225,Marcar Comerc Y Distrib De Combustibles Lub Y Otros Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Chacabuco,,-71.6055555109999,-33.0455553979999,RETC_Valparaiso
+226,Comercial Ralun Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av Sta Maria,,-71.6497221739999,-33.0449998539999,RETC_Valparaiso
+227,Santa Isabel Administradora Sa,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Villanelo,,-71.5563888339999,-33.0238887019999,RETC_Valparaiso
+228,Comercializadora Y Distribuidora America Andina Limitada,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Phillippi,,-71.586944447,-33.0358331499999,RETC_Valparaiso
+229,Club Union Espanola,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,A De Ercilla,,-71.5700000229999,-33.0305553699999,RETC_Valparaiso
+230,Mutual De Seguridad Camara Chilena De La Construccion,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5430555489999,-33.0263886909999,RETC_Valparaiso
+231,Asoc Chilena De Seguridad,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Edwards,,-71.6180555139999,-33.0436109619999,RETC_Valparaiso
+232,Cooperativa De Agua Potable Santo Domingo Limitada,Exposición,Región de Valparaíso,San Antonio,Santo Domingo,,Griselda,,-71.6269444119999,-33.639999826,RETC_Valparaiso
+233,Instituto De Seguridad Del Trabajo,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Alvares,,-71.5524999929999,-33.025555381,RETC_Valparaiso
+234,Imprenta De La Armada De Chile,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Antonio Varas,,-71.6286111149999,-33.030277587,RETC_Valparaiso
+235,Empresa Portuaria Valparaiso,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Errazuriz,,-71.6286111149999,-33.033055376,RETC_Valparaiso
+236,Empresa Portuaria San Antonio,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Alan Macowan,,-71.6119444809999,-33.5847220299999,RETC_Valparaiso
+237,Servicios Portuarios Patillos S A,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Avenida Angamos,,-71.6122222059999,-33.5891664839999,RETC_Valparaiso
+238,Servicio De Salud Valparaiso San Antonio,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,San Ignacio,,-71.6102777869999,-33.0499998429999,RETC_Valparaiso
+239,Servicio De Salud Valparaiso San Antonio,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Carmen Guerrero,,-71.6058333139999,-33.5849998039999,RETC_Valparaiso
+240,Servicio De Salud Vina Del Mar Quillota,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Alvarez,,-71.5383332829999,-33.0288887539999,RETC_Valparaiso
+241,Edificio Nueva Vista,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Alvarez,,-71.5574999479999,-33.0247220549999,RETC_Valparaiso
+242,Farias Mena Luis Humberto Y Otro,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Cardenal Samore,,-71.5750000369999,-33.1091664779999,RETC_Valparaiso
+243,Maria Del Pilar Munoz Moreno Eirl,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Av Valparaiso,,-71.5458333819999,-33.0247220839999,RETC_Valparaiso
+244,Daniel Fernandez Saavedra Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Concón,,Avenida Borgono,,-71.5094444469999,-32.9191665249999,RETC_Valparaiso
+245,Guillermo Gonzalez Vera Y Cia Ltda,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Avenida Concon,,-71.5377778099999,-33.0072220319999,RETC_Valparaiso
+246,Rut Ester Cortes Videla,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Gonzalez,,-71.6011111439999,-33.039722096,RETC_Valparaiso
+247,Cesar Alberto Gordon Olave,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Arturo Prat,,-71.5566667139999,-33.1152776139999,RETC_Valparaiso
+248,Marcela Del Rosario Rouse Bories,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avenida Los Placeres,,-71.5950000419999,-33.0358331969999,RETC_Valparaiso
+249,Guillermo Patricio Cerda Cerda,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Av Baquedano,,-71.6069444439999,-33.613610945,RETC_Valparaiso
+250,German Edmundo Vasquez Valenzuela,Exposición,Región de Valparaíso,Valparaíso,Casablanca,,Chacabuco,,-71.4052777879999,-33.3174998509999,RETC_Valparaiso
+251,Patricio Jorge Soza Scolari,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Eucaliptus,,-71.6055555839999,-33.6163887089999,RETC_Valparaiso
+252,Maria Angelica Menares Perez,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Lauro Barros,,-71.6063888729999,-33.574999847,RETC_Valparaiso
+253,Raul Del Carmen Hinojosa Malhue,Exposición,Región de Valparaíso,San Antonio,San Antonio,,Cardenal Caro,,-71.6013888749999,-33.6099998329999,RETC_Valparaiso
+254,Bruna Angela Podesta Rivara,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Av Playa Ancha,,-71.634722215,-33.0297220479999,RETC_Valparaiso
+255,Patricio Alberto Estay Cadiz,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Las Rejas,,-71.5219444699999,-33.0261109289999,RETC_Valparaiso
+256,Oscar Alberto Arriagada Garces,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Avenida Anita Lizana,,-71.5011111379999,-33.0130553639999,RETC_Valparaiso
+257,Hernan Francisco Toledo Aburto,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Eusebio Lillo,,-71.6025000249999,-33.0444442769999,RETC_Valparaiso
+258,Hugo Arnaldo Olguin Perucci,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Calle Tres,,-71.5363888369999,-33.0052775959999,RETC_Valparaiso
+259,Pedro Hernan Rojas Escobar,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Clave,,-71.6300000529999,-33.0361109749999,RETC_Valparaiso
+260,Herta Anita Sethmacher Schubert,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Bustamante,,-71.6299999899999,-33.0349998799999,RETC_Valparaiso
+261,Guadalupe De Lourdes Navia Cisternas,Exposición,Región de Valparaíso,Valparaíso,Concón,,San Agustin,,-71.5163888459999,-32.922777592,RETC_Valparaiso
+262,Salvador Florencio Forno Aguila,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Quito,,-71.6025000319999,-33.0452775829999,RETC_Valparaiso
+263,Bernardo Y Pedro Oroz Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Psje. Quillota,,-71.6033333139999,-33.0441664829999,RETC_Valparaiso
+264,Arturo Junge Y Cia Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Orrego,,-71.585833293,-33.030555353,RETC_Valparaiso
+265,Angela Bruna Podesta Rivera,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Playa Ancha,,-71.634722215,-33.0297220479999,RETC_Valparaiso
+266,Alejandro Torres Pantoja,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Las Heras,,-71.6166666959999,-33.0472220929999,RETC_Valparaiso
+267,Agustín González Olivares,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Baden Powell,,-71.6436110989999,-33.0555554199999,RETC_Valparaiso
+268,Comercial La Tahona Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Bellavista,,-71.6225000189999,-33.043610961,RETC_Valparaiso
+269,Bruno Vaccareza Y Cia,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Ecuador,,-71.6238889399999,-33.0461109419999,RETC_Valparaiso
+270,Dusproser Saldaña Y Cia.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Rodelillo,,-71.5655555179999,-33.064999843,RETC_Valparaiso
+271,Domingo Pescara,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Quebrada Verde,,-71.6386111499999,-33.031388735,RETC_Valparaiso
+272,David Zorrilla Rojas,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Matta,,-71.5755555599999,-33.0480553979999,RETC_Valparaiso
+273,Dante Fuentes,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Matta,,-71.5827777459999,-33.0455553619999,RETC_Valparaiso
+274,Hernan Rivero Vergara,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Paulino Alfonso,,-71.6352777249999,-33.0333332029999,RETC_Valparaiso
+275,Heriberto Pruneda,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Quebrada Verde,,-71.6369444779999,-33.038055392,RETC_Valparaiso
+276,Gino,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Matta,,-71.5916667079999,-33.0352775869999,RETC_Valparaiso
+277,Friedrich Reinoso Y Cia Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Victoria,,-71.6122221809999,-33.0466664749999,RETC_Valparaiso
+278,Francisco A. Ugarte,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Torquemada,,-71.6350000389999,-33.0369442909999,RETC_Valparaiso
+279,Francia Rivas Rivas,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Porvenir,,-71.6480555819999,-33.0338887569999,RETC_Valparaiso
+280,Francesca Solimano Y Otros,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Levarte,,-71.6436111289999,-33.0372220289999,RETC_Valparaiso
+281,Fernando Cordova,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. O Higgins,,-71.5847222469999,-33.0630554189999,RETC_Valparaiso
+282,Fabrica De Pasteles Pelú Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Molina,,-71.6191666979999,-33.0444442769999,RETC_Valparaiso
+283,Empresa Panificadora Pansoval,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Pedro Montt,,-71.6158333409999,-33.04611099,RETC_Valparaiso
+284,Industrias Lifelon S.A.,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5213889029999,-33.039444247,RETC_Valparaiso
+285,Industria Quimica Reno S.A.,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5208332799999,-33.0402776299999,RETC_Valparaiso
+286,Idiart Hnos. Y Cia Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Serrano,,-71.6294443929999,-33.0363887689999,RETC_Valparaiso
+287,Mazzino Hnos. Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Pedro Montt,,-71.6130555999999,-33.0461109059999,RETC_Valparaiso
+288,Mauricio Guzman Muñoz,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Pacífico,,-71.6402777949999,-33.0322220979999,RETC_Valparaiso
+289,María Soto Diaz,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Cancha Rayada,,-71.5319443889999,-33.0416664879999,RETC_Valparaiso
+290,María Mondaca Hernandez,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,José María Caro,,-71.6519443999999,-33.0397220249999,RETC_Valparaiso
+291,María Fernandez Y Cia Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Simpson,,-71.5994444569999,-33.0499998059999,RETC_Valparaiso
+292,María Cecilia González Videla,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Colon,,-71.6172221859999,-33.0477776579999,RETC_Valparaiso
+293,Marcela Rouse Bories,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Placeres,,-71.5950000419999,-33.0358331969999,RETC_Valparaiso
+294,Manuel Requeiro Y Cia Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Rodelillo,,-71.5791666519999,-33.0524998499999,RETC_Valparaiso
+295,Manuel Juanicotena,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Pedro Montt,,-71.6111111619999,-33.0463886889999,RETC_Valparaiso
+296,Luis Musquiz Iraizoz,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Argentina,,-71.6036111199999,-33.0455553559999,RETC_Valparaiso
+297,Luis Martinez C.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Mexico,,-71.6461111119999,-33.0386109889999,RETC_Valparaiso
+298,Lorenzo Mella Cavecho,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,12 De Julio,,-71.6352777249999,-33.0333332029999,RETC_Valparaiso
+299,Lobos Y Cia Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Bustamante,,-71.6299999899999,-33.0349998799999,RETC_Valparaiso
+300,Julio Manzamaros Y Otros,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Venezuela,,-71.6463888929999,-33.0497220269999,RETC_Valparaiso
+301,Juan Romero Vilches,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Victoria,,-71.6052778039999,-33.0480554369999,RETC_Valparaiso
+302,Juan Olaechea Y Cia. Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Salvador Donoso,,-71.6219443939999,-33.043888723,RETC_Valparaiso
+303,Juan Lagomarsino,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Playa Ancha,,-71.6386111639999,-33.024999874,RETC_Valparaiso
+304,Juan Carlos,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Estrella De Chile,,-71.6419444519999,-33.0455554209999,RETC_Valparaiso
+305,José Zamorano Vergara,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Barros Arana,,-71.5852777859999,-33.0316665329999,RETC_Valparaiso
+306,José Vacarezza Y Cia Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Independencia,,-71.6180555509999,-33.0461109579999,RETC_Valparaiso
+307,José M. Albornoz Diaz,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Tocornal,,-71.599444462,-33.0397220519999,RETC_Valparaiso
+308,José Cortez Saldia,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Matta,,-71.5755555599999,-33.0480553979999,RETC_Valparaiso
+309,José Alvarez Jimenez,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Levarte,,-71.6419444659999,-33.0352776219999,RETC_Valparaiso
+310,Jesus Alvarez,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Playa Ancha,,-71.6358333499999,-33.028610914,RETC_Valparaiso
+311,"Productos Alimenticios, Piramide",Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Pedro Montt,,-71.6094444219999,-33.0466664919999,RETC_Valparaiso
+312,Plasticos Warda,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5213889029999,-33.039444247,RETC_Valparaiso
+313,Pinturas Tricolor S.A.,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5208332799999,-33.0402776299999,RETC_Valparaiso
+314,Peter Espinoza Fernandez,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Cajilla,,-71.6319444089999,-33.0358331759999,RETC_Valparaiso
+315,Perez Y Perez Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,General Mitre,,-71.5961110959999,-33.0430554,RETC_Valparaiso
+316,Pedro Rojas Escobar,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Clave,,-71.6300000529999,-33.0361109749999,RETC_Valparaiso
+317,Pasalacua Solari Y Cia.,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache,,-71.5047222169999,-33.0497220799999,RETC_Valparaiso
+318,Paola Vásquez Saavedra,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Psje. Lientur,,-71.6411111019999,-33.0286109579999,RETC_Valparaiso
+319,Panificadora San Lorenzo Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Bustamante,,-71.6297222219999,-33.0352775839999,RETC_Valparaiso
+320,Panificadora Puropan Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Uruguay,,-71.6072221919999,-33.0461109539999,RETC_Valparaiso
+321,Panificadora Progreso Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Uruguay,,-71.6072221919999,-33.0461109539999,RETC_Valparaiso
+322,Panificadora Juan Lorenzo Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Bustamante,,-71.6297222219999,-33.0352775839999,RETC_Valparaiso
+323,Panificadora Daveri Rivero Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Cochrane,,-71.6294444289999,-33.0349998749999,RETC_Valparaiso
+324,Panificadora Avda. Francia Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Francia,,-71.612222201,-33.0497220699999,RETC_Valparaiso
+325,Panificadora Andina Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Independencia,,-71.6158333689999,-33.0469442909999,RETC_Valparaiso
+326,Panadería Punto Pan,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Francia,,-71.6119444539999,-33.0483331309999,RETC_Valparaiso
+327,Pablo Floridor Gaete Vanni,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Hector Calvo,,-71.621388856,-33.0480553699999,RETC_Valparaiso
+328,Oroz Hnos Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Las Heras,,-71.6166666959999,-33.0472220929999,RETC_Valparaiso
+329,Oberenak Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Hontaneda,,-71.6069444219999,-33.0513887089999,RETC_Valparaiso
+330,Nibaldo Alegre González,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,José María Caro,,-71.6519443999999,-33.0397220249999,RETC_Valparaiso
+331,Monaldi Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Uruguay,,-71.6074999689999,-33.0491665159999,RETC_Valparaiso
+332,Soc. Panificadora Progreso Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Pedro Montt,,-71.6144444699999,-33.0461109099999,RETC_Valparaiso
+333,Soc. Menmedo Hnos.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Los Boldos,,-71.5819444949999,-33.0358331829999,RETC_Valparaiso
+334,Soc. Industria De Masas Artesanales,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Serrano,,-71.6288888599999,-33.037222062,RETC_Valparaiso
+335,Sinclain Y Cia,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Pacífico,,-71.6422221889999,-33.0305554329999,RETC_Valparaiso
+336,Sergio Segovia,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Colon,,-71.6108333569999,-33.0491665359999,RETC_Valparaiso
+337,Sergio Leal Vega,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Mexico,,-71.6461111119999,-33.0386109889999,RETC_Valparaiso
+338,Santiago Schappacasse Fenetti,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Chaparro,,-71.6347221789999,-33.0419442709999,RETC_Valparaiso
+339,Santa Isabel S.A.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Pedro Montt,,-71.6166667069999,-33.045833195,RETC_Valparaiso
+340,Rodriguez Galdamez,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Matta,,-71.589444468,-33.0397220349999,RETC_Valparaiso
+341,Ricardo González Espinoza,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Pelle,,-71.5894444859999,-33.0322220579999,RETC_Valparaiso
+342,Renzo Vaccarezza Barbagelata,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Yerbas Buenas,,-71.6227777839999,-33.0461109709999,RETC_Valparaiso
+343,Raúl Rodriguez Maule,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,21 De Mayo,,-71.5777777519999,-33.0397220529999,RETC_Valparaiso
+344,Ranulfo Gargari Iglesias,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Almte. Montt,,-71.6272221899999,-33.0427776019999,RETC_Valparaiso
+345,Ramón Toro Silva,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Yungay,,-71.6086110949999,-33.0447220319999,RETC_Valparaiso
+346,Quimica Latinoamericana S.A,Exposición,Región de Valparaíso,Valparaíso,Viña del Mar,,Limache Esquina Calle 5,,-71.5208333669999,-33.0244442809999,RETC_Valparaiso
+347,Queirolo Y Bonino Ltda.,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Victoria,,-71.6038888339999,-33.0483331319999,RETC_Valparaiso
+348,-,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Uruguay,,-71.6074999689999,-33.0491665159999,RETC_Valparaiso
+349,-,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Avda. Playa Ancha,,-71.6358333499999,-33.028610914,RETC_Valparaiso
+350,Vormi Irne Valderrama,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Barros Arana,,-71.5822222099999,-33.033333175,RETC_Valparaiso
+351,Teresa Davalos Uribe,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Phillippi,,-71.5877777819999,-33.033610946,RETC_Valparaiso
+352,Suc. Pedro Apablaza Silva,Exposición,Región de Valparaíso,Valparaíso,Valparaíso,,Concordia,,-71.637222231,-33.0347220969999,RETC_Valparaiso
+1,BANCO DEL ESTADO DE CHILE,Industrial,Región de Valparaíso,,,5401,ORTIZ DE ROZAS 562,97030000-7,-71.2313888979999,-32.4483331709999,RETC_VNorte
+2,BANCO DEL ESTADO DE CHILE,Industrial,Región de Valparaíso,,,5107,AVDA. NORMANDIE 1970,97030000-7,-71.5250000029999,-32.7822220869999,RETC_VNorte
+3,ESVAL S A,Industrial,Región de Valparaíso,,,5107,ARTURO PRAT 75,89900400-0,-71.5294444779999,-32.763888726,RETC_VNorte
+4,SOC FABRICA DE TEJIDOS KIKO LIMITADA,Industrial,Región de Valparaíso,,,5401,ESMERALDA 480,89874800-6,-71.2302777819999,-32.447499826,RETC_VNorte
+5,ESVAL S A,Industrial,Región de Valparaíso,,,5107,ARTURO PRAT 216,89900400-0,-71.5297221999999,-32.7644442469999,RETC_VNorte
+6,ESVAL S A,Industrial,Región de Valparaíso,,,5405,DIEGO SUTIL 156,89900400-0,-71.4519444159999,-32.5519443319999,RETC_VNorte
+7,FABRICA DE HELADOS Y RESTAURANT LIHUEN LIMITADA,Industrial,Región de Valparaíso,,,5401,ORTIZ DE ROZAS 303,88939700-4,-71.2294444869999,-32.4483331739999,RETC_VNorte
+8,PASTELERIA RUBIO LTDA,Industrial,Región de Valparaíso,,,5401,MANUEL MONTT 255,85431500-5,-71.2341666679999,-32.4480553769999,RETC_VNorte
+9,PANIFICADORA PORTALES LIMITADA,Industrial,Región de Valparaíso,,,5401,PORTALES 695,77194000-5,-71.2324999749999,-32.4494442679999,RETC_VNorte
+10,SOC PESQUERA MARLIMAR LIMITADA,Industrial,Región de Valparaíso,,,5107,BAQUEDANO 775,77094750-2,-71.5308333799999,-32.7699998269999,RETC_VNorte
+11,SUPERMERCADO LA LIGUA LIMITADA,Industrial,Región de Valparaíso,,,5401,SANTA TERESA 735,76570420-0,-71.2336110919999,-32.4463887449999,RETC_VNorte
+12,FABRICA DE TEJIDOS MARIA LIMITADA,Industrial,Región de Valparaíso,,,5401,ORTIZ DE ROZAS 261,50054340-K,-71.2283333049999,-32.448610953,RETC_VNorte
+13,FABIOLA SOLEDAD ARAYA AHUMADA,Industrial,Región de Valparaíso,,,5401,PORTALES 1500,12816562-2,-71.2505555109999,-32.4522221109999,RETC_VNorte
+14,MARIO ORLANDO MONDACA VEGA,Industrial,Región de Valparaíso,,,5401,SANTA TERESA 608,9825304-1,-71.2322221679999,-32.4461109999999,RETC_VNorte
+15,MARIA EUGENIA NAVARRETE PEREZ,Industrial,Región de Valparaíso,,,5401,LAS ARAUCARIAS 1390,9020738-5,-71.2458333589999,-32.4530554189999,RETC_VNorte
+16,HERNAN OSNALDO CORTEZ OLIVARES,Industrial,Región de Valparaíso,,,5401,VIC MACKENNA 386,4746509-5,-71.2327777909999,-32.4469442619999,RETC_VNorte
+17,AQUILES DEL CARMEN CARDOZA MENDOZA,Industrial,Región de Valparaíso,,,5401,ESMERALDA 260,5107007-0,-71.2283332819999,-32.4474999039999,RETC_VNorte
+18,VICTORIO IRIGOYEN RECARTE,Industrial,Región de Valparaíso,,,5107,ESTRELLA DE CHILE 180,3676944-0,-71.5247221879999,-32.7813887439999,RETC_VNorte
+19,JUAN ENRIQUE PARRA DURAN,Industrial,Región de Valparaíso,,,5107,LUIS ORIONE 920,2478522-K,-71.5341666899999,-32.7822220699999,RETC_VNorte
+20,FRESIA ADRIANA GUZMAN BRICENO,Industrial,Región de Valparaíso,,,5401,ORTIZ DE ROZAS 721,3040397-5,-71.2336111609999,-32.4486109289999,RETC_VNorte
