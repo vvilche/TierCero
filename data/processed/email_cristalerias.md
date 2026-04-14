@@ -1,146 +1,130 @@
-# EMAIL: Cristalerías Chile — Propuesta Baby Steps
+# EMAIL: Cristalerías Chile — Propuesta Piloto Informativo
 
 ---
 
 **Para:** Carlos Concha — Ing. Departamento de Ingeniería  
-**Email:** —  
-**Fecha:** 14-abr-2026  
-**Asunto:** Propuesta escalonada para Cristalerías Chile — Sin riesgo, alto impacto
+**Asunto:** Propuesta piloto: Diagnóstico y optimización de hornos de fusión
 
 ---
 
 Estimado Carlos,
 
-Gracias por la reunión de hoy. Fue muy productivo entender mejor la operación de Cristalerías.
+Gracias por la reunión de hoy. Fue muy productivo entender mejor la operación de Cristalerías y cómo podemos aportar valor a su proceso productivo.
 
-Según lo que conversamos, entiendo que tienen 6 hornos operando con PLCs que actualmente no se comunican entre sí. Eso significa que no tienen visibilidad centralizada de la temperatura, el flujo de gas, ni la eficiencia de cada horno.
-
-Les propongo una estrategia **escalonada** para ir resolviendo esto sin comprometer capital grande desde el inicio. Así empezamos con algo pequeño, vemos resultados, y escalamos cuando ustedes lo decidan.
+Según lo conversado, tienen 6 hornos operando en Llay-Llay y un compromiso con la excelencia operativa. Les propongo explorar un **programa piloto** que les permita evaluar nuestra tecnología **sin compromiso de inversión grande**.
 
 ---
 
-## OPCIÓN 1: Recocido Watch (Entry Point)
-### Inversión: US$20-25K | Tiempo: 3 semanas | Riesgo: MUY BAJO
+## PROGRAMA PILOTO: "Cristalerías 4.0"
 
-Empezamos por el proceso de **recocido** — que es donde ustedes generan más scrap según lo que vi.
+### ¿Qué incluye?
 
-**Incluye:**
-- 3 sensores de temperatura wireless (WS300)
-- 1 gateway para conectividad
-- Dashboard en cloud con tendencias 24/7
-- Alarmas por desviación de temperatura
-- Reportes semanales de eficiencia
+Les ofrecemos un diagnóstico completo de sus hornos + una prueba controlada de nuestras herramientas.
 
-**Beneficio inmediato:**
-- Reducción de scrap 2-3% en vidrio recocido
-- Alertas antes de que el vidrio se dañe
-- Visibilidad desde cualquier lugar
+**Fase 1: Diagnóstico (2 semanas)**
+- Levantamiento técnico de los 6 hornos
+- Identificación de gaps de control y visibilidad
+- Benchmark de eficiencia vs industria
+- Entrega de informe con recomendaciones priorizadas
 
-**ROI:**
-- Si ustedes producen 100K ton/año de vidrio recocido
-- 2% scrap reduction = 2,000 ton salvadas
-- Valor: ~US$40-60K/año
-- Payback: **4-6 meses**
+**Fase 2: Prueba Piloto (4-6 semanas)**
+- Instalación de sensores wireless en 1 horno
+- Conexión a nuestra plataforma de monitoreo
+- Dashboard en tiempo real para el equipo
+- Alertas y reportes automáticos
 
-> *"No les pido que me den el control del horno. Solo les muestro qué está pasando en el recocido."*
+**Fase 3: Evaluación (2 semanas)**
+- Presentación de resultados del piloto
+- Análisis de savings potenciales
+- Recomendación de próximos pasos
 
 ---
 
-## OPCIÓN 2: SCADA-only (1 horno)
-### Inversión: US$50-60K | Tiempo: 6 semanas | Riesgo: BAJO
+## ¿QUÉ USTEDES OBTIENEN?
 
-Si el recocido funciona bien, subimos a monitorear **1 horno** completo.
-
-**Incluye:**
-- Controlador FCU713 para 1 horno
-- Módulos I/O (temperatura, presión, flujo)
-- SCADA con dashboard para ese horno
-- Historian para tendencias
-- Alarmas centralizadas
-
-**Beneficio:**
-- Visibilidad completa del horno #1
+### Información
+- Visibilidad completa de 1 horno (temp, presión, flujo)
 - Datos históricos para análisis
-- Base para escalar a los otros 5
+- Alertas en tiempo real
 
-**ROI:**
-- Monitoreo de eficiencia = ahorro 2-3% en gas
-- Ahorro: ~US$80-120K/año por horno
-- Payback: **6-9 meses**
+### Conocimiento
+- Diagnóstico de gaps en control
+- Benchmark vs mejores prácticas
+- ROI estimado con datos reales
 
-> *"Vemos cómo funciona el sistema en 1 horno. Si funciona, escalamos a los otros 5."*
-
----
-
-## OPCIÓN 3: APC Standalone (1 horno)
-### Inversión: US$140K | Tiempo: 3 meses | Riesgo: MEDIO
-
-Con el control predictivo avanzado, **optimizamos** el consumo de gas del horno #1.
-
-**Incluye:**
-- Sistema APC con modelo predictivo
-- Conexión a PLCs existentes
-- Recomendaciones de setpoints en tiempo real
-- El operador decide si acepta o no
-
-**Beneficio:**
-- Ahorro de gas 4-5% por horno
-- Reducción de variabilidad
-- Extensión de vida útil del horno
-
-**ROI:**
-- Ahorro: ~US$200-300K/año por horno
-- Payback: **5-7 meses**
-
-> *"El APC 'aprende' el comportamiento del horno y sugiere el mejor setpoint cada 5 minutos. El operador decide."*
+### Decisión
+- Prueba sin riesgo — ustedes evalúan
+- Sin compromiso de compra
+- Si no funciona, no deben nada
 
 ---
 
-## OPCIÓN 4: Full DCS (6 hornos)
-### Inversión: US$2.0M | Tiempo: 12 meses | Riesgo: BAJO (con referencias)
+## LO QUE PODEMOS RESOLVER
 
-Cuando hayamos demostrado valor en 1 horno, escalamos a los 6.
+Según nuestra experiencia en hornos de vidrio similares:
 
-**Incluye:**
-- 2 controladores FCU713 redundantes
-- Red completa Ethernet-APL
-- SCADA unificado para 6 hornos
-- APC para optimización
-- supOS como plataforma
-
-**ROI:**
-- Ahorro total: US$1.2-1.8M/año
-- Payback: **13-20 meses**
+| Problema | Solución | Beneficio |
+|----------|----------|-----------|
+| Temperatura oscila ±30°C | APC multivariable | Estabilidad ±5°C |
+| Scarp en recocido | Monitoreo + IA | Reducción 2-3% |
+| Alarmas aisladas | SCADA unificado | Visibilidad total |
+| Datos en Excel | Historian conectado | Análisis automático |
+| Paradas no planificadas | Diagnóstico predictivo | Prevención |
 
 ---
 
-## NUESTRA RECOMENDACIÓN
+## CASO DE REFERENCIA
 
-```
-MES 1-2:  Recocido Watch ──────► US$20-25K
-MES 3-4:  SCADA 1 horno ──────► US$50-60K
-MES 5-8:  APC 1 horno ───────► US$140K
-MES 9-12: Full DCS 6 hornos ──► US$1.0M (descuento por volumen)
-                                    ───────────────
-TOTAL:                              US$1.2M
-                                    (vs US$2.0M upfront)
-```
+Trabajamos con plantas de vidrio en Perú y Argentina. Un caso similar al suyo:
 
-> *"No les pido US$2M upfront. Empezamos con US$20K, demostramos valor, escalamos cuando ustedes quieran."*
+- **Planta:** Vidrio hueco, 4 hornos
+- **Situación inicial:** Sin visibilidad centralizada, scrap 4%
+- **Piloto:** Monitoreo 1 horno por 6 semanas
+- **Resultado piloto:** Datos claros, savings identificados
+- **Resultado final:** Reducción de scrap 2.1%, ahorro gas 4%
+
+> *"No les pido que me crean — les pido que prueben con datos reales."*
 
 ---
 
 ## PRÓXIMOS PASOS
 
-1. **Esta semana:** Me confirman qué opción les interesa más
-2. **Próxima semana:** Visita técnica para levantar specs
-3. **2-3 semanas:** Propuesta formal con timeline
+1. **Esta semana:** Me confirman interés en el programa piloto
+2. **Próxima semana:** Reunión técnica para levantar specs
+3. **Semana 3:** Inicio del diagnóstico
+4. **Semana 5-11:** Implementación del piloto
+5. **Semana 13:** Presentación de resultados
 
-¿Les parece? ¿Cuándo podemos agendar la próxima reunión para profundizar en alguna opción?
+Duración total: **~3 meses**
 
-Quedo atenta.
+---
 
-Saludos,
+## ¿QUÉ LES INCLUYE EL PILOTO?
+
+| Ítem | Detalle |
+|------|---------|
+| Diagnóstico | Levantamiento + informe técnico |
+| Equipos | Sensores wireless, gateway |
+| Plataforma | Acceso a dashboard supOS |
+| Soporte | Ingeniería de soporte |
+| Capacitación | Entrenamiento al equipo |
+| Informe final | Resultados + recomendaciones |
+
+---
+
+## NOTAS
+
+Este programa piloto está diseñado para que ustedes **evalúen con datos reales** antes de cualquier decisión de inversión. No es una venta — es una **oportunidad de conocer la tecnología** sin compromiso.
+
+Si después del piloto deciden continuar,我们会.presentar opciones de escalamiento según sus prioridades y presupuesto.
+
+---
+
+¿Les parece si agendamos una próxima reunión para presentar el programa en detalle?
+
+Quedo atenta a su respuesta.
+
+Saludos cordiales,
 
 **Victoria Vilches**  
 KAM | SUPCON Chile  
@@ -148,25 +132,24 @@ KAM | SUPCON Chile
 
 ---
 
-## NOTAS PARA LA REUNIÓN
+## NOTAS INTERNAS PARA LA REUNIÓN
 
-### Datos de Cristalerías (estimados):
-- 6 hornos operando
-- Producción: ~500K ton/año
-- Consumo gas: ~US$60M/año (estimado)
-- EBIT negativo = urgencia para savings
+### Datos de Cristalerías:
+- 6 hornos operando en Llay-Llay
+- PLCs dispersos — sin visibilidad centralizada
+- EBIT negativo — urgencia para savings
 
-### Objeciones anticipadas:
+### Objeciones a manejar:
 | Objeción | Respuesta |
 |-----------|-----------|
-| "No tenemos presupuesto" | Empezamos con US$20K en recocido. Casi nada. |
-| "Ya tenemos Siemens" | No reemplazamos Siemens. Solo agregamos visibilidad. |
-| "Funciona bien ahora" | ¿Han medido cuánto les cuesta una parada no planificada? |
-| "Prueba primero" | Por eso empezamos con el recocido — riesgo casi cero. |
+| "No tenemos presupuesto" | El piloto es sin costo inicial. Evaluamos juntos después. |
+| "Ya tenemos Siemens" | No reemplazamos Siemens. Agregamos visibilidad. |
+| "Funciona bien ahora" | ¿Han medido la desviación de temperatura en operación normal? |
+| "Prueba primero" | Exactamente — por eso es un piloto sin compromiso. |
 
 ### Preguntas para discovery:
 1. ¿Cuántos grados se desvía la temperatura del horno en operación normal?
-2. ¿Cuánto scrap generan en recocido?
+2. ¿Cuánto scrap generan en recocido mensualmente?
 3. ¿Cuántas paradas no planificadas tuvieron el año pasado?
-4. ¿Quién monitorea los hornos hoy?
+4. ¿Quién monitorea los hornos hoy y cómo?
 5. ¿Qué les gustaría saber que hoy no pueden ver?
